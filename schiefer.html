@@ -193,7 +193,7 @@
   </style>
 </head>
 <body>
-  <div class="fh5co-loader"></div>
+  
 
   <div id="page">
     <div id="menu-placeholder"></div>
@@ -346,6 +346,10 @@
         } else {
           data.galerie.forEach(function (item) {
             var bildPfad = item.bild || "";
+            // Resolve local images relative to this project, including GitHub Pages subdirectories.
+            if (bildPfad.indexOf("/images/") === 0) {
+              bildPfad = bildPfad.substring(1);
+            }
 
             if (bildPfad.indexOf("./") === 0) {
               bildPfad = bildPfad.substring(2);
@@ -356,6 +360,8 @@
 
             var img = document.createElement("img");
             img.src = bildPfad;
+            img.loading = "lazy";
+            img.decoding = "async";
             img.alt = item.alt || item.titel || "";
 
             var caption = document.createElement("div");

@@ -36,23 +36,22 @@
 			.find('li')
 			.removeClass('has-dropdown');
 
-		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function(){
-			var $this = $(this);
-
-			$this
-				.addClass('active')
-				.find('ul')
-				.slideDown(500, 'easeOutExpo');				
-		}).mouseleave(function(){
-
-			var $this = $(this);
-			$this
-				.removeClass('active')
-				.find('ul')
-				.slideUp(500, 'easeOutExpo');				
-		});
-
+		// Explicit touch and keyboard controls for mobile submenus.
+        $('#fh5co-offcanvas .submenu-toggle').on('click', function(event) {
+            event.preventDefault();
+            var button = $(this);
+            var expanded = button.attr('aria-expanded') !== 'true';
+            button.attr('aria-expanded', String(expanded)).text(expanded ? '−' : '+');
+            button.parent().toggleClass('active', expanded).children('ul').stop(true, true).slideToggle(180);
+        });
+        $('#fh5co-offcanvas .offcanvas-has-dropdown > a[href="#"]').on('click', function(event) {
+            event.preventDefault();
+            $(this).siblings('.submenu-toggle').trigger('click');
+        });
+        $('#fh5co-offcanvas a[href]:not([href="#"])').on('click', function() {
+            $('body').removeClass('overflow offcanvas');
+            $('.js-fh5co-nav-toggle').removeClass('active');
+        });
 
 		$(window).resize(function(){
 

@@ -1372,3 +1372,13 @@ blockquote .person cite {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Accessible gift and material submenus, without changing the header branding. */
+.submenu-toggle{display:none}
+.fh5co-nav .has-dropdown:focus-within>.dropdown{display:block!important}
+.fh5co-nav .dropdown{min-width:225px}
+#fh5co-offcanvas .offcanvas-has-dropdown{position:relative}
+#fh5co-offcanvas .offcanvas-has-dropdown>a{padding-right:36px}
+#fh5co-offcanvas .offcanvas-has-dropdown>a:after{display:none}
+#fh5co-offcanvas .submenu-toggle{display:inline-flex;position:absolute;top:0;right:-15px;align-items:center;justify-content:center;min-width:40px;min-height:40px;color:white;font-size:22px;margin:0}
+.submenu-toggle:focus-visible{outline:2px solid #cabcab;outline-offset:2px}
