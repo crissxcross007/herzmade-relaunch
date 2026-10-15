@@ -1,0 +1,194 @@
+media:
+  - name: bilder
+    label: Bilder
+    input: images
+    output: /images
+    rename: safe
+    extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: holz
+    label: Holz
+    type: file
+    path: content/holz.json
+    format: json
+    fields:
+      - name: titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            type: string
+          - name: alt
+            type: string
+
+  - name: glas
+    label: Glas
+    type: file
+    path: content/glas.json
+    format: json
+    fields:
+      - name: titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            type: string
+          - name: alt
+            type: string
+
+  - name: schiefer
+    label: Schiefer
+    type: file
+    path: content/schiefer.json
+    format: json
+    fields:
+      - name: titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            type: string
+          - name: alt
+            type: string
+
+  - name: zipper
+    label: Zipper
+    type: file
+    path: content/zipper.json
+    format: json
+    fields:
+      - name: titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            type: string
+          - name: alt
+            type: string
+
+  - name: edelstahl
+    label: Edelstahl
+    type: file
+    path: content/edelstahl.json
+    format: json
+    fields:
+      - name: titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            type: string
+          - name: alt
+            type: string
+
+  - name: leder
+    label: Leder
+    type: file
+    path: content/leder.json
+    format: json
+    fields:
+      - name: titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            type: string
+          - name: alt
+            type: string
+
+  - name: keramik
+    label: Keramik
+    type: file
+    path: content/keramik.json
+    format: json
+    fields:
+      - name: titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            type: string
+          - name: alt
+            type: string
+
+settings:
+  content:
+    merge: true
