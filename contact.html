@@ -152,5 +152,14 @@ Promise.all([
 });
 </script>
 
+<script>
+(() => {
+ const product = new URLSearchParams(location.search).get('produkt');
+ const field = document.querySelector('textarea[name="message"]');
+ if (product && field && !field.value) {
+   field.value = 'Ich interessiere mich für: ' + product.slice(0,150) + '\nAnlass: \nGewünschtes Motiv / Text: \nStückzahl: \nWunschtermin: ';
+ }
+})();
+</script>
 </body>
 </html>
