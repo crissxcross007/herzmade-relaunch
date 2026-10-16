@@ -1,23 +1,26 @@
 # Herzmade Relaunch
 
-Separate Arbeitskopie für die Überarbeitung von Herzmade.
+Statische Testseite für Herzmade. Die Live-Seite in crissxcross007/herzmade bleibt getrennt.
+Keine CNAME-Datei hinzufügen und keine Hauptdomain in diesem Repository setzen.
 
-- Original: https://github.com/crissxcross007/herzmade
-- Ausgangsstand: `9bfa157bd124154d0457ee2151ca8a371a205748`
-- Das Original-Repository und seine Domain-Konfiguration wurden nicht verändert.
-- Die CNAME-Datei wurde nicht übernommen. Keine eigene Domain für dieses Projekt setzen.
-- HTML-Seiten enthalten vorerst `noindex, nofollow`.
-- Der einmalige Import ist abgeschlossen; es gibt keine automatische Synchronisierung mit dem Original.
+## Aufbau
 
-## Vorschau einrichten
+- content/gifts.json: neun Geschenkideen, Preise, Anlässe und Bilder.
+- content/holz.json, glas.json, schiefer.json, edelstahl.json, keramik.json, leder.json: vorhandene Texte und Galerien.
+- scripts/build_site.py: zentraler Seitengenerator mit Menü und Footer. Diese werden beim Erstellen in jede Seite geschrieben; im Browser gibt es keine Includes und keine Inhalts-Fetches.
+- assets/site.css, assets/site.js: Gestaltung, mobile Navigation, Anlassfilter und Galerie-Dialog.
+- assets/img/: lokal optimierte WebP-Dateien in zwei Größen.
+- images/: Originalbilder als Grundlage für spätere Bearbeitung; Besucher laden nur die optimierten Assets.
 
-In diesem Repository unter Settings → Pages → Build and deployment:
+## Änderungen erstellen
 
-1. Source: Deploy from a branch
-2. Branch: main, Ordner / (root)
-3. Save
-4. Custom domain leer lassen
+Mit Python und Pillow (requirements-build.txt) im Projektordner ausführen:
 
-## Nächste Arbeitsschritte
+    python scripts/build_site.py
 
-Startseite gestalten, mobile Navigation und Ladeverhalten verbessern, Bilder optimieren. Gemeinsame Elemente wie Menü und Footer weiter zentral pflegen. Erst nach Abnahme die Hauptdomain umstellen.
+Anschließend die generierten HTML-Seiten, aktualisierten Assets und Quelldateien gemeinsam committen. GitHub Pages veröffentlicht main aus dem Stammordner.
+Nicht nur menu.html oder footer.html ändern: Diese Dateien werden aus den zentralen Funktionen navigation() und footer() erzeugt.
+
+## Prüfung
+
+Die Seiten bleiben während der Testphase auf noindex,nofollow. Keine externen Schriften, kein Bootstrap, kein jQuery. Formularziel bleibt der vorhandene Formspree-Endpunkt. Es wurden keine Testnachrichten versendet.

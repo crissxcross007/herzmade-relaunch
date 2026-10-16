@@ -1,0 +1,93 @@
+/* Small progressive enhancements. Content, images and navigation are static HTML. */
+document.documentElement.classList.add('js');
+(() => {
+  const menuButton = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('main-nav');
+  const closeMenu = () => {
+    if (!menuButton || !nav) return;
+    menuButton.setAttribute('aria-expanded','false');
+    nav.classList.remove('is-open');
+  };
+  if (menuButton && nav) {
+    menuButton.addEventListener('click', () => {
+      const open = menuButton.getAttribute('aria-expanded') !== 'true';
+      menuButton.setAttribute('aria-expanded',String(open));
+      nav.classList.toggle('is-open',open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click',closeMenu));
+    window.addEventListener('resize', () => { if (window.innerWidth > 850) closeMenu(); });
+  }
+  document.querySelectorAll('.submenu-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const group = button.closest('.nav-group');
+      const open = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded',String(open));
+      group.classList.toggle('open',open);
+    });
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      const wasOpen = nav && nav.classList.contains('is-open');
+      closeMenu();
+      document.querySelectorAll('.nav-group.open').forEach(group => {
+        group.classList.remove('open');
+        group.querySelector('button').setAttribute('aria-expanded','false');
+      });
+      if (wasOpen) menuButton.focus();
+    }
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.site-header')) closeMenu();
+  });
+  const filterButtons = [...document.querySelectorAll('[data-filter]')];
+  const products = [...document.querySelectorAll('.product')];
+  const count = document.getElementById('gift-count');
+  function filterProducts() {
+    const wanted = location.hash.slice(1);
+    const active = filterButtons.some(b=>b.dataset.filter===wanted) ? wanted : 'alle';
+    filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===active)));
+    let visible=0;
+    products.forEach(p=>{
+      p.hidden=active!=='alle' && !p.dataset.occasions.split(' ').includes(active);
+      if (!p.hidden) visible++;
+    });
+    if (count) count.textContent=visible+(visible===1?' Geschenkidee':' Geschenkideen');
+  }
+  if (filterButtons.length) {
+    filterButtons.forEach(button=>button.addEventListener('click',()=>{
+      history.replaceState(null,'',location.pathname+location.search+(button.dataset.filter==='alle'?'':'#'+button.dataset.filter));
+      filterProducts();
+    }));
+    window.addEventListener('hashchange',filterProducts);
+    filterProducts();
+  }
+  const dialog=document.querySelector('dialog.lightbox');
+  const gallery=[...document.querySelectorAll('[data-lightbox]')];
+  let current=0, returnFocus=null;
+  if (dialog && typeof dialog.showModal==='function') {
+    const image=dialog.querySelector('img');
+    const caption=dialog.querySelector('figcaption');
+    const show=i=>{
+      current=(i+gallery.length)%gallery.length;
+      const item=gallery[current];
+      image.src=item.href;
+      image.alt=item.querySelector('img').alt;
+      caption.textContent=item.dataset.caption+' · '+(current+1)+' / '+gallery.length;
+    };
+    gallery.forEach((link,index)=>link.addEventListener('click',event=>{
+      event.preventDefault();returnFocus=link;show(index);dialog.showModal();document.body.style.overflow='hidden';
+    }));
+    dialog.querySelector('.lightbox-close').addEventListener('click',()=>dialog.close());
+    dialog.querySelector('.lightbox-prev').addEventListener('click',()=>show(current-1));
+    dialog.querySelector('.lightbox-next').addEventListener('click',()=>show(current+1));
+    dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+    dialog.addEventListener('keydown',e=>{
+      if(e.key==='ArrowLeft'){e.preventDefault();show(current-1)}
+      if(e.key==='ArrowRight'){e.preventDefault();show(current+1)}
+    });
+    dialog.addEventListener('close',()=>{document.body.style.overflow='';image.removeAttribute('src');if(returnFocus)returnFocus.focus()});
+  }
+  const select=document.getElementById('product');
+  const requested=new URLSearchParams(location.search).get('produkt');
+  if(select && requested){const option=[...select.options].find(o=>o.textContent===requested);if(option)select.value=option.value}
+})();
