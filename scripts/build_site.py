@@ -96,19 +96,20 @@ def gallery_example(material, preferred):
 
 def build_home():
     featured = {
-        'holz': 'images/holz/2026-01-10_14-38-05_703-1.jpeg',
-        'glas': 'images/glas/img5452.jpeg',
-        'schiefer': 'images/schiefer/f2e1ab83-2054-414a-8c57-7d859082a8e6.jpeg',
-        'edelstahl': 'images/edelstahl/img3223.jpeg',
+        'holz': 'images/holz/brett-lieblingsfussballer.jpg',
+        'glas': 'images/glas/weinglas-hochzeit.jpg',
+        'schiefer': 'images/schiefer/schiefertafel-goldene-hochzeit.jpg',
+        'edelstahl': 'images/edelstahl/tasse-geschenkbox.jpg',
         'keramik': 'images/keramik/img5124.jpeg',
         'leder': 'images/leder/dd52daca-2171-4a2e-866a-46794246d3cd2025-12-1922-35-57764.jpeg',
     }
     material_images = {key: gallery_example(key, path) for key, path in featured.items()}
-    hero_item = gallery_example('glas', 'images/glas/img5674.jpeg')
+    hero_item = gallery_example('glas', 'images/glas/laterne-lebensbaum.jpg')
     hero = picture(hero_item['bild'],hero_item['alt'],True)
-    small = picture(material_images['holz']['bild'],material_images['holz']['alt'])
+    small_item = gallery_example('holz', 'images/holz/hochzeitsbox-holz.jpg')
+    small = picture(small_item['bild'],small_item['alt'])
     cards = ''.join(f'<a class="material-card" href="{key}.html"><div>{picture(material_images[key]["bild"],material_images[key]["alt"])}</div><h3>{label}<span aria-hidden="true">↗</span></h3></a>' for key,label in MATERIALS.items())
-    content = f'''<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">Gravuren & Geschenkideen aus Döbern</p><h1>Kein Geschenk<br>wie jedes.<br><em>Deins.</em></h1><p class="hero-lead">Ein Name. Ein besonderer Moment. Eine Erinnerung, die bleibt. Wir machen aus deiner Idee ein persönliches Einzelstück.</p><div class="hero-actions"><a class="button" href="geschenkideen.html">Geschenkideen entdecken <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">Das ist Herzmade</a></div><p class="hero-signoff">Mit Herz gemacht statt Barcode.</p></div><div class="hero-visual"><div class="hero-main">{hero}<span class="image-label">Ein kleines Licht.<br>Eine persönliche Botschaft.</span></div><div class="hero-small">{small}<span>Für deine Lieblingsmenschen.</span></div></div></div></section>
+    content = f'''<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">Gravuren & Geschenkideen aus Döbern</p><h1>Kein Geschenk<br>wie jedes.<br><em>Deins.</em></h1><p class="hero-lead">Ein Name. Ein besonderer Moment. Eine Erinnerung, die bleibt. Wir machen aus deiner Idee ein persönliches Einzelstück.</p><div class="hero-actions"><a class="button" href="geschenkideen.html">Geschenkideen entdecken <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">Das ist Herzmade</a></div><p class="hero-signoff">Mit Herz gemacht statt Barcode.</p></div><div class="hero-visual"><div class="hero-main">{hero}<span class="image-label">Ein Licht.<br>Deine persönliche Botschaft.</span></div><div class="hero-small">{small}<span>Für deine Lieblingsmenschen.</span></div></div></div></section>
     <div class="values-strip"><div class="wrap"><span>Individuell graviert</span><span>Material & Gravur inklusive</span><span>Persönlich aus der Lausitz</span></div></div>
     <section class="occasion-section wrap"><div class="section-heading"><div><p class="eyebrow">Weil jeder Moment anders ist</p><h2>Was möchtest du<br>in Erinnerung behalten?</h2></div><p>Zum Geburtstag, als Dankeschön oder für einen ganz besonderen Menschen: Hier beginnt deine Geschenkidee.</p></div><div class="occasion-links">{''.join(f'<a href="geschenkideen.html#{key}"><span>{E(label)}</span><span aria-hidden="true">↗</span></a>' for key,label in OCCASIONS.items())}</div></section>
     <section class="materials-section wrap" id="materialien"><div class="section-heading"><div><p class="eyebrow">Echte Materialien. Deine Geschichte.</p><h2>Mit Charakter gemacht.</h2></div><p>Natürliches Holz, kontrastreicher Schiefer oder edles Glas. Entdecke unsere Materialien und echten Arbeiten.</p></div><div class="materials-grid">{cards}</div></section>
