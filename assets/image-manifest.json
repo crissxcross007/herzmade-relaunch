@@ -103,6 +103,14 @@
     "width": 1152,
     "height": 1536
   },
+  "images/holz/heissluftballon-polterabend.jpg": {
+    "600": "assets/img/9d8f0e9839c1-600.webp",
+    "w600": 450,
+    "1200": "assets/img/9d8f0e9839c1-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
+  },
   "images/holz/holzscheibe-wappen.jpg": {
     "600": "assets/img/29a7bb9fda29-600.webp",
     "w600": 450,
