@@ -84,11 +84,29 @@ def page(filename, title, desc, content, active, lightbox=False):
 def product_card(p):
     return f'''<article class="product" data-occasions="{E(' '.join(p['occasions']))}"><a class="product-photo" href="{p['material']}.html#gallery">{picture(p['image'],p['alt'])}<span class="photo-arrow" aria-hidden="true">↗</span></a><div class="product-top"><h3>{E(p['title'])}</h3><p class="price">ab {E(p['price'])} €</p></div><p>{E(p['description'])}</p><p class="product-detail">{E(p['detail'])}</p><a class="text-link" href="{p['material']}.html#gallery">Beispiele ansehen <span aria-hidden="true">↗</span></a></article>'''
 
+def gallery_example(material, preferred):
+    """Keep featured examples stable when editors reorder or empty a gallery."""
+    gallery = DATA[material].get('galerie') or []
+    candidates = sorted(gallery, key=lambda item: item.get('bild', '').lstrip('/') != preferred)
+    for item in candidates:
+        path = (item.get('bild') or '').lstrip('/').removeprefix('./')
+        if path and (ROOT/path).is_file():
+            return {'bild': path, 'alt': item.get('alt') or item.get('titel') or f'Gravur auf {MATERIALS[material]}'}
+    return {'bild': 'images/herzmade-social.jpg', 'alt': f'Herzmade – Gravuren auf {MATERIALS[material]}'}
+
 def build_home():
-    glass = DATA['glas']['galerie']
-    hero = picture(glass[2]['bild'],'Weißes Windlicht mit persönlicher Gravur',True)
-    small = picture(DATA['holz']['galerie'][5]['bild'],'Persönlich graviertes Holzbrett')
-    material_images = {'holz':DATA['holz']['galerie'][5], 'glas':glass[4], 'schiefer':DATA['schiefer']['galerie'][1], 'edelstahl':DATA['edelstahl']['galerie'][1], 'keramik':DATA['keramik']['galerie'][0], 'leder':DATA['leder']['galerie'][0]}
+    featured = {
+        'holz': 'images/holz/2026-01-10_14-38-05_703-1.jpeg',
+        'glas': 'images/glas/img5452.jpeg',
+        'schiefer': 'images/schiefer/f2e1ab83-2054-414a-8c57-7d859082a8e6.jpeg',
+        'edelstahl': 'images/edelstahl/img3223.jpeg',
+        'keramik': 'images/keramik/img5124.jpeg',
+        'leder': 'images/leder/dd52daca-2171-4a2e-866a-46794246d3cd2025-12-1922-35-57764.jpeg',
+    }
+    material_images = {key: gallery_example(key, path) for key, path in featured.items()}
+    hero_item = gallery_example('glas', 'images/glas/img5674.jpeg')
+    hero = picture(hero_item['bild'],hero_item['alt'],True)
+    small = picture(material_images['holz']['bild'],material_images['holz']['alt'])
     cards = ''.join(f'<a class="material-card" href="{key}.html"><div>{picture(material_images[key]["bild"],material_images[key]["alt"])}</div><h3>{label}<span aria-hidden="true">↗</span></h3></a>' for key,label in MATERIALS.items())
     content = f'''<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">Gravuren & Geschenkideen aus Döbern</p><h1>Kein Geschenk<br>wie jedes.<br><em>Deins.</em></h1><p class="hero-lead">Ein Name. Ein besonderer Moment. Eine Erinnerung, die bleibt. Wir machen aus deiner Idee ein persönliches Einzelstück.</p><div class="hero-actions"><a class="button" href="geschenkideen.html">Geschenkideen entdecken <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">Das ist Herzmade</a></div><p class="hero-signoff">Mit Herz gemacht statt Barcode.</p></div><div class="hero-visual"><div class="hero-main">{hero}<span class="image-label">Ein kleines Licht.<br>Eine persönliche Botschaft.</span></div><div class="hero-small">{small}<span>Für deine Lieblingsmenschen.</span></div></div></div></section>
     <div class="values-strip"><div class="wrap"><span>Individuell graviert</span><span>Material & Gravur inklusive</span><span>Persönlich aus der Lausitz</span></div></div>
@@ -110,18 +128,22 @@ def build_materials():
     for key,label in MATERIALS.items():
         data=DATA[key]
         gallery=''
-        for item in data['galerie']:
+        for item in data.get('galerie') or []:
+            if not item.get('bild'):
+                continue
+            item_title = clean(item.get('titel') or f'Gravur auf {label}')
+            item_alt = clean(item.get('alt') or item_title)
             optimized=optimize(item['bild'])
-            gallery+=f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(clean(item["titel"]))}" aria-label="{E(clean(item["titel"]))} vergrößern">{picture(item["bild"],clean(item["alt"]))}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(clean(item["titel"]))}</h3><p>{E(clean(item["alt"]))}</p></article>'
+            gallery+=f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{picture(item["bild"],item_alt)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
         related=[p for p in PRODUCTS if p['material']==key]
         prices=''.join(f'<div><span>{E(p["title"])}</span><strong>ab {E(p["price"])} €</strong></div>' for p in related)
         priceblock=f'<aside class="material-prices"><p class="eyebrow">Deine Preisorientierung</p>{prices}<p>Inklusive Material und Gravur. Details zu Größen und Ausführungen findest du bei den Geschenkideen.</p><a class="text-link" href="geschenkideen.html">Geschenkideen & Preise ↗</a></aside>' if related else ''
-        content=f'''<section class="page-intro wrap"><p class="eyebrow">Materialien / {label}</p><h1>{label} mit Gravur.<br><em>{subtitles[key]}</em></h1><p>Individuelle Arbeiten von Herzmade aus Döbern. Lass dich inspirieren und bring deine eigene Idee mit.</p></section><section class="material-overview wrap"><div class="material-story">{clean(data['einleitung'])}</div>{priceblock}</section><section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">So persönlich kann {label} sein</p><h2>Einblicke in unsere Arbeiten.</h2></div><p>Echte Einzelstücke aus unserer Werkstatt.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta()}'''
+        content=f'''<section class="page-intro wrap"><p class="eyebrow">Materialien / {label}</p><h1>{label} mit Gravur.<br><em>{subtitles[key]}</em></h1><p>Individuelle Arbeiten von Herzmade aus Döbern. Lass dich inspirieren und bring deine eigene Idee mit.</p></section><section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div>{priceblock}</section><section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">So persönlich kann {label} sein</p><h2>Einblicke in unsere Arbeiten.</h2></div><p>Echte Einzelstücke aus unserer Werkstatt.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta()}'''
         page(key+'.html',f'{label} gravieren lassen in Döbern | Herzmade',f'Individuelle Gravuren auf {label} aus Döbern. Entdecke echte Arbeiten, persönliche Geschenkideen und Gestaltungsmöglichkeiten von Herzmade.',content,'materials',True)
 
 def build_about():
-    drawing=DATA['schiefer']['galerie'][3]
-    content=f'''<section class="page-intro wrap"><p class="eyebrow">Hallo, wir sind Herzmade</p><h1>Chris & Levi.<br><em>Technik trifft Fantasie.</em></h1><p>Vater und Sohn aus Döbern. Ein gemeinsames Hobby. Und die Freude daran, aus einer Idee etwas Persönliches zu machen.</p></section><section class="story-grid wrap"><div class="story-photo">{picture(drawing['bild'],'Eine Zeichnung von Levi, als Erinnerung auf Schiefer graviert',sizes='(max-width: 600px) 94vw, 46vw')}<p>Aus einer Zeichnung wird eine Erinnerung.</p></div><div class="story-copy"><p class="eyebrow">Unsere Geschichte</p><h2>Mit Herz gemacht.<br>Ganz wörtlich.</h2><p>Herzmade ist unser gemeinsames Herzensprojekt. Chris bringt als gelernter IT-Systemelektroniker den technischen Hintergrund mit. Levi zeichnet gerne, entwickelt Motive und probiert neue Ideen aus.</p><p>In unserer Freizeit verbinden wir beides: Kreativität und präzise Technik. So entstehen Gravuren auf Holz, Glas, Keramik, Schiefer, Edelstahl und Leder – und manchmal auf einer Weihnachtskugel.</p><p>Uns geht es um Dinge mit persönlicher Bedeutung. Einen Namen. Eine Zeichnung. Einen Moment, den du festhalten möchtest.</p><p>Wir sind in 03159 Döbern zu Hause und gestalten für Menschen aus Döbern, Forst (Lausitz), Spree-Neiße, Cottbus und Umgebung.</p><a class="text-link" href="geschenkideen.html">Unsere Geschenkideen entdecken ↗</a></div></section><section class="about-band"><div class="wrap about-grid"><p class="eyebrow">Was uns ausmacht</p><div><h2>Persönlich statt von der Stange.</h2><p>Gezeichnete Motive, kleine Botschaften oder eine ganz eigene Idee: Wir nehmen uns Zeit, gemeinsam mit dir das passende Material und die Gestaltung zu finden.</p></div></div></section>{cta()}'''
+    drawing=gallery_example('schiefer', 'images/schiefer/2025-11-0216-28-30563.jpg')
+    content=f'''<section class="page-intro wrap"><p class="eyebrow">Hallo, wir sind Herzmade</p><h1>Chris & Levi.<br><em>Technik trifft Fantasie.</em></h1><p>Vater und Sohn aus Döbern. Ein gemeinsames Hobby. Und die Freude daran, aus einer Idee etwas Persönliches zu machen.</p></section><section class="story-grid wrap"><div class="story-photo">{picture(drawing['bild'],drawing['alt'],sizes='(max-width: 600px) 94vw, 46vw')}<p>Aus einer Zeichnung wird eine Erinnerung.</p></div><div class="story-copy"><p class="eyebrow">Unsere Geschichte</p><h2>Mit Herz gemacht.<br>Ganz wörtlich.</h2><p>Herzmade ist unser gemeinsames Herzensprojekt. Chris bringt als gelernter IT-Systemelektroniker den technischen Hintergrund mit. Levi zeichnet gerne, entwickelt Motive und probiert neue Ideen aus.</p><p>In unserer Freizeit verbinden wir beides: Kreativität und präzise Technik. So entstehen Gravuren auf Holz, Glas, Keramik, Schiefer, Edelstahl und Leder – und manchmal auf einer Weihnachtskugel.</p><p>Uns geht es um Dinge mit persönlicher Bedeutung. Einen Namen. Eine Zeichnung. Einen Moment, den du festhalten möchtest.</p><p>Wir sind in 03159 Döbern zu Hause und gestalten für Menschen aus Döbern, Forst (Lausitz), Spree-Neiße, Cottbus und Umgebung.</p><a class="text-link" href="geschenkideen.html">Unsere Geschenkideen entdecken ↗</a></div></section><section class="about-band"><div class="wrap about-grid"><p class="eyebrow">Was uns ausmacht</p><div><h2>Persönlich statt von der Stange.</h2><p>Gezeichnete Motive, kleine Botschaften oder eine ganz eigene Idee: Wir nehmen uns Zeit, gemeinsam mit dir das passende Material und die Gestaltung zu finden.</p></div></div></section>{cta()}'''
     page('about.html','Chris & Levi – das ist Herzmade aus Döbern','Lerne Chris und Levi kennen: Vater und Sohn aus Döbern, die Kreativität und Technik zu persönlichen Gravuren und Geschenkideen verbinden.',content,'about')
 
 def build_contact():

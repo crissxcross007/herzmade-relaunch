@@ -24,3 +24,21 @@ Nicht nur menu.html oder footer.html ändern: Diese Dateien werden aus den zentr
 ## Prüfung
 
 Die Seiten bleiben während der Testphase auf noindex,nofollow. Keine externen Schriften, kein Bootstrap, kein jQuery. Formularziel bleibt der vorhandene Formspree-Endpunkt. Es wurden keine Testnachrichten versendet.
+
+
+## Bilder selbst mit Pages CMS pflegen
+
+Backend: https://app.pagescms.org
+
+1. Mit deinem GitHub-Konto anmelden.
+2. Repository `crissxcross007/herzmade-relaunch`, Branch `main` auswählen.
+3. Die passende Materialseite öffnen (z. B. Glas oder Holz).
+4. Unter Galerie einen Eintrag hinzufügen, ein Bild hochladen/auswählen und optional Titel und Bildbeschreibung eintragen.
+5. Speichern. GitHub Actions optimiert die Bilder, erstellt die Seiten und stößt die Veröffentlichung an.
+
+Nur eine Datei unter Medien hochzuladen fügt noch keinen Galerieeintrag hinzu. Das Bild muss in der gewünschten Galerie ausgewählt und gespeichert werden.
+Ist das neue Repository im Backend nicht sichtbar, muss die bestehende Pages-CMS-GitHub-App auch Zugriff auf dieses Repository erhalten.
+
+Der Workflow `.github/workflows/pages-cms.yml` reagiert auf Änderungen an Bildern, Inhaltsdateien und dem Seitengenerator. Er verändert ausschließlich dieses Repository. GitHub Pages bleibt auf `main` und `/ (root)` eingestellt. Es werden keine persönlichen Tokens benötigt.
+
+Falls eine Bilddatei noch von einer Geschenkidee verwendet wird, sollte sie nicht aus Medien gelöscht werden, bevor dort ein anderes Bild ausgewählt wurde. Das Entfernen eines Galerieeintrags ist davon unabhängig.

@@ -1,0 +1,85 @@
+name: Pages CMS – Bilder optimieren und veröffentlichen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'images/**'
+      - 'scripts/**'
+      - 'requirements-build.txt'
+      - '.pages.yml'
+      - '.github/workflows/pages-cms.yml'
+      - 'assets/site.css'
+      - 'assets/site.js'
+  workflow_dispatch:
+
+# Only this repository is written. The existing branch-based Pages setup stays.
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: herzmade-cms-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Galerien aktualisieren
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Aktuellen Stand laden
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Python bereitstellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-build.txt
+
+      - name: Bildverarbeitung installieren
+        run: python -m pip install --disable-pip-version-check -r requirements-build.txt
+
+      - name: Bilder optimieren und Seiten aktualisieren
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          published=false
+          for attempt in 1 2 3; do
+            # A second CMS save may arrive while this job starts. Rebuild from
+            # the newest source, and never overwrite someone else's commit.
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/build_site.py
+            git add -- '*.html' assets
+            if git diff --cached --quiet; then
+              published=true
+              break
+            fi
+            git commit -m 'Galerien und optimierte Bilder automatisch aktualisieren'
+            if git push origin HEAD:main; then
+              published=true
+              break
+            fi
+          done
+          if [ "$published" != true ]; then
+            echo 'Während des Builds wurden weitere Änderungen gespeichert. Bitte den Workflow erneut starten.'
+            exit 1
+          fi
+          echo "Fertiger Stand: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Veröffentlichung bei GitHub Pages starten
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # GITHUB_TOKEN commits do not start Pages implicitly; request the
+          # branch build explicitly, using the repository-scoped Pages right.
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds" --jq '.status'
+          echo 'Bilder optimiert, Seiten erstellt und Veröffentlichung angefordert.' >> "$GITHUB_STEP_SUMMARY"
