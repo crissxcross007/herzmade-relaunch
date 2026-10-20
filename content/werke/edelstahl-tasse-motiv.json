@@ -1,0 +1,16 @@
+{
+  "material": "edelstahl",
+  "produktart": "tasse",
+  "bild": "/images/edelstahl/tasse-motiv.jpg",
+  "titel": "Feuerwehrtasse mit Stadtwappen",
+  "alt": "Edelstahltasse für einen Feuerwehrmann, graviert mit Stadtwappen, Feuerwehrhelm und Strahlrohr.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "9,90",
+  "preishinweis": "Edelstahltasse inklusive Gravur.",
+  "sortierung": 6,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "edelstahl-tasse-motiv"
+}

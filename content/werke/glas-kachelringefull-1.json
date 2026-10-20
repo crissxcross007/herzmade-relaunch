@@ -1,0 +1,18 @@
+{
+  "material": "glas",
+  "produktart": "laterne",
+  "bild": "/images/glas/kachelringefull-1.png",
+  "titel": "Ringe auf Glas",
+  "alt": "Ringe zur Hochzeit auf einer Glasscheibe die dann in eine Laterne eingesetzt wurde.",
+  "anlaesse": [
+    "paare"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 13,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-kachelringefull-1"
+}

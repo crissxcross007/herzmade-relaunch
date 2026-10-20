@@ -1,0 +1,19 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-verein-danke.jpg",
+  "titel": "Ein Dankeschön für den Einsatz",
+  "alt": "Schiefertafel mit Vereinswappen, Sportmotiven und persönlicher Danksagung.",
+  "anlaesse": [
+    "danke",
+    "firmen"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 8,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-verein-danke"
+}

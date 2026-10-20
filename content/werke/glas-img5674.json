@@ -1,0 +1,19 @@
+{
+  "material": "glas",
+  "produktart": "windlicht",
+  "bild": "/images/glas/img5674.jpeg",
+  "titel": "Ein Windlicht zum Firmenjubiläum",
+  "alt": "Anlässlich eines 15 jährigem Firmenjubiläum durften wir ein Windlicht in elegantem weiß , innen Gold 🥇 gravieren",
+  "anlaesse": [
+    "ehrung",
+    "firmen"
+  ],
+  "in_ideen": true,
+  "preis_ab": "19,90",
+  "preishinweis": "Weißes oder schwarzes Glas inklusive Gravur.",
+  "sortierung": 15,
+  "ideen_reihenfolge": 65,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-img5674"
+}

@@ -1,0 +1,18 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefer-ruhestand-werkfeuerwehr.jpg",
+  "titel": "Ein Abschied für einen Feuerwehrmann",
+  "alt": "Schiefertafel zum Ruhestand mit Motiven der Werkfeuerwehr und einer persönlichen Danksagung.",
+  "anlaesse": [
+    "danke"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 3,
+  "ideen_reihenfolge": 71,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefer-ruhestand-werkfeuerwehr"
+}

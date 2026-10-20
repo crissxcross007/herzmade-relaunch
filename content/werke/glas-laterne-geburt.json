@@ -1,0 +1,18 @@
+{
+  "material": "glas",
+  "produktart": "laterne",
+  "bild": "/images/glas/laterne-geburt.jpg",
+  "titel": "Laterne zur Geburt",
+  "alt": "Schwarze Laterne mit persönlicher Glasgravur zur Geburt.",
+  "anlaesse": [
+    "geburt"
+  ],
+  "in_ideen": true,
+  "preis_ab": "14,90",
+  "preishinweis": "Laternen ab 14,90 € in 20 cm Höhe; Größe und Gestaltung nach Absprache.",
+  "sortierung": 10,
+  "ideen_reihenfolge": 9,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-laterne-geburt"
+}

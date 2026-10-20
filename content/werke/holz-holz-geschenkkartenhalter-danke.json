@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "holzarbeit",
+  "bild": "/images/holz/holz-geschenkkartenhalter-danke.jpg",
+  "titel": "Danke aus Holz",
+  "alt": "Lasergeschnittene Geschenkkartenhalterung aus Holz mit dem Schriftzug „Danke“ und persönlicher Gravur.",
+  "anlaesse": [
+    "danke"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 2,
+  "ideen_reihenfolge": 51,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-holz-geschenkkartenhalter-danke"
+}

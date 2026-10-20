@@ -1,0 +1,18 @@
+{
+  "material": "edelstahl",
+  "produktart": "thermo",
+  "bild": "/images/edelstahl/thermobecher-rosenmotiv.jpg",
+  "titel": "Krankenschwester als Hummel",
+  "alt": "Zum Geburtstag: Kaffeebecher mit der gravierten Karikatur einer Frau als Krankenschwester-Hummel.",
+  "anlaesse": [
+    "geburtstag"
+  ],
+  "in_ideen": true,
+  "preis_ab": "14,90",
+  "preishinweis": "Thermobecher je nach Ausführung inklusive Gravur.",
+  "sortierung": 5,
+  "ideen_reihenfolge": 3,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "edelstahl-thermobecher-rosenmotiv"
+}

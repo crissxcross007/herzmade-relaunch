@@ -1,0 +1,16 @@
+{
+  "material": "schiefer",
+  "produktart": "sonstiges",
+  "bild": "/images/schiefer/schiefer-hundefoto.jpg",
+  "titel": "Ein Hundefoto für immer",
+  "alt": "Schiefertafel mit der Fotogravur eines Hundes und seines Spielzeugs.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 1,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "schiefer-schiefer-hundefoto"
+}

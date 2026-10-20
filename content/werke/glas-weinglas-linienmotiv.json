@@ -1,0 +1,16 @@
+{
+  "material": "glas",
+  "produktart": "sonstiges",
+  "bild": "/images/glas/weinglas-linienmotiv.jpg",
+  "titel": "Weinglas mit persönlichem Motiv",
+  "alt": "Klares Weinglas mit filigranem Linienmotiv vor grünem Gartenhintergrund.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 11,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "glas-weinglas-linienmotiv"
+}

@@ -1,0 +1,18 @@
+{
+  "material": "glas",
+  "produktart": "laterne",
+  "bild": "/images/glas/laterne-familie.jpg",
+  "titel": "Ein Licht für die Familie",
+  "alt": "Weiße Laterne mit Familiennamen und graviertem Lebensbaum.",
+  "anlaesse": [
+    "freundschaft"
+  ],
+  "in_ideen": true,
+  "preis_ab": "14,90",
+  "preishinweis": "Laternen ab 14,90 € in 20 cm Höhe; Größe und Gestaltung nach Absprache.",
+  "sortierung": 9,
+  "ideen_reihenfolge": 63,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-laterne-familie"
+}

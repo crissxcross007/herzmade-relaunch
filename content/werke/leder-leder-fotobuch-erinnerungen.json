@@ -1,0 +1,16 @@
+{
+  "material": "leder",
+  "produktart": "sonstiges",
+  "bild": "/images/leder/leder-fotobuch-erinnerungen.jpg",
+  "titel": "Ein Buch voller Erinnerungen",
+  "alt": "Grünes Fotobuch mit graviertem Einband, persönlichen Symbolen und dem Schriftzug „Ein Buch voller Erinnerungen“.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 1,
+  "ideen_reihenfolge": 12,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "leder-leder-fotobuch-erinnerungen"
+}

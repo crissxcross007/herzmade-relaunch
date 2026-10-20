@@ -45,3 +45,27 @@
 .material-card h3{align-items:center;gap:10px}
 .material-card h3>span{display:inline-flex;align-items:center;justify-content:center}
 .material-card .ui-arrow{width:19px;height:19px}
+
+/* Space for the separate remembrance link on narrow desktops. */
+@media(min-width:851px) and (max-width:1050px){.wrap,.header-inner{width:calc(100% - 44px)}.header-inner{min-height:88px;position:relative}.brand{order:0}.brand img{width:172px;max-height:70px}.menu-toggle{display:flex;align-items:center;gap:15px;border:1px solid var(--line);background:white;padding:9px 12px;min-height:44px;font-size:12px}#main-nav{display:flex;flex-direction:column;align-items:stretch;gap:0;position:absolute;top:100%;left:-22px;right:-22px;padding:18px 22px 25px;background:var(--white);z-index:15;border-bottom:1px solid var(--line)}.js #main-nav{display:none}.js #main-nav.is-open{display:flex}#main-nav>a{padding:13px 0}#main-nav>a:last-child{border:0}.nav-group-title{justify-content:space-between}.nav-group-title>a{padding:13px 0;flex:1}.submenu-toggle{width:44px}.nav-submenu{position:static;border:0;box-shadow:none;background:var(--paper);padding:6px 0;margin-bottom:10px}.nav-group:hover>.nav-submenu,.nav-group:focus-within>.nav-submenu{display:none}.nav-group.open>.nav-submenu{display:block}}
+
+.collection-context{margin:24px 0 8px}
+.collection-context h2{font-size:clamp(26px,3vw,36px);line-height:1.25}
+.collection-context>p{font-size:14px;margin-top:12px}
+.work-material{font-size:10px;text-transform:uppercase;letter-spacing:.14em;margin-top:18px;color:var(--muted)}
+.work-card .product-top{margin-top:8px}
+.work-card .price{white-space:normal}
+.product-photo>img,.product-photo>svg.gallery-crop{object-fit:contain;background:var(--grey)}
+.product-photo>svg.gallery-crop{display:block;width:100%;height:auto;aspect-ratio:4/4.3}
+.occasion-note{padding:22px 25px;background:var(--grey);margin-top:24px}
+.occasion-note p{margin-bottom:12px}
+.remembrance-link{border-top:1px solid var(--line);margin-top:55px;padding-top:35px}
+.remembrance-link h2{font-size:clamp(28px,4vw,40px);margin:12px 0 16px}
+.remembrance-link>p:not(.eyebrow){max-width:640px;margin-bottom:20px}
+.remembrance-request{max-width:720px;margin:60px auto 0;text-align:center}
+.remembrance-request h2{font-size:clamp(32px,5vw,48px)}
+.remembrance-request p{margin:25px 0 30px}
+.review-title{font-size:22px;line-height:1.35;margin:20px 0 12px}
+[hidden]{display:none!important}
+@media(min-width:851px) and (max-width:1050px){.js #main-nav.is-open{display:flex}}
+@media(max-width:600px){.product-photo>svg.gallery-crop{aspect-ratio:3/4}.work-material{font-size:10px}.work-card .price{font-size:14px}.collection-context>p{font-size:13px}.filters{gap:8px}.filters button{min-height:40px}.remembrance-request .button{max-width:100%}.review-grid{grid-template-columns:1fr}.review-title{font-size:24px}}

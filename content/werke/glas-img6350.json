@@ -1,0 +1,19 @@
+{
+  "material": "glas",
+  "produktart": "medaille",
+  "bild": "/images/glas/img6350.jpeg",
+  "titel": "Glasmedaillen Frühlingslauf",
+  "alt": "Wir durften die Glasmedaillen zum 21. Kinder-Frühlingslauf in Döbern gestalten",
+  "anlaesse": [
+    "ehrung",
+    "firmen"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 14,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-img6350"
+}

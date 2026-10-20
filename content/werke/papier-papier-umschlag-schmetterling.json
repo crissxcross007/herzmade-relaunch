@@ -1,0 +1,16 @@
+{
+  "material": "papier",
+  "produktart": "sonstiges",
+  "bild": "/images/papier/papier-umschlag-schmetterling.jpg",
+  "titel": "Ein Umschlag mit Schmetterling",
+  "alt": "Rosafarbener Papierumschlag mit filigran ausgeschnittenem Schmetterlingsverschluss.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 5,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "papier-papier-umschlag-schmetterling"
+}

@@ -5,137 +5,164 @@
     {
       "bild": "/images/glas/weihnachtskugel-traktor-kullick.jpg",
       "titel": "Weihnachtskugel mit Traktor",
-      "alt": "Rote Weihnachtsbaumkugel mit detailreicher Traktorgravur und dem Schriftzug „Kullick Agrardienste“."
+      "alt": "Rote Weihnachtsbaumkugel mit detailreicher Traktorgravur und dem Schriftzug „Kullick Agrardienste“.",
+      "in_ideen": true
     },
     {
       "bild": "/images/glas/2025-11-2216-50-59948.jpg",
       "titel": "Weihnachtskugel Klein Loitz",
-      "alt": "Blaue Weihnachtsbaumkugel mit einem individuell gestalteten Klein-Loitz-Motiv."
+      "alt": "Blaue Weihnachtsbaumkugel mit einem individuell gestalteten Klein-Loitz-Motiv.",
+      "in_ideen": true
     },
     {
       "bild": "/images/glas/weihnachtskugel-pferd-herzlinie.jpg",
       "titel": "Pferdeliebe am Weihnachtsbaum",
-      "alt": "Glänzende goldfarbene Weihnachtsbaumkugel mit graviertem Pferd und Herzlinie."
+      "alt": "Glänzende goldfarbene Weihnachtsbaumkugel mit graviertem Pferd und Herzlinie.",
+      "in_ideen": true
     },
     {
       "bild": "/images/glas/weihnachtskugel-elena.jpg",
       "titel": "Eine Weihnachtskugel für Elena",
-      "alt": "Helle Weihnachtsbaumkugel mit dem gravierten Namen Elena und weihnachtlichen Motiven."
+      "alt": "Helle Weihnachtsbaumkugel mit dem gravierten Namen Elena und weihnachtlichen Motiven.",
+      "in_ideen": true
     },
     {
       "bild": "/images/glas/weihnachtskugel-oldtimer.jpg",
       "titel": "Für Oldtimerfreunde",
-      "alt": "Schwarze Weihnachtsbaumkugel mit einer detailreichen Oldtimergravur."
+      "alt": "Schwarze Weihnachtsbaumkugel mit einer detailreichen Oldtimergravur.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-blumen-rot.jpg",
       "titel": "Blumen auf rotem Glas",
-      "alt": "Rote Weihnachtsbaumkugel mit einem gravierten Band aus Blüten und Blättern."
+      "alt": "Rote Weihnachtsbaumkugel mit einem gravierten Band aus Blüten und Blättern.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugeln-eishockey.jpg",
       "titel": "Für Eishockeyfans",
-      "alt": "Weihnachtsbaumkugeln mit gravierten Eishockeymotiven und persönlicher Gestaltung."
+      "alt": "Weihnachtsbaumkugeln mit gravierten Eishockeymotiven und persönlicher Gestaltung.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-doreen.jpg",
       "titel": "Eine Weihnachtskugel für Doreen",
-      "alt": "Grüne Weihnachtsbaumkugel mit graviertem Namen Doreen und Sternen."
+      "alt": "Grüne Weihnachtsbaumkugel mit graviertem Namen Doreen und Sternen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-schneeflocke.jpg",
       "titel": "Eine Schneeflocke für den Baum",
-      "alt": "Rote matte Weihnachtsbaumkugel mit einer großen gravierten Schneeflocke."
+      "alt": "Rote matte Weihnachtsbaumkugel mit einer großen gravierten Schneeflocke.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugeln-fee-name.jpg",
       "titel": "Ein Hauch von Feenzauber",
-      "alt": "Glänzende Weihnachtsbaumkugeln mit gravierten Feenmotiven und Namen."
+      "alt": "Glänzende Weihnachtsbaumkugeln mit gravierten Feenmotiven und Namen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-maehdrescher.jpg",
       "titel": "Für Freunde der Landwirtschaft",
-      "alt": "Rosafarbene Weihnachtsbaumkugel mit graviertem Mähdreschermotiv in einer Geschenkverpackung."
+      "alt": "Rosafarbene Weihnachtsbaumkugel mit graviertem Mähdreschermotiv in einer Geschenkverpackung.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-physiotherapie-krautz.jpg",
       "titel": "Weihnachtskugel mit Praxislogo",
-      "alt": "Glänzende Weihnachtsbaumkugel mit graviertem Schriftzug der Physiotherapie Krautz und Sternen."
+      "alt": "Glänzende Weihnachtsbaumkugel mit graviertem Schriftzug der Physiotherapie Krautz und Sternen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-zimmerei-sachse.jpg",
       "titel": "Weihnachtskugel für die Zimmerei",
-      "alt": "Schwarze Weihnachtsbaumkugel mit graviertem Logo der Zimmerei Sachse."
+      "alt": "Schwarze Weihnachtsbaumkugel mit graviertem Logo der Zimmerei Sachse.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-siio-smarthome.jpg",
       "titel": "Smart Home am Weihnachtsbaum",
-      "alt": "Grüne Weihnachtsbaumkugel mit graviertem siio-Smart-Home-Logo am Weihnachtsbaum."
+      "alt": "Grüne Weihnachtsbaumkugel mit graviertem siio-Smart-Home-Logo am Weihnachtsbaum.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugeln-weiss-herzlinie.jpg",
       "titel": "Namen und Herzen auf Weiß",
-      "alt": "Weiße Weihnachtsbaumkugeln mit gravierten Namen und Herzlinienmotiven."
+      "alt": "Weiße Weihnachtsbaumkugeln mit gravierten Namen und Herzlinienmotiven.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-wolfshain.jpg",
       "titel": "Wolfshain am Weihnachtsbaum",
-      "alt": "Schwarze Weihnachtsbaumkugel mit dem gravierten Ortsnamen Wolfshain."
+      "alt": "Schwarze Weihnachtsbaumkugel mit dem gravierten Ortsnamen Wolfshain.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugeln-wolfshain-tschernitz-original.jpg",
       "titel": "Heimat am Weihnachtsbaum",
-      "alt": "Rote und blaue Weihnachtsbaumkugeln mit den gravierten Ortsnamen Wolfshain und Tschernitz sowie Herzen und Sternen."
+      "alt": "Rote und blaue Weihnachtsbaumkugeln mit den gravierten Ortsnamen Wolfshain und Tschernitz sowie Herzen und Sternen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-pferdemotiv.jpeg",
       "titel": "Für Pferdefreunde",
-      "alt": "Violette Weihnachtsbaumkugel mit graviertem Pferdekopf, Blumen und Sternen."
+      "alt": "Violette Weihnachtsbaumkugel mit graviertem Pferdekopf, Blumen und Sternen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-pfote-name.jpeg",
       "titel": "Eine Pfote für den Lieblingshund",
-      "alt": "Glänzende Weihnachtsbaumkugel mit gravierter Hundepfote und Namen."
+      "alt": "Glänzende Weihnachtsbaumkugel mit gravierter Hundepfote und Namen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-gaming-controller.jpeg",
       "titel": "Weihnachten für Gaming-Fans",
-      "alt": "Grüne Weihnachtsbaumkugel mit graviertem Controller und persönlicher Namensgravur."
+      "alt": "Grüne Weihnachtsbaumkugel mit graviertem Controller und persönlicher Namensgravur.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-blumenmotiv.jpeg",
       "titel": "Blumen für den Weihnachtsbaum",
-      "alt": "Goldfarbene Weihnachtsbaumkugel mit gravierten Blumen und Namen."
+      "alt": "Goldfarbene Weihnachtsbaumkugel mit gravierten Blumen und Namen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-dackelmotiv.jpeg",
       "titel": "Für Dackelfreunde",
-      "alt": "Glänzende rote Weihnachtsbaumkugel mit graviertem Dackel, Pfoten und persönlichem Namen."
+      "alt": "Glänzende rote Weihnachtsbaumkugel mit graviertem Dackel, Pfoten und persönlichem Namen.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/weihnachtskugel-namensgravur.jpeg",
       "titel": "Dein Name am Weihnachtsbaum",
-      "alt": "Rote matte Weihnachtsbaumkugel mit graviertem Namen und Schneeflockenmotiv."
+      "alt": "Rote matte Weihnachtsbaumkugel mit graviertem Namen und Schneeflockenmotiv.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/3cb68ea3-2501-44fa-97f7-b43472624a732025-11-2502-04-35046-1.jpeg",
       "titel": "Weihnachtskugeln für den Kreisfeuerwehrverband",
-      "alt": "Rote und blaue Weihnachtsbaumkugeln mit dem gravierten Logo des Kreisfeuerwehrverbands Spree-Neiße."
+      "alt": "Rote und blaue Weihnachtsbaumkugeln mit dem gravierten Logo des Kreisfeuerwehrverbands Spree-Neiße.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/2025-11-0223-53-31946.jpg",
       "titel": "Eheringe und Hochzeitsdatum",
-      "alt": "Weihnachtsbaumkugeln aus Echtglas mit gravierten Eheringen und Hochzeitsdatum."
+      "alt": "Weihnachtsbaumkugeln aus Echtglas mit gravierten Eheringen und Hochzeitsdatum.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/2025-11-2317-01-35272.jpg",
       "titel": "Eine Erinnerung ans erste Weihnachten",
-      "alt": "Rosafarbene Weihnachtsbaumkugel mit Namen, Geburtsdatum und kleinen Füßen im Herz als Erinnerung ans erste Weihnachten."
+      "alt": "Rosafarbene Weihnachtsbaumkugel mit Namen, Geburtsdatum und kleinen Füßen im Herz als Erinnerung ans erste Weihnachten.",
+      "in_ideen": false
     },
     {
       "bild": "/images/glas/img2036.jpeg",
       "titel": "Weihnachtskugel Halbendorf",
-      "alt": "Silberne Weihnachtsbaumkugel mit graviertem Halbendorf-Motiv."
+      "alt": "Silberne Weihnachtsbaumkugel mit graviertem Halbendorf-Motiv.",
+      "in_ideen": false
     }
   ]
 }

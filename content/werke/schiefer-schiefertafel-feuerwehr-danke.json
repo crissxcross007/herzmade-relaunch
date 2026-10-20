@@ -1,0 +1,18 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-feuerwehr-danke.jpg",
+  "titel": "Ein persönliches Dankeschön",
+  "alt": "Schiefertafel mit Feuerwehrfahrzeug und persönlicher Danksagung.",
+  "anlaesse": [
+    "danke"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 12,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-feuerwehr-danke"
+}

@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "holzarbeit",
+  "bild": "/images/holz/hochzeitsbox-holz.jpg",
+  "titel": "Namensschild zur Hochzeit",
+  "alt": "Namensschild als Tischkarte zur Hochzeit, mit lasergeschnittenen Ornamenten sowie graviertem Namen und Hochzeitsdatum.",
+  "anlaesse": [
+    "paare"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 6,
+  "ideen_reihenfolge": 54,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-hochzeitsbox-holz"
+}

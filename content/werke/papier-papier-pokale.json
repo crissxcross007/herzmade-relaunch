@@ -1,0 +1,18 @@
+{
+  "material": "papier",
+  "produktart": "verpackung",
+  "bild": "/images/papier/papier-pokale.jpg",
+  "titel": "Kleine Pokale aus Papier",
+  "alt": "Goldfarbene Pokalverpackungen aus Papier, gefüllt mit kleinen Aufmerksamkeiten.",
+  "anlaesse": [
+    "ehrung"
+  ],
+  "in_ideen": false,
+  "preis_ab": "3,00",
+  "preishinweis": "Preis für die Papierverpackung, ohne Inhalt.",
+  "sortierung": 7,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "papier-papier-pokale"
+}

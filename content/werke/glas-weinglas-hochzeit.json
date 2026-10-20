@@ -1,0 +1,18 @@
+{
+  "material": "glas",
+  "produktart": "weinglas",
+  "bild": "/images/glas/weinglas-hochzeit.jpg",
+  "titel": "Weinglas zur Hochzeit",
+  "alt": "Klares Weinglas mit gravierten Ringen, Namen und Hochzeitsdatum.",
+  "anlaesse": [
+    "paare"
+  ],
+  "in_ideen": true,
+  "preis_ab": "14,90",
+  "preishinweis": "Klares Weinglas inklusive Gravur.",
+  "sortierung": 6,
+  "ideen_reihenfolge": 2,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-weinglas-hochzeit"
+}

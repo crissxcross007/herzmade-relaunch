@@ -1,252 +1,301 @@
 media:
-  - name: bilder
-    label: Bilder
-    input: images
-    output: /images
-    rename: safe
-    extensions: [jpg, jpeg, png, webp]
-
+- name: bilder
+  label: Bilder
+  input: images
+  output: /images
+  rename: safe
+  extensions:
+  - jpg
+  - jpeg
+  - png
+  - webp
 content:
-  - name: papier
-    label: Papier
-    type: file
-    path: content/papier.json
-    format: json
+- name: werke
+  label: Werke & Anlässe
+  type: collection
+  path: content/werke
+  format: json
+  filename: '{primary}.json'
+  view:
+    primary: titel
     fields:
-      - name: titel
-        label: Titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        label: Einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            label: Bildtitel
-            type: string
-          - name: alt
-            label: Bildbeschreibung
-            type: string
-
-  - name: weihnachtsbaumkugeln
-    label: Weihnachtsbaumkugeln
-    type: file
-    path: content/weihnachtsbaumkugeln.json
-    format: json
+    - titel
+    - material
+    - anlaesse
+    - in_ideen
+    search:
+    - titel
+    - alt
+    - material
+    - anlaesse
+    sort:
+    - titel
+    - material
+    - sortierung
+    default:
+      sort: titel
+      order: asc
+  fields:
+  - name: titel
+    label: Titel des Werks
+    type: string
+    required: true
+  - name: bild
+    label: Foto
+    type: image
+    media: bilder
+    required: true
+  - name: alt
+    label: Beschreibung – was ist auf dem Foto zu sehen und wofür entstand es?
+    type: text
+    required: true
+  - name: material
+    label: Materialgalerie
+    type: select
+    required: true
+    options:
+      values:
+      - name: holz
+        label: Holz
+      - name: glas
+        label: Glas
+      - name: schiefer
+        label: Schiefer
+      - name: edelstahl
+        label: Edelstahl
+      - name: keramik
+        label: Keramik
+      - name: leder
+        label: Leder
+      - name: papier
+        label: Papier
+  - name: produktart
+    label: Produktart
+    type: select
+    options:
+      values:
+      - name: schiefertafel
+        label: Schiefertafel
+      - name: untersetzer
+        label: Untersetzer
+      - name: weinglas
+        label: Weinglas
+      - name: windlicht
+        label: Windlicht
+      - name: laterne
+        label: Laterne
+      - name: medaille
+        label: Medaille
+      - name: holzbox
+        label: Holzbox
+      - name: brett
+        label: Brettchen
+      - name: flaschenoeffner
+        label: Flaschenöffner
+      - name: holzarbeit
+        label: Holzarbeit
+      - name: tasse
+        label: Tasse
+      - name: thermo
+        label: Thermoflasche / Thermobecher
+      - name: leder
+        label: Lederstück / Notizbuch
+      - name: verpackung
+        label: Papierverpackung
+      - name: folie
+        label: Folienarbeit
+      - name: sonstiges
+        label: Weitere Einzelstücke
+  - name: anlaesse
+    label: Passende Anlässe – nur auswählen, wenn dieser konkrete Auftrag dazu passt
+    type: select
+    options:
+      multiple: true
+      values:
+      - name: geburtstag
+        label: Geburtstag
+      - name: paare
+        label: Hochzeit & Liebe
+      - name: freundschaft
+        label: Freundschaft & Familie
+      - name: danke
+        label: Danke & Abschied
+      - name: ehrung
+        label: Jubiläum & Ehrung
+      - name: geburt
+        label: Zur Geburt
+      - name: firmen
+        label: Firmen & Vereine
+      - name: ostern
+        label: Ostern
+      - name: weihnachten
+        label: Weihnachten
+      - name: gedenken
+        label: Erinnern & Gedenken
+  - name: in_ideen
+    label: Bei den Ideen beziehungsweise beim Gedenken anzeigen
+    type: boolean
+    default: false
+  - name: preis_ab
+    label: Preis ab in Euro, z. B. 14,90 – leer bedeutet Preis auf Anfrage
+    type: string
+  - name: preishinweis
+    label: Was umfasst der Preis? Zum Beispiel Größe oder Material extra
+    type: text
+  - name: sortierung
+    label: Reihenfolge in der Materialgalerie
+    type: number
+    default: 100
+  - name: ideen_reihenfolge
+    label: Reihenfolge in der Ideen-Auswahl
+    type: number
+    default: 100
+  - name: anlass_notiz
+    label: Interne Notiz zur Zuordnung – wird nicht auf der Website angezeigt
+    type: text
+  subfolders: false
+- name: papier
+  label: Papier – Seitentext
+  type: file
+  path: content/papier.json
+  format: json
+  fields:
+  - name: titel
+    label: Titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    label: Einleitung
+    type: richtext
+- name: weihnachtsbaumkugeln
+  label: Weihnachtsbaumkugeln
+  type: file
+  path: content/weihnachtsbaumkugeln.json
+  format: json
+  fields:
+  - name: titel
+    label: Seitentitel
+    type: string
+  - name: einleitung
+    label: Einleitung
+    type: richtext
+  - name: galerie
+    label: Galerie
+    type: object
+    list: true
     fields:
-      - name: titel
-        label: Seitentitel
-        type: string
-      - name: einleitung
-        label: Einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            label: Bildtitel
-            type: string
-          - name: alt
-            label: Bildbeschreibung
-            type: string
-
-  - name: holz
-    label: Holz
-    type: file
-    path: content/holz.json
-    format: json
+    - name: bild
+      label: Bild
+      type: image
+      media: bilder
+    - name: titel
+      label: Bildtitel
+      type: string
+    - name: alt
+      label: Bildbeschreibung
+      type: string
+    - name: in_ideen
+      label: Auch in der Ideen-Auswahl Weihnachten anzeigen
+      type: boolean
+      default: false
+- name: holz
+  label: Holz – Seitentext
+  type: file
+  path: content/holz.json
+  format: json
+  fields:
+  - name: titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    type: richtext
+- name: glas
+  label: Glas – Seitentext
+  type: file
+  path: content/glas.json
+  format: json
+  fields:
+  - name: titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    type: richtext
+- name: schiefer
+  label: Schiefer – Seitentext
+  type: file
+  path: content/schiefer.json
+  format: json
+  fields:
+  - name: titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    type: richtext
+- name: zipper
+  label: Zipper
+  type: file
+  path: content/zipper.json
+  format: json
+  fields:
+  - name: titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    type: richtext
+  - name: galerie
+    label: Galerie
+    type: object
+    list: true
     fields:
-      - name: titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            type: string
-          - name: alt
-            type: string
-
-  - name: glas
-    label: Glas
-    type: file
-    path: content/glas.json
-    format: json
-    fields:
-      - name: titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            type: string
-          - name: alt
-            type: string
-
-  - name: schiefer
-    label: Schiefer
-    type: file
-    path: content/schiefer.json
-    format: json
-    fields:
-      - name: titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            type: string
-          - name: alt
-            type: string
-
-  - name: zipper
-    label: Zipper
-    type: file
-    path: content/zipper.json
-    format: json
-    fields:
-      - name: titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            type: string
-          - name: alt
-            type: string
-
-  - name: edelstahl
-    label: Edelstahl
-    type: file
-    path: content/edelstahl.json
-    format: json
-    fields:
-      - name: titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            type: string
-          - name: alt
-            type: string
-
-  - name: leder
-    label: Leder
-    type: file
-    path: content/leder.json
-    format: json
-    fields:
-      - name: titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            type: string
-          - name: alt
-            type: string
-
-  - name: keramik
-    label: Keramik
-    type: file
-    path: content/keramik.json
-    format: json
-    fields:
-      - name: titel
-        type: string
-      - name: slug
-        type: string
-      - name: einleitung
-        type: richtext
-      - name: galerie
-        label: Galerie
-        type: object
-        list: true
-        fields:
-          - name: bild
-            label: Bild
-            type: image
-            media: bilder
-          - name: titel
-            type: string
-          - name: alt
-            type: string
-
+    - name: bild
+      label: Bild
+      type: image
+      media: bilder
+    - name: titel
+      type: string
+    - name: alt
+      type: string
+- name: edelstahl
+  label: Edelstahl – Seitentext
+  type: file
+  path: content/edelstahl.json
+  format: json
+  fields:
+  - name: titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    type: richtext
+- name: leder
+  label: Leder – Seitentext
+  type: file
+  path: content/leder.json
+  format: json
+  fields:
+  - name: titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    type: richtext
+- name: keramik
+  label: Keramik – Seitentext
+  type: file
+  path: content/keramik.json
+  format: json
+  fields:
+  - name: titel
+    type: string
+  - name: slug
+    type: string
+  - name: einleitung
+    type: richtext
 settings:
   content:
     merge: true

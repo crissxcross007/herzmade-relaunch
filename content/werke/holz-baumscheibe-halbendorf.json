@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "holzarbeit",
+  "bild": "/images/holz/baumscheibe-halbendorf.jpg",
+  "titel": "Halbendorf auf einer Baumscheibe",
+  "alt": "Runde Baumscheibe mit Rinde und einer Gravur des Halbendorf-Motivs mit den Schriftzügen „Halbendorf“ und „Brězowka“.",
+  "anlaesse": [
+    "firmen"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 5,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-baumscheibe-halbendorf"
+}

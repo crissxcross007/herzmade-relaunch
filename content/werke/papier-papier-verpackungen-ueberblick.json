@@ -1,0 +1,18 @@
+{
+  "material": "papier",
+  "produktart": "verpackung",
+  "bild": "/images/papier/papier-verpackungen-ueberblick.jpg",
+  "titel": "Verpackungen mit Persönlichkeit",
+  "alt": "Individuelle Papierverpackungen: Hasen für gravierte Ostereier, kleine Boxen und filigran gestaltete Umschläge.",
+  "anlaesse": [
+    "ostern"
+  ],
+  "in_ideen": false,
+  "preis_ab": "3,00",
+  "preishinweis": "Preis für die Verpackung, ohne Inhalt oder Werkstück.",
+  "sortierung": 1,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "papier-papier-verpackungen-ueberblick"
+}

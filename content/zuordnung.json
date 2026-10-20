@@ -1,0 +1,28 @@
+{
+  "werke": [
+    {
+      "id": "glas-glas-hund-erinnerung",
+      "frage": "Ist dies ein Andenken an einen verstorbenen Hund oder ein Geschenk mit dem Motiv eines lebenden Hundes?"
+    },
+    {
+      "id": "glas-glas-portraet-fotoerinnerung",
+      "frage": "War das Porträt als Gedenklicht gedacht oder für einen anderen Anlass?"
+    },
+    {
+      "id": "schiefer-schiefer-hundefoto",
+      "frage": "Ist dies eine Erinnerung an einen verstorbenen Hund oder ein Fotogeschenk ohne Trauerbezug?"
+    },
+    {
+      "id": "leder-leder-fotobuch-erinnerungen",
+      "frage": "Für welchen Anlass entstand das Fotobuch: Geburtstag, Hochzeit, Reise, Abschied oder etwas anderes?"
+    },
+    {
+      "id": "glas-laterne-lebensbaum",
+      "frage": "War die Laterne für den Lehrer ein Dankeschön oder Abschiedsgeschenk?"
+    },
+    {
+      "id": "holz-holzscheibe-wappen",
+      "frage": "War der Feuerwehr-Flaschenöffner ein Dankeschön, eine Ehrung, ein Geburtstagsgeschenk oder ein Vereinsartikel?"
+    }
+  ]
+}

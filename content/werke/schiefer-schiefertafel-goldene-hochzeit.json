@@ -1,0 +1,19 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-goldene-hochzeit.jpg",
+  "titel": "Zur goldenen Hochzeit",
+  "alt": "Schiefertafel mit Namen, Eheringen und Hochzeitsdatum im Garten.",
+  "anlaesse": [
+    "paare",
+    "ehrung"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 6,
+  "ideen_reihenfolge": 74,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-goldene-hochzeit"
+}

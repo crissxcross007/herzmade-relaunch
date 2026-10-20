@@ -1,0 +1,18 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefer-fotogravur-hund.jpg",
+  "titel": "In Erinnerung an Bonny",
+  "alt": "Schiefertafel mit Bonnys Foto, Namen und Lebensdaten als persönliche Erinnerung an einen verstorbenen Hund.",
+  "anlaesse": [
+    "gedenken"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 14,
+  "ideen_reihenfolge": 77,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefer-fotogravur-hund"
+}

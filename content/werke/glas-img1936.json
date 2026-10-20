@@ -1,0 +1,18 @@
+{
+  "material": "glas",
+  "produktart": "windlicht",
+  "bild": "/images/glas/img1936.jpeg",
+  "titel": "Schwarz / silbernes Glas",
+  "alt": "Hier haben wir das Logo von Halbendorf (bei Weißwasser) auf ein schwarzes, innen silbernes Glas graviert.",
+  "anlaesse": [
+    "firmen"
+  ],
+  "in_ideen": false,
+  "preis_ab": "19,90",
+  "preishinweis": "Glas inklusive Gravur.",
+  "sortierung": 16,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-img1936"
+}

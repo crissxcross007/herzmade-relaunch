@@ -1,0 +1,16 @@
+{
+  "material": "edelstahl",
+  "produktart": "tasse",
+  "bild": "/images/edelstahl/tasse-geschenkbox.jpg",
+  "titel": "Für das Herz eines Freiwilligen",
+  "alt": "Edelstahltasse für einen Feuerwehrmann mit dem Filmspruch aus „Pearl Harbor“: „Nichts schlägt so stark wie das Herz eines Freiwilligen“. Dazu eine Geschenkbox aus lasergeschnittenem Holz.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "9,90",
+  "preishinweis": "Preis für die Tasse inklusive Gravur. Die Holz-Geschenkbox kommt separat hinzu.",
+  "sortierung": 2,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "edelstahl-tasse-geschenkbox"
+}

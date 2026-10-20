@@ -1,0 +1,19 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-feuerwehr.jpg",
+  "titel": "Erinnerung für die Feuerwehr",
+  "alt": "Schiefertafel mit Feuerwehrmotiv, Gebäuden und Jubiläumsgravur.",
+  "anlaesse": [
+    "ehrung",
+    "firmen"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 11,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-feuerwehr"
+}

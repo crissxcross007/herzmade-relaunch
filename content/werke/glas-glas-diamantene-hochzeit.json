@@ -1,0 +1,19 @@
+{
+  "material": "glas",
+  "produktart": "windlicht",
+  "bild": "/images/glas/glas-diamantene-hochzeit.jpg",
+  "titel": "60 Jahre gemeinsam",
+  "alt": "Weißes Glas mit persönlicher Gravur zur diamantenen Hochzeit.",
+  "anlaesse": [
+    "paare",
+    "ehrung"
+  ],
+  "in_ideen": true,
+  "preis_ab": "19,90",
+  "preishinweis": "Weißes oder schwarzes Glas inklusive Gravur.",
+  "sortierung": 2,
+  "ideen_reihenfolge": 7,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-glas-diamantene-hochzeit"
+}

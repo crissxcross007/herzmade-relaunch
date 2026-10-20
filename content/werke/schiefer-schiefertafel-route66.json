@@ -1,0 +1,18 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-route66.jpg",
+  "titel": "Zum runden Geburtstag",
+  "alt": "Schiefertafel mit Motorrad, Route-66-Motiv und persönlicher Geburtstagsgravur.",
+  "anlaesse": [
+    "geburtstag"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 7,
+  "ideen_reihenfolge": 8,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-route66"
+}

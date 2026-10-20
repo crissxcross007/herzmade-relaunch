@@ -1,0 +1,16 @@
+{
+  "material": "glas",
+  "produktart": "sonstiges",
+  "bild": "/images/glas/glas-portraet-fotoerinnerung.jpg",
+  "titel": "Porträtgravur auf Glas",
+  "alt": "Schwarzes Glas mit persönlicher Porträtgravur als Fotoerinnerung, neben weiteren gestalteten Gläsern.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 3,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "glas-glas-portraet-fotoerinnerung"
+}

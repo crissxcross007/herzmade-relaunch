@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "holzarbeit",
+  "bild": "/images/holz/IMG_5221.jpeg",
+  "titel": "Holz-Osterei",
+  "alt": "Holz-Osterei mit lustigem, muskulösen Osterhasen",
+  "anlaesse": [
+    "ostern"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 12,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-img-5221"
+}

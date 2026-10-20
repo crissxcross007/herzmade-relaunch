@@ -1,0 +1,19 @@
+{
+  "material": "glas",
+  "produktart": "medaille",
+  "bild": "/images/glas/glasmedaille-tanzgruppe-halbendorf.jpg",
+  "titel": "Ein Dankeschön für die Tanzgruppe",
+  "alt": "Gravierte Glasmedaille mit Tänzerin im Herz, „Halbendorf“ und „10.2026“ am grünen Band – als Dankeschön für eine Gruppe Mädchen, die beim Rentnercafé in Halbendorf aufgetreten ist.",
+  "anlaesse": [
+    "danke",
+    "ehrung"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 4,
+  "ideen_reihenfolge": 6,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-glasmedaille-tanzgruppe-halbendorf"
+}

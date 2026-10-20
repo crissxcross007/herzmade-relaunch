@@ -1,0 +1,18 @@
+{
+  "material": "glas",
+  "produktart": "weinglas",
+  "bild": "/images/glas/weinglas-jubilaeum.jpg",
+  "titel": "Weinglas zum Jubiläum",
+  "alt": "Klares Weinglas mit Namen, Datum und persönlichem Motiv im Freien.",
+  "anlaesse": [
+    "ehrung"
+  ],
+  "in_ideen": false,
+  "preis_ab": "14,90",
+  "preishinweis": "Klares Weinglas inklusive Gravur.",
+  "sortierung": 12,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-weinglas-jubilaeum"
+}

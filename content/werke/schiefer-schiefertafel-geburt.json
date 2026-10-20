@@ -1,0 +1,18 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-geburt.jpg",
+  "titel": "Willkommen im Leben",
+  "alt": "Schiefertafel mit Namen, Geburtsdaten und kleinen Fußabdrücken.",
+  "anlaesse": [
+    "geburt"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 13,
+  "ideen_reihenfolge": 76,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-geburt"
+}

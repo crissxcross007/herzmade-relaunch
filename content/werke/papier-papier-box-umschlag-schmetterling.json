@@ -1,0 +1,16 @@
+{
+  "material": "papier",
+  "produktart": "sonstiges",
+  "bild": "/images/papier/papier-box-umschlag-schmetterling.jpg",
+  "titel": "Filigrane Boxen und Umschläge",
+  "alt": "Papierbox mit feinem Ausschnitt und ein Umschlag mit plastisch abstehenden Schmetterlingen.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 4,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "papier-papier-box-umschlag-schmetterling"
+}

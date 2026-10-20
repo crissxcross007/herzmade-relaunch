@@ -1,0 +1,19 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-firmenjubilaeum.jpg",
+  "titel": "Zum Firmenjubiläum",
+  "alt": "Schiefertafel mit Firmenlogo, Fahrzeugmotiven und Gravur zum 150-jährigen Jubiläum.",
+  "anlaesse": [
+    "ehrung",
+    "firmen"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 9,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-firmenjubilaeum"
+}

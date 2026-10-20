@@ -1,0 +1,18 @@
+{
+  "material": "schiefer",
+  "produktart": "untersetzer",
+  "bild": "/images/schiefer/schieferuntersetzer-ehrung.jpg",
+  "titel": "Auszeichnungen aus Schiefer",
+  "alt": "Mehrere Schieferuntersetzer mit einheitlichem Motiv als Auszeichnung.",
+  "anlaesse": [
+    "ehrung"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 10,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schieferuntersetzer-ehrung"
+}

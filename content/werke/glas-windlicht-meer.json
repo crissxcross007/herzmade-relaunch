@@ -1,0 +1,16 @@
+{
+  "material": "glas",
+  "produktart": "sonstiges",
+  "bild": "/images/glas/windlicht-meer.jpg",
+  "titel": "Windlicht für Meerliebhaber",
+  "alt": "Weißes Windlicht mit Spruch und maritimem Strandmotiv.",
+  "anlaesse": [],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 7,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": true,
+  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "_id": "glas-windlicht-meer"
+}

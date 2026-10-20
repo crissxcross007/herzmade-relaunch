@@ -1,0 +1,19 @@
+{
+  "material": "glas",
+  "produktart": "laterne",
+  "bild": "/images/glas/laterne-geburtstag.jpg",
+  "titel": "Laterne zum Ortsjubiläum Groß-Kölzig",
+  "alt": "Weiße Laterne mit individueller Glasgravur anlässlich des Ortsjubiläums „680 Jahre Groß-Kölzig“.",
+  "anlaesse": [
+    "ehrung",
+    "firmen"
+  ],
+  "in_ideen": true,
+  "preis_ab": "14,90",
+  "preishinweis": "Laternen ab 14,90 € in 20 cm Höhe; größere Ausführungen auf Anfrage.",
+  "sortierung": 8,
+  "ideen_reihenfolge": 62,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-laterne-geburtstag"
+}

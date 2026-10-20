@@ -1,0 +1,18 @@
+{
+  "material": "papier",
+  "produktart": "folie",
+  "bild": "/images/papier/folie-tshirt-name-einhorn.jpg",
+  "titel": "Dein Motiv auf dem T-Shirt",
+  "alt": "Schwarzes T-Shirt mit ausgeschnittener und aufgebügelter Folie: der Name Lena und ein Einhornmotiv.",
+  "anlaesse": [
+    "freundschaft"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 8,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "papier-folie-tshirt-name-einhorn"
+}

@@ -1,0 +1,18 @@
+{
+  "material": "schiefer",
+  "produktart": "schiefertafel",
+  "bild": "/images/schiefer/schiefertafel-paare.jpg",
+  "titel": "Ein Zuhause für zwei",
+  "alt": "Schiefertafel mit Namen und einem Paar vor einer Berglandschaft.",
+  "anlaesse": [
+    "paare"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 5,
+  "ideen_reihenfolge": 73,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "schiefer-schiefertafel-paare"
+}

@@ -1,0 +1,18 @@
+{
+  "material": "edelstahl",
+  "produktart": "thermo",
+  "bild": "/images/edelstahl/img6380.jpeg",
+  "titel": "Ein Dankeschön für die Küchencrew",
+  "alt": "Persönlich gravierte Thermoflaschen als Dankeschön des Truppmannlehrgangs 2026 an die Küchencrew.",
+  "anlaesse": [
+    "danke"
+  ],
+  "in_ideen": true,
+  "preis_ab": "14,90",
+  "preishinweis": "Thermoflasche je nach Ausführung inklusive Gravur.",
+  "sortierung": 11,
+  "ideen_reihenfolge": 83,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "edelstahl-img6380"
+}

@@ -1,0 +1,18 @@
+{
+  "material": "papier",
+  "produktart": "verpackung",
+  "bild": "/images/papier/papier-hasen-osterei.jpg",
+  "titel": "Ein Osterhase für dein Einzelstück",
+  "alt": "Bunte Hasenverpackungen aus Papier mit Ausschnitten und Schleifen, passend für gravierte Ostereier.",
+  "anlaesse": [
+    "ostern"
+  ],
+  "in_ideen": true,
+  "preis_ab": "3,00",
+  "preishinweis": "Preis für die Verpackung, ohne graviertes Osterei oder sonstigen Inhalt.",
+  "sortierung": 2,
+  "ideen_reihenfolge": 85,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "papier-papier-hasen-osterei"
+}

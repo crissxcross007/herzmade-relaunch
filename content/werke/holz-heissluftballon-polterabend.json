@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "holzarbeit",
+  "bild": "/images/holz/heissluftballon-polterabend.jpg",
+  "titel": "Heißluftballon zum Polterabend",
+  "alt": "Beleuchteter Heißluftballon zum Polterabend, aus lasergeschnittenen Sperrholzteilen zusammengesetzt und mit einem kleinen Holzanhänger gestaltet.",
+  "anlaesse": [
+    "paare"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 7,
+  "ideen_reihenfolge": 11,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-heissluftballon-polterabend"
+}

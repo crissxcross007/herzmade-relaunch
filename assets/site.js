@@ -15,7 +15,7 @@ document.documentElement.classList.add('js');
       nav.classList.toggle('is-open',open);
     });
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click',closeMenu));
-    window.addEventListener('resize', () => { if (window.innerWidth > 850) closeMenu(); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 1050) closeMenu(); });
   }
   document.querySelectorAll('.submenu-toggle').forEach(button => {
     button.addEventListener('click', () => {
@@ -44,6 +44,10 @@ document.documentElement.classList.add('js');
   const count = document.getElementById('gift-count');
   function filterProducts() {
     const wanted = location.hash.slice(1);
+    if (wanted === 'andenken' || wanted === 'gedenken') {
+      location.replace('erinnern.html');
+      return;
+    }
     const active = filterButtons.some(b=>b.dataset.filter===wanted) ? wanted : 'alle';
     filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===active)));
     let visible=0;
@@ -51,7 +55,13 @@ document.documentElement.classList.add('js');
       p.hidden=active!=='alle' && !p.dataset.occasions.split(' ').includes(active);
       if (!p.hidden) visible++;
     });
-    if (count) count.textContent=visible+(visible===1?' Geschenkidee':' Geschenkideen');
+    if (count) count.textContent=visible+(visible===1?' Beispiel':' Beispiele');
+    const heading=document.getElementById('ideas-title');
+    const chosen=filterButtons.find(b=>b.dataset.filter===active);
+    if (heading) heading.textContent=active==='alle'?'Echte Arbeiten als Inspiration.':chosen.textContent+' – echte Beispiele.';
+    const empty=document.getElementById('empty-results');
+    if (empty) empty.hidden=visible!==0;
+    document.querySelectorAll('[data-only-filter]').forEach(note=>{note.hidden=note.dataset.onlyFilter!==active});
   }
   if (filterButtons.length) {
     filterButtons.forEach(button=>button.addEventListener('click',()=>{
@@ -62,7 +72,8 @@ document.documentElement.classList.add('js');
     filterProducts();
   }
   const dialog=document.querySelector('dialog.lightbox');
-  const gallery=[...document.querySelectorAll('[data-lightbox]')];
+  const allGallery=[...document.querySelectorAll('[data-lightbox]')];
+  let gallery=allGallery;
   let current=0, returnFocus=null;
   if (dialog && typeof dialog.showModal==='function') {
     const image=dialog.querySelector('img');
@@ -86,8 +97,10 @@ document.documentElement.classList.add('js');
       }
       caption.textContent=item.dataset.caption+' · '+(current+1)+' / '+gallery.length;
     };
-    gallery.forEach((link,index)=>link.addEventListener('click',event=>{
-      event.preventDefault();returnFocus=link;show(index);dialog.showModal();document.body.style.overflow='hidden';
+    allGallery.forEach(link=>link.addEventListener('click',event=>{
+      event.preventDefault();returnFocus=link;
+      gallery=allGallery.filter(item=>!item.closest('[hidden]'));
+      show(gallery.indexOf(link));dialog.showModal();document.body.style.overflow='hidden';
     }));
     dialog.querySelector('.lightbox-close').addEventListener('click',()=>dialog.close());
     dialog.querySelector('.lightbox-prev').addEventListener('click',()=>show(current-1));

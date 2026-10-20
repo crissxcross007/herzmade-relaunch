@@ -1,0 +1,18 @@
+{
+  "material": "glas",
+  "produktart": "windlicht",
+  "bild": "/images/glas/2025-12-2315-47-27276.jpg",
+  "titel": "Camping Freunde Glas weiß",
+  "alt": "In dieser Variante haben wir probiert die Grafik auf ein weißes Glas zu gravieren.",
+  "anlaesse": [
+    "freundschaft"
+  ],
+  "in_ideen": false,
+  "preis_ab": "19,90",
+  "preishinweis": "Glas inklusive Gravur.",
+  "sortierung": 24,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "glas-2025-12-2315-47-27276"
+}

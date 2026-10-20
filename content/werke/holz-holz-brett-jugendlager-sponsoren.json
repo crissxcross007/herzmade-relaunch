@@ -1,0 +1,19 @@
+{
+  "material": "holz",
+  "produktart": "brett",
+  "bild": "/images/holz/holz-brett-jugendlager-sponsoren.jpg",
+  "titel": "Ein Dankeschön für die Unterstützer",
+  "alt": "Graviertes Holzbrett als Dankeschön für die Sponsoren des Amtsjugendlagers 2026.",
+  "anlaesse": [
+    "danke",
+    "firmen"
+  ],
+  "in_ideen": true,
+  "preis_ab": "7,90",
+  "preishinweis": "Brettchen je nach Größe ab 7,90 €. Die gezeigte Ausführung stimmen wir mit dir ab.",
+  "sortierung": 3,
+  "ideen_reihenfolge": 52,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-holz-brett-jugendlager-sponsoren"
+}

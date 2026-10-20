@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "holzbox",
+  "bild": "/images/holz/brett-lieblingsfussballer.jpg",
+  "titel": "Noel’s Süßigkeitenbox",
+  "alt": "Holzbox zum Geburtstag mit graviertem Fußballlogo und dem Schriftzug „Noel’s Süßigkeitenbox“ auf dem Deckel.",
+  "anlaesse": [
+    "geburtstag"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 8,
+  "ideen_reihenfolge": 5,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-brett-lieblingsfussballer"
+}

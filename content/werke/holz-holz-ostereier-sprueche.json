@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "holzarbeit",
+  "bild": "/images/holz/holz-ostereier-sprueche.jpg",
+  "titel": "Ostergrüße mit Humor",
+  "alt": "Gravierte Ostereier mit unterschiedlichen Sprüchen und Motiven als persönliche Osteraufmerksamkeit.",
+  "anlaesse": [
+    "ostern"
+  ],
+  "in_ideen": true,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 4,
+  "ideen_reihenfolge": 53,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-holz-ostereier-sprueche"
+}

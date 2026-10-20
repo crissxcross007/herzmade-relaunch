@@ -1,0 +1,19 @@
+{
+  "material": "holz",
+  "produktart": "holzarbeit",
+  "bild": "/images/holz/IMG_5533.jpeg",
+  "titel": "Holz-Osterei",
+  "alt": "Holz Osterei 🐣 graviert mit eigenem Logo",
+  "anlaesse": [
+    "ostern",
+    "firmen"
+  ],
+  "in_ideen": false,
+  "preis_ab": "",
+  "preishinweis": "",
+  "sortierung": 10,
+  "ideen_reihenfolge": 150,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-img-5533"
+}

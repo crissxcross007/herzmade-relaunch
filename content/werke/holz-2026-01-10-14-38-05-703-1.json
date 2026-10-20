@@ -1,0 +1,18 @@
+{
+  "material": "holz",
+  "produktart": "brett",
+  "bild": "/images/holz/2026-01-10_14-38-05_703-1.jpeg",
+  "titel": "Ein Stullenbrett für den Tagebau-Kumpel",
+  "alt": "Ein Stullenbrett mit einer eigens gestalteten Grafik für einen Freund, der im Tagebau arbeitet.",
+  "anlaesse": [
+    "freundschaft"
+  ],
+  "in_ideen": true,
+  "preis_ab": "7,90",
+  "preishinweis": "Brettchen je nach Größe ab 7,90 €. Motiv und Ausführung besprechen wir persönlich.",
+  "sortierung": 15,
+  "ideen_reihenfolge": 57,
+  "zuordnung_offen": false,
+  "anlass_notiz": "",
+  "_id": "holz-2026-01-10-14-38-05-703-1"
+}
