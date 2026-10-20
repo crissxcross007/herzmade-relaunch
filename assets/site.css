@@ -24,3 +24,18 @@
 .lightbox svg.lightbox-crop{height:auto;max-width:80vw;max-height:75vh;display:block}
 @media(max-width:600px){.gallery-photo>svg.gallery-crop{aspect-ratio:3/4}}
 @media(max-width:360px){.gallery-photo>svg.gallery-crop{aspect-ratio:4/4.3}}
+
+/* Quiet, readable legal links and text pages. */
+.footer-bottom{flex-wrap:wrap;gap:12px 24px}
+.legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:13px}
+.legal-links a{color:var(--muted);text-underline-offset:4px}
+.legal-links a:hover,.legal-links a:focus-visible{text-decoration:underline;color:var(--ink)}
+.legal-content{max-width:780px;padding-bottom:90px;overflow-wrap:anywhere}
+.legal-content h2{font-size:clamp(24px,3vw,32px);line-height:1.25;margin:38px 0 16px;letter-spacing:-.025em}
+.legal-content h2:first-child{margin-top:0}
+.legal-content p{margin-bottom:20px}
+.legal-content a,.contact-form .form-note a{text-decoration:underline;text-underline-offset:3px;color:var(--ink)}
+.legal-draft{border:1px solid var(--line);padding:20px 24px;margin-bottom:30px;background:var(--grey)}
+.legal-draft p{margin:8px 0 0}
+.legal-pending{border-left:3px solid var(--accent);padding-left:16px}
+@media(max-width:600px){.legal-links{font-size:13px}.legal-content{padding-bottom:55px}}
