@@ -1,16 +1,18 @@
 {
   "material": "glas",
-  "produktart": "sonstiges",
+  "produktart": "windlicht",
   "bild": "/images/glas/glas-portraet-fotoerinnerung.jpg",
-  "titel": "Porträtgravur auf Glas",
-  "alt": "Schwarzes Glas mit persönlicher Porträtgravur als Fotoerinnerung, neben weiteren gestalteten Gläsern.",
-  "anlaesse": [],
-  "in_ideen": false,
-  "preis_ab": "",
-  "preishinweis": "",
+  "titel": "Ein Porträt als Erinnerung",
+  "alt": "Persönliche Fotogravur auf schwarzem Glas als Erinnerung an einen Menschen.",
+  "anlaesse": [
+    "gedenken"
+  ],
+  "in_ideen": true,
+  "preis_ab": "19,90",
+  "preishinweis": "Weißes oder schwarzes Glas inklusive persönlicher Gravur.",
   "sortierung": 3,
   "ideen_reihenfolge": 150,
-  "zuordnung_offen": true,
-  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "zuordnung_offen": false,
+  "anlass_notiz": "Vom Inhaber als persönliche Fotoerinnerung bestätigt.",
   "_id": "glas-glas-portraet-fotoerinnerung"
 }

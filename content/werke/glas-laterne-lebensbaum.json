@@ -1,16 +1,18 @@
 {
   "material": "glas",
-  "produktart": "sonstiges",
+  "produktart": "laterne",
   "bild": "/images/glas/laterne-lebensbaum.jpg",
-  "titel": "Laterne mit Lebensbaum",
-  "alt": "Schwarze Laterne mit graviertem Lebensbaum und persönlicher Botschaft für einen Lehrer.",
-  "anlaesse": [],
-  "in_ideen": false,
-  "preis_ab": "",
-  "preishinweis": "",
+  "titel": "Ein Dankeschön für die Lehrerin",
+  "alt": "Schwarze Laterne mit graviertem Lebensbaum und persönlicher Botschaft – ein Geschenk der Klasse an ihre Lehrerin zum Schuljahreswechsel.",
+  "anlaesse": [
+    "danke"
+  ],
+  "in_ideen": true,
+  "preis_ab": "14,90",
+  "preishinweis": "Laternen in 20 cm Höhe ab 14,90 € inklusive Gravur. Größe und Gestaltung stimmen wir persönlich ab.",
   "sortierung": 5,
   "ideen_reihenfolge": 150,
-  "zuordnung_offen": true,
-  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "zuordnung_offen": false,
+  "anlass_notiz": "Vom Inhaber bestätigt: Geschenk einer Klasse für ihre Lehrerin zum Schuljahreswechsel.",
   "_id": "glas-laterne-lebensbaum"
 }

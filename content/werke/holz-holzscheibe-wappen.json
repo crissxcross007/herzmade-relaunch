@@ -1,16 +1,18 @@
 {
   "material": "holz",
-  "produktart": "sonstiges",
+  "produktart": "flaschenoeffner",
   "bild": "/images/holz/holzscheibe-wappen.jpg",
-  "titel": "Holzflaschenöffner mit Feuerwehrlogo",
-  "alt": "Holzflaschenöffner mit graviertem Feuerwehrlogo, Stadtwappen und Namen.",
-  "anlaesse": [],
-  "in_ideen": false,
+  "titel": "Zum Geburtstag für eine Feuerwehrfrau",
+  "alt": "Individuell gravierter Holzflaschenöffner als Geburtstagsgeschenk für eine Feuerwehrfrau, mit Feuerwehrlogo, Stadtwappen und ihrem Namen.",
+  "anlaesse": [
+    "geburtstag"
+  ],
+  "in_ideen": true,
   "preis_ab": "",
   "preishinweis": "",
   "sortierung": 9,
   "ideen_reihenfolge": 150,
-  "zuordnung_offen": true,
-  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "zuordnung_offen": false,
+  "anlass_notiz": "Vom Inhaber bestätigt: individuelles Geburtstagsgeschenk für eine Feuerwehrfrau.",
   "_id": "holz-holzscheibe-wappen"
 }

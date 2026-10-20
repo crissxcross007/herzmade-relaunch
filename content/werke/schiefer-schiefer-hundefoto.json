@@ -1,16 +1,16 @@
 {
   "material": "schiefer",
-  "produktart": "sonstiges",
+  "produktart": "schiefertafel",
   "bild": "/images/schiefer/schiefer-hundefoto.jpg",
-  "titel": "Ein Hundefoto für immer",
-  "alt": "Schiefertafel mit der Fotogravur eines Hundes und seines Spielzeugs.",
+  "titel": "Dein Hundefoto auf Schiefer",
+  "alt": "Fotogravur eines Hundes mit seinem Spielzeug auf Schiefer, nach individuellem Kundenwunsch gestaltet.",
   "anlaesse": [],
   "in_ideen": false,
   "preis_ab": "",
   "preishinweis": "",
   "sortierung": 1,
   "ideen_reihenfolge": 150,
-  "zuordnung_offen": true,
-  "anlass_notiz": "Der konkrete Anlass ist noch offen. Bitte nur belegte Anlässe auswählen.",
+  "zuordnung_offen": false,
+  "anlass_notiz": "Kundenwunsch: Fotogravur eines Hundes. Ob das Tier verstorben ist, ist unbekannt. Neutral beschreiben und nicht als Trauerarbeit einordnen.",
   "_id": "schiefer-schiefer-hundefoto"
 }

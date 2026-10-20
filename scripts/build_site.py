@@ -265,12 +265,14 @@ def build_review():
     cards = ''
     for index, entry in enumerate(data.get('werke') or [], 1):
         work = works.get(entry['id'])
-        if not work or work.get('anlaesse'):
+        if not work or work.get('anlaesse') or work.get('zuordnung_offen') is False:
             continue
         optimized = optimize(work['bild'])
         cards += f'<article class="gallery-item" id="frage-{index}"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(work["titel"])}" aria-label="{E(work["titel"])} vergrößern">{gallery_picture(work)}<span class="photo-arrow" aria-hidden="true">+</span></a><h2 class="review-title">{index}. {E(work["titel"])}</h2><p>{E(entry["frage"])}</p></article>'
-    content = f'<section class="page-intro wrap"><p class="eyebrow">Zuordnung gemeinsam ergänzen</p><h1>Sechs Werke.<br><em>Dein Wissen dazu.</em></h1><p>Chris, zu diesen Bildern fehlt noch der konkrete Anlass. Antworte im Chat einfach mit der Nummer und einem kurzen Satz. Die Bilder bleiben bis dahin in ihren Materialgalerien; wir zeigen sie noch nicht unter einem vermuteten Anlass.</p></section><section class="gallery-section wrap"><div class="gallery-grid review-grid">{cards}</div></section>'
-    page('zuordnung-pruefen.html','Offene Werk-Zuordnungen | Herzmade','Sechs Rückfragen zu den tatsächlichen Anlässen einzelner Arbeiten.',content,'',True)
+    content = f'<section class="page-intro wrap"><p class="eyebrow">Zuordnung gemeinsam ergänzen</p><h1>Offene Werke.<br><em>Dein Wissen dazu.</em></h1><p>Chris, zu diesen Bildern fehlt noch der konkrete Anlass. Antworte im Chat einfach mit der Nummer und einem kurzen Satz. Die Bilder bleiben bis dahin in ihren Materialgalerien; wir zeigen sie noch nicht unter einem vermuteten Anlass.</p></section><section class="gallery-section wrap"><div class="gallery-grid review-grid">{cards}</div></section>'
+    if not cards:
+        content = '<section class="page-intro wrap"><p class="eyebrow">Zuordnung aktualisiert</p><h1>Danke, Chris.<br><em>Alle sechs Antworten sind übernommen.</em></h1><p>Die bestätigten Anlässe und Beschreibungen sind eingepflegt. Das Hundefoto auf Schiefer bleibt ohne vermuteten Trauerbezug in der Materialgalerie.</p><a class="text-link" href="geschenkideen.html">Zur aktualisierten Auswahl ↗</a></section>'
+    page('zuordnung-pruefen.html','Offene Werk-Zuordnungen | Herzmade','Rückfragen zu den tatsächlichen Anlässen einzelner Arbeiten.',content,'',True)
 
 def main():
     # Keep the exact logo artwork; only resize its transparent image for the web.
