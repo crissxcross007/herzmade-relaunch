@@ -550,5 +550,13 @@
     "w1200": 768,
     "width": 768,
     "height": 1024
+  },
+  "images/person3.jpeg": {
+    "600": "assets/img/15ee6b3529aa-600.webp",
+    "w600": 600,
+    "1200": "assets/img/15ee6b3529aa-1200.webp",
+    "w1200": 1200,
+    "width": 1536,
+    "height": 1356
   }
 }
