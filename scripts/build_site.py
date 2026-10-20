@@ -106,7 +106,7 @@ def build_home():
         'schiefer': 'images/schiefer/schiefertafel-goldene-hochzeit.jpg',
         'edelstahl': 'images/edelstahl/tasse-geschenkbox.jpg',
         'keramik': 'images/keramik/img5124.jpeg',
-        'leder': 'images/leder/dd52daca-2171-4a2e-866a-46794246d3cd2025-12-1922-35-57764.jpeg',
+        'leder': 'images/leder/2025-12-1922-36-12195.jpg',
     }
     material_images = {key: gallery_example(key, path) for key, path in featured.items()}
     hero_item = gallery_example('glas', 'images/glas/laterne-lebensbaum.jpg')
