@@ -18,6 +18,9 @@ DATA = {key: json.loads((ROOT/'content'/f'{key}.json').read_text()) for key in M
 PRODUCTS = json.loads((ROOT/'content/gifts.json').read_text())
 IMAGES = {}
 
+def occasion_url(key):
+    return 'weihnachtsbaumkugeln.html' if key == 'weihnachten' else f'geschenkideen.html#{key}'
+
 def optimize(path):
     path = path.removeprefix('/').removeprefix('./')
     if path in IMAGES:
@@ -53,7 +56,7 @@ def picture(path, alt, eager=False, cls='', sizes=None):
     return f'<img class="{E(cls)}" src="{data["600"]}" srcset="{srcset}" sizes="{sizes}" width="{data["width"]}" height="{data["height"]}" alt="{E(alt)}" loading="{loading}" decoding="async"{priority}>'
 
 def navigation(active):
-    gift_links = ''.join(f'<a href="geschenkideen.html#{key}">{E(label)}</a>' for key,label in OCCASIONS.items())
+    gift_links = ''.join(f'<a href="{occasion_url(key)}">{E(label)}</a>' for key,label in OCCASIONS.items())
     material_links = ''.join(f'<a href="{key}.html">{label}</a>' for key,label in MATERIALS.items())
     def link(url, label, key):
         return f'<a href="{url}"'+(' aria-current="page"' if active == key else '')+f'>{label}</a>'
@@ -82,7 +85,7 @@ def page(filename, title, desc, content, active, lightbox=False):
     (ROOT/filename).write_text(out)
 
 def product_card(p):
-    return f'''<article class="product" data-occasions="{E(' '.join(p['occasions']))}"><a class="product-photo" href="{p['material']}.html#gallery">{picture(p['image'],p['alt'])}<span class="photo-arrow" aria-hidden="true">↗</span></a><div class="product-top"><h3>{E(p['title'])}</h3><p class="price">ab {E(p['price'])} €</p></div><p>{E(p['description'])}</p><p class="product-detail">{E(p['detail'])}</p><a class="text-link" href="{p['material']}.html#gallery">Beispiele ansehen <span aria-hidden="true">↗</span></a></article>'''
+    return f'''<article class="product" data-occasions="{E(' '.join(p['occasions']))}"><a class="product-photo" href="{E(p.get('gallery') or (p['material']+'.html#gallery'))}">{picture(p['image'],p['alt'])}<span class="photo-arrow" aria-hidden="true">↗</span></a><div class="product-top"><h3>{E(p['title'])}</h3><p class="price">ab {E(p['price'])} €</p></div><p>{E(p['description'])}</p><p class="product-detail">{E(p['detail'])}</p><a class="text-link" href="{E(p.get('gallery') or (p['material']+'.html#gallery'))}">Beispiele ansehen <span aria-hidden="true">↗</span></a></article>'''
 
 def gallery_example(material, preferred):
     """Keep featured examples stable when editors reorder or empty a gallery."""
@@ -111,7 +114,7 @@ def build_home():
     cards = ''.join(f'<a class="material-card" href="{key}.html"><div>{picture(material_images[key]["bild"],material_images[key]["alt"])}</div><h3>{label}<span aria-hidden="true">↗</span></h3></a>' for key,label in MATERIALS.items())
     content = f'''<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">Gravuren & Geschenkideen aus Döbern</p><h1>Kein Geschenk<br>wie jedes.<br><em>Deins.</em></h1><p class="hero-lead">Ein Name. Ein besonderer Moment. Eine Erinnerung, die bleibt. Wir machen aus deiner Idee ein persönliches Einzelstück.</p><div class="hero-actions"><a class="button" href="geschenkideen.html">Geschenkideen entdecken <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">Das ist Herzmade</a></div><p class="hero-signoff">Mit Herz gemacht statt Barcode.</p></div><div class="hero-visual"><div class="hero-main">{hero}<span class="image-label">Ein Licht.<br>Deine persönliche Botschaft.</span></div><div class="hero-small">{small}<span>Für deine Lieblingsmenschen.</span></div></div></div></section>
     <div class="values-strip"><div class="wrap"><span>Individuell graviert</span><span>Material & Gravur inklusive</span><span>Persönlich aus der Lausitz</span></div></div>
-    <section class="occasion-section wrap"><div class="section-heading"><div><p class="eyebrow">Weil jeder Moment anders ist</p><h2>Was möchtest du<br>in Erinnerung behalten?</h2></div><p>Zum Geburtstag, als Dankeschön oder für einen ganz besonderen Menschen: Hier beginnt deine Geschenkidee.</p></div><div class="occasion-links">{''.join(f'<a href="geschenkideen.html#{key}"><span>{E(label)}</span><span aria-hidden="true">↗</span></a>' for key,label in OCCASIONS.items())}</div></section>
+    <section class="occasion-section wrap"><div class="section-heading"><div><p class="eyebrow">Weil jeder Moment anders ist</p><h2>Was möchtest du<br>in Erinnerung behalten?</h2></div><p>Zum Geburtstag, als Dankeschön oder für einen ganz besonderen Menschen: Hier beginnt deine Geschenkidee.</p></div><div class="occasion-links">{''.join(f'<a href="{occasion_url(key)}"><span>{E(label)}</span><span aria-hidden="true">↗</span></a>' for key,label in OCCASIONS.items())}</div></section>
     <section class="materials-section wrap" id="materialien"><div class="section-heading"><div><p class="eyebrow">Echte Materialien. Deine Geschichte.</p><h2>Mit Charakter gemacht.</h2></div><p>Natürliches Holz, kontrastreicher Schiefer oder edles Glas. Entdecke unsere Materialien und echten Arbeiten.</p></div><div class="materials-grid">{cards}</div></section>
     <section class="about-band"><div class="wrap about-grid"><p class="eyebrow">Zwei Köpfe. Viele Ideen.</p><div><h2>Vater, Sohn<br>und ein Herzensprojekt.</h2><p>Wir sind Chris und Levi aus Döbern. Bei Herzmade verbinden wir Technik, Kreativität und unsere Freude an persönlichen Geschenken.</p><a class="text-link" href="about.html">Lerne uns kennen <span aria-hidden="true">↗</span></a></div></div></section>{cta()}'''
     page('index.html','Herzmade – persönliche Geschenke & Gravuren aus Döbern','Individuelle Geschenkideen aus Holz, Glas, Schiefer und Edelstahl. Persönlich graviert von Chris und Levi aus Döbern in der Lausitz.',content,'home')
@@ -142,6 +145,23 @@ def build_materials():
         content=f'''<section class="page-intro wrap"><p class="eyebrow">Materialien / {label}</p><h1>{label} mit Gravur.<br><em>{subtitles[key]}</em></h1><p>Individuelle Arbeiten von Herzmade aus Döbern. Lass dich inspirieren und bring deine eigene Idee mit.</p></section><section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div>{priceblock}</section><section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">So persönlich kann {label} sein</p><h2>Einblicke in unsere Arbeiten.</h2></div><p>Echte Einzelstücke aus unserer Werkstatt.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta()}'''
         page(key+'.html',f'{label} gravieren lassen in Döbern | Herzmade',f'Individuelle Gravuren auf {label} aus Döbern. Entdecke echte Arbeiten, persönliche Geschenkideen und Gestaltungsmöglichkeiten von Herzmade.',content,'materials',True)
 
+def build_christmas():
+    data = json.loads((ROOT/'content/weihnachtsbaumkugeln.json').read_text())
+    title = data.get('titel') or 'Weihnachtskugeln mit Gravur'
+    gallery = ''
+    for item in data.get('galerie') or []:
+        if not item.get('bild'):
+            continue
+        item_title = clean(item.get('titel') or 'Persönliche Weihnachtskugel')
+        item_alt = clean(item.get('alt') or item_title)
+        optimized = optimize(item['bild'])
+        gallery += f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{picture(item["bild"],item_alt)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
+    product = next(p for p in PRODUCTS if p.get('gallery') == 'weihnachtsbaumkugeln.html#gallery')
+    content = f'''<section class="page-intro wrap"><p class="eyebrow">Geschenkideen / Weihnachten</p><h1>{E(title)}.<br><em>Deine Erinnerungen am Baum.</em></h1><p>Namen, Lieblingsfotos und persönliche Motive auf Echtglas. Für deinen Weihnachtsbaum oder als Geschenk für einen besonderen Menschen.</p></section>
+    <section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div><aside class="material-prices"><p class="eyebrow">8 cm Echtglas · persönlich gestaltet</p><div><span>Weihnachtskugel mit Gravur</span><strong>ab {E(product['price'])} €</strong></div><div><span>Mit Foto- oder Grafikbearbeitung</span><strong>ab 14,90 €</strong></div><p>Alle Preise pro Stück inklusive Material und Gravur. Gestaltung und Ausführung stimmen wir persönlich mit dir ab.</p></aside></section>
+    <section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">Namen. Fotos. Besondere Momente.</p><h2>Unsere Weihnachtskugeln.</h2></div><p>Echte Arbeiten von Herzmade.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta().replace('Deine Geschenkidee anfragen', 'Deine Weihnachtskugel anfragen')}'''
+    page('weihnachtsbaumkugeln.html', f'{title} & Fotogravur | Herzmade Döbern', 'Persönliche Weihnachtsbaumkugeln aus Echtglas mit Namen, Foto oder Wunschmotiv. 8 cm, ab 9,90 Euro inklusive Gravur. Entdecke echte Arbeiten von Herzmade.', content, 'gifts', True)
+
 def build_about():
     drawing=gallery_example('schiefer', 'images/schiefer/2025-11-0216-28-30563.jpg')
     content=f'''<section class="page-intro wrap"><p class="eyebrow">Hallo, wir sind Herzmade</p><h1>Chris & Levi.<br><em>Technik trifft Fantasie.</em></h1><p>Vater und Sohn aus Döbern. Ein gemeinsames Hobby. Und die Freude daran, aus einer Idee etwas Persönliches zu machen.</p></section><section class="story-grid wrap"><div class="story-photo">{picture(drawing['bild'],drawing['alt'],sizes='(max-width: 600px) 94vw, 46vw')}<p>Aus einer Zeichnung wird eine Erinnerung.</p></div><div class="story-copy"><p class="eyebrow">Unsere Geschichte</p><h2>Mit Herz gemacht.<br>Ganz wörtlich.</h2><p>Herzmade ist unser gemeinsames Herzensprojekt. Chris bringt als gelernter IT-Systemelektroniker den technischen Hintergrund mit. Levi zeichnet gerne, entwickelt Motive und probiert neue Ideen aus.</p><p>In unserer Freizeit verbinden wir beides: Kreativität und präzise Technik. So entstehen Gravuren auf Holz, Glas, Keramik, Schiefer, Edelstahl und Leder – und manchmal auf einer Weihnachtskugel.</p><p>Uns geht es um Dinge mit persönlicher Bedeutung. Einen Namen. Eine Zeichnung. Einen Moment, den du festhalten möchtest.</p><p>Wir sind in 03159 Döbern zu Hause und gestalten für Menschen aus Döbern, Forst (Lausitz), Spree-Neiße, Cottbus und Umgebung.</p><a class="text-link" href="geschenkideen.html">Unsere Geschenkideen entdecken ↗</a></div></section><section class="story-grid wrap team-story"><figure class="story-photo">{picture('images/person3.jpeg','Chris und Levi – Vater und Sohn hinter Herzmade aus Döbern',cls='team-portrait',sizes='(max-width: 600px) 94vw, 46vw')}<figcaption>Chris & Levi – Vater, Sohn und ein gemeinsames Herzensprojekt.</figcaption></figure><div class="story-copy"><p class="eyebrow">Was uns ausmacht</p><h2>Persönlich statt von der Stange.</h2><p>Gezeichnete Motive, kleine Botschaften oder eine ganz eigene Idee: Wir nehmen uns Zeit, gemeinsam mit dir das passende Material und die Gestaltung zu finden.</p></div></section>{cta()}'''
@@ -155,7 +175,7 @@ def main():
     # Keep the exact logo artwork; only resize its transparent image for the web.
     with Image.open(ROOT/'images/1Herzmade-transparent.png') as original:
         logo=ImageOps.exif_transpose(original).convert('RGBA');logo.thumbnail((480,208),Image.Resampling.LANCZOS);logo.save(ROOT/'assets/logo.png',optimize=True)
-    build_home();build_gifts();build_materials();build_about();build_contact()
+    build_home();build_gifts();build_materials();build_christmas();build_about();build_contact()
     page('work.html','Geschenkideen | Herzmade','Persönliche Geschenkideen mit Gravur.', '<section class="page-intro wrap"><h1>Unsere Geschenkideen.</h1><p>Du findest unsere Arbeiten jetzt nach Anlässen sortiert.</p><a class="button" href="geschenkideen.html">Zu den Geschenkideen ↗</a></section>','gifts')
     page('danke.html','Danke für deine Nachricht | Herzmade','Wir freuen uns auf deine Geschenkidee.','<section class="page-intro wrap"><p class="eyebrow">Mit Herz gelesen</p><h1>Danke für deine Nachricht.</h1><p>Wir freuen uns auf deine Idee und melden uns bei dir.</p><a class="button" href="index.html">Zur Startseite</a></section>','contact')
     # Central snippets remain available; published pages already contain them.
@@ -164,6 +184,6 @@ def main():
     (ROOT/'assets/image-manifest.json').write_text(json.dumps(IMAGES,ensure_ascii=False,indent=2))
     (ROOT/'.nojekyll').touch()
     assert not (ROOT/'CNAME').exists(), 'Test repository must not claim the live domain'
-    print(f'Built 12 pages, {len(PRODUCTS)} products and {len(IMAGES)} optimized image pairs.')
+    print(f'Built 13 pages, {len(PRODUCTS)} products and {len(IMAGES)} optimized image pairs.')
 
 if __name__=='__main__':main()
