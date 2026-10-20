@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'assets' / 'img'
 ASSETS.mkdir(parents=True, exist_ok=True)
 E = lambda value: html.escape(str(value), quote=True)
-MATERIALS = {'holz': 'Holz', 'glas': 'Glas', 'schiefer': 'Schiefer', 'edelstahl': 'Edelstahl', 'keramik': 'Keramik', 'leder': 'Leder'}
+MATERIALS = {'holz': 'Holz', 'glas': 'Glas', 'schiefer': 'Schiefer', 'edelstahl': 'Edelstahl', 'keramik': 'Keramik', 'leder': 'Leder', 'papier': 'Papier'}
 OCCASIONS = {'geburtstag': 'Geburtstag', 'freundschaft': 'Freundschaft & Danke', 'paare': 'Hochzeit & Paare', 'ehrung': 'Jubiläum & Ehrung', 'weihnachten': 'Weihnachten', 'andenken': 'Andenken & Gedenken'}
 DATA = {key: json.loads((ROOT/'content'/f'{key}.json').read_text()) for key in MATERIALS}
 PRODUCTS = json.loads((ROOT/'content/gifts.json').read_text())
@@ -100,6 +100,7 @@ def gallery_example(material, preferred):
 
 def build_home():
     featured = {
+        'papier': 'images/papier/papier-box-umschlag-schmetterling.jpg',
         'holz': 'images/holz/brett-lieblingsfussballer.jpg',
         'glas': 'images/glas/weinglas-hochzeit.jpg',
         'schiefer': 'images/schiefer/schiefertafel-goldene-hochzeit.jpg',
@@ -122,14 +123,14 @@ def build_home():
 
 def build_gifts():
     filters = '<button type="button" data-filter="alle" aria-pressed="true">Alle Geschenkideen</button>'+''.join(f'<button type="button" data-filter="{key}" aria-pressed="false">{E(label)}</button>' for key,label in OCCASIONS.items())
-    content = f'''<section class="page-intro wrap"><p class="eyebrow">Kleine Aufmerksamkeiten. Große Erinnerungen.</p><h1>Für deinen Anlass.<br><em>Für deinen Lieblingsmenschen.</em></h1><p>Entdecke persönliche Geschenke mit deinem Namen, Wunschtext oder Motiv. Jedes Stück beginnt mit deiner Idee.</p></section><section class="gift-collection wrap" aria-label="Geschenkideen mit Preisen"><div class="filters" role="group" aria-label="Nach Anlass filtern">{filters}</div><div class="collection-meta"><p id="gift-count" role="status" aria-live="polite">{len(PRODUCTS)} Geschenkideen</p><p>Alle Preise pro Stück inklusive Material und Gravur.<br>Je nach Größe und Ausführung kann der Preis variieren.</p></div><div class="product-grid">{''.join(product_card(p) for p in PRODUCTS)}</div><noscript><p>Alle Geschenkideen sind sichtbar. Die Auswahl nach Anlass ist mit JavaScript verfügbar.</p></noscript></section>{cta()}'''
+    content = f'''<section class="page-intro wrap"><p class="eyebrow">Kleine Aufmerksamkeiten. Große Erinnerungen.</p><h1>Für deinen Anlass.<br><em>Für deinen Lieblingsmenschen.</em></h1><p>Entdecke persönliche Geschenke mit deinem Namen, Wunschtext oder Motiv. Jedes Stück beginnt mit deiner Idee.</p></section><section class="gift-collection wrap" aria-label="Geschenkideen mit Preisen"><div class="filters" role="group" aria-label="Nach Anlass filtern">{filters}</div><div class="collection-meta"><p id="gift-count" role="status" aria-live="polite">{len(PRODUCTS)} Geschenkideen</p><p>Alle Preise pro Stück inklusive Material und Gestaltung.<br>Bei Gravurprodukten ist die Gravur enthalten. Je nach Größe und Ausführung kann der Preis variieren.</p></div><div class="product-grid">{''.join(product_card(p) for p in PRODUCTS)}</div><noscript><p>Alle Geschenkideen sind sichtbar. Die Auswahl nach Anlass ist mit JavaScript verfügbar.</p></noscript></section>{cta()}'''
     page('geschenkideen.html','Geschenkideen mit Gravur – Anlässe & Preise | Herzmade','Persönliche Geschenke für Geburtstag, Hochzeit, Jubiläum und Weihnachten. Entdecke Gravuren aus Döbern mit Preisen ab 7 Euro inklusive Material.',content,'gifts')
 
 def clean(text):
     return re.sub('[\U0001F000-\U0001FAFF\u2600-\u27ff\ufe0f]', '', text).strip()
 
 def build_materials():
-    subtitles={'holz':'Natürlich. Persönlich. Ein Stück für jeden Tag.', 'glas':'Ein besonderer Moment, für immer festgehalten.', 'schiefer':'Dunkler Stein. Helle Erinnerungen.', 'edelstahl':'Dein Lieblingsstück. Immer dabei.', 'keramik':'Eine kleine Auszeit mit persönlicher Note.', 'leder':'Charakter, den man sehen und fühlen kann.'}
+    subtitles={'holz':'Natürlich. Persönlich. Ein Stück für jeden Tag.', 'glas':'Ein besonderer Moment, für immer festgehalten.', 'schiefer':'Dunkler Stein. Helle Erinnerungen.', 'edelstahl':'Dein Lieblingsstück. Immer dabei.', 'keramik':'Eine kleine Auszeit mit persönlicher Note.', 'leder':'Charakter, den man sehen und fühlen kann.', 'papier':'Das i-Tüpfelchen für dein Geschenk.'}
     for key,label in MATERIALS.items():
         data=DATA[key]
         gallery=''
@@ -142,9 +143,13 @@ def build_materials():
             gallery+=f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{picture(item["bild"],item_alt)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
         related=[p for p in PRODUCTS if p['material']==key]
         prices=''.join(f'<div><span>{E(p["title"])}</span><strong>ab {E(p["price"])} €</strong></div>' for p in related)
-        priceblock=f'<aside class="material-prices"><p class="eyebrow">Deine Preisorientierung</p>{prices}<p>Inklusive Material und Gravur. Details zu Größen und Ausführungen findest du bei den Geschenkideen.</p><a class="text-link" href="geschenkideen.html">Geschenkideen & Preise ↗</a></aside>' if related else ''
-        content=f'''<section class="page-intro wrap"><p class="eyebrow">Materialien / {label}</p><h1>{label} mit Gravur.<br><em>{subtitles[key]}</em></h1><p>Individuelle Arbeiten von Herzmade aus Döbern. Lass dich inspirieren und bring deine eigene Idee mit.</p></section><section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div>{priceblock}</section><section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">So persönlich kann {label} sein</p><h2>Einblicke in unsere Arbeiten.</h2></div><p>Echte Einzelstücke aus unserer Werkstatt.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta()}'''
-        page(key+'.html',f'{label} gravieren lassen in Döbern | Herzmade',f'Individuelle Gravuren auf {label} aus Döbern. Entdecke echte Arbeiten, persönliche Geschenkideen und Gestaltungsmöglichkeiten von Herzmade.',content,'materials',True)
+        price_note = 'Je nach Größe und Gestaltung. Inhalt und Werkstück separat. Folienarbeiten auf Anfrage.' if key == 'papier' else 'Inklusive Material und Gravur. Details zu Größen und Ausführungen findest du bei den Geschenkideen.'
+        heading = 'Papier, Verpackungen & Folien.' if key == 'papier' else f'{label} mit Gravur.'
+        page_title = 'Papierverpackungen, filigrane Ausschnitte & Folien | Herzmade' if key == 'papier' else f'{label} gravieren lassen in Döbern | Herzmade'
+        description = 'Individuelle Papierboxen, Umschläge und Geschenkverpackungen ab 3 Euro. Dazu Bügel- und Klebefolien mit persönlichen Motiven von Herzmade aus Döbern.' if key == 'papier' else f'Individuelle Gravuren auf {label} aus Döbern. Entdecke echte Arbeiten, persönliche Geschenkideen und Gestaltungsmöglichkeiten von Herzmade.'
+        priceblock=f'<aside class="material-prices"><p class="eyebrow">Deine Preisorientierung</p>{prices}<p>{E(price_note)}</p><a class="text-link" href="geschenkideen.html">Geschenkideen & Preise ↗</a></aside>' if related else ''
+        content=f'''<section class="page-intro wrap"><p class="eyebrow">Materialien / {label}</p><h1>{E(heading)}<br><em>{subtitles[key]}</em></h1><p>Individuelle Arbeiten von Herzmade aus Döbern. Lass dich inspirieren und bring deine eigene Idee mit.</p></section><section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div>{priceblock}</section><section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">So persönlich kann {label} sein</p><h2>Einblicke in unsere Arbeiten.</h2></div><p>Echte Einzelstücke aus unserer Werkstatt.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta()}'''
+        page(key+'.html',page_title,description,content,'materials',True)
 
 
 def gallery_picture(item):
@@ -196,6 +201,6 @@ def main():
     (ROOT/'assets/image-manifest.json').write_text(json.dumps(IMAGES,ensure_ascii=False,indent=2))
     (ROOT/'.nojekyll').touch()
     assert not (ROOT/'CNAME').exists(), 'Test repository must not claim the live domain'
-    print(f'Built 13 pages, {len(PRODUCTS)} products and {len(IMAGES)} optimized image pairs.')
+    print(f'Built 14 pages, {len(PRODUCTS)} products and {len(IMAGES)} optimized image pairs.')
 
 if __name__=='__main__':main()

@@ -127,5 +127,22 @@
     ],
     "description": "Ein Licht für besondere Momente – zur Hochzeit, zum Jubiläum oder als persönliche Erinnerung.",
     "detail": "20 cm hoch, inklusive Material und Gravur. Größe und Ausführung stimmen wir mit dir ab."
+  },
+  {
+    "title": "Persönliche Geschenkverpackungen",
+    "price": "3,00",
+    "material": "papier",
+    "image": "images/papier/papier-box-umschlag-schmetterling.jpg",
+    "alt": "Papierbox mit filigranem Ausschnitt und ein Umschlag mit Schmetterlingen.",
+    "occasions": [
+      "geburtstag",
+      "freundschaft",
+      "paare",
+      "ehrung",
+      "weihnachten",
+      "andenken"
+    ],
+    "description": "Das i-Tüpfelchen für dein Geschenk: individuelle Papierboxen, Umschläge und liebevolle Verpackungen.",
+    "detail": "Verpackungen ab 3,00 € je nach Größe und Gestaltung. Inhalt und Werkstück separat."
   }
 ]

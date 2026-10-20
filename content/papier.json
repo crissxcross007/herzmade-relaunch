@@ -1,0 +1,47 @@
+{
+  "titel": "Papier, Verpackungen & Folien",
+  "slug": "papier",
+  "einleitung": "<section class=\"material-intro\"><h2>Das i-Tüpfelchen für dein Geschenk.</h2><p>Ein persönliches Werkstück verdient eine Verpackung, die genauso besonders ist. Wir gestalten passende Papierboxen, Umschläge mit filigranen Ausschnitten und liebevolle Verpackungen für deine Einzelstücke – zum Beispiel unsere Osterhasen für gravierte Ostereier.</p><h3>Feine Schnitte mit dem geführten Messer</h3><p>Für diese Arbeiten tauschen wir die Lasereinheit gegen ein geführtes Messer aus. Damit schneiden wir Papier, Karton und Folien präzise in Form: von feinen Ornamenten bis zur individuell passenden Verpackung.</p><h3>Auch für Textilien und Klebefolien</h3><p>Ausgeschnittene Bügelfolie bringt Namen und Wunschmotive auf T-Shirts. Mit Klebefolie lassen sich Gegenstände persönlich gestalten. Motiv, Farbe und Ausführung besprechen wir gemeinsam.</p><p>Verpackungen gibt es ab 3,00 € pro Stück, je nach Größe und Gestaltung. Die abgebildeten Inhalte und Werkstücke sind separat erhältlich. Folienarbeiten stimmen wir individuell mit dir ab.</p></section>",
+  "galerie": [
+    {
+      "bild": "/images/papier/papier-verpackungen-ueberblick.jpg",
+      "titel": "Verpackungen mit Persönlichkeit",
+      "alt": "Individuelle Papierverpackungen: Hasen für gravierte Ostereier, kleine Boxen und filigran gestaltete Umschläge."
+    },
+    {
+      "bild": "/images/papier/papier-hasen-osterei.jpg",
+      "titel": "Ein Osterhase für dein Einzelstück",
+      "alt": "Bunte Hasenverpackungen aus Papier mit Ausschnitten und Schleifen, passend für gravierte Ostereier."
+    },
+    {
+      "bild": "/images/papier/papier-hase-osterei-detail.jpg",
+      "titel": "Passend verpackt bis ins Detail",
+      "alt": "Gelbe Hasenverpackung mit ausgeschnittenem Fenster, in dem das gravierte Osterei sichtbar bleibt."
+    },
+    {
+      "bild": "/images/papier/papier-box-umschlag-schmetterling.jpg",
+      "titel": "Filigrane Boxen und Umschläge",
+      "alt": "Papierbox mit feinem Ausschnitt und ein Umschlag mit plastisch abstehenden Schmetterlingen."
+    },
+    {
+      "bild": "/images/papier/papier-umschlag-schmetterling.jpg",
+      "titel": "Ein Umschlag mit Schmetterling",
+      "alt": "Rosafarbener Papierumschlag mit filigran ausgeschnittenem Schmetterlingsverschluss."
+    },
+    {
+      "bild": "/images/papier/papier-geburtstagsboxen.jpg",
+      "titel": "Schon die Verpackung sagt alles",
+      "alt": "Grüne und violette Papierboxen mit Ausschnitten, Schmetterling und persönlichem Geburtstagsgruß."
+    },
+    {
+      "bild": "/images/papier/papier-pokale.jpg",
+      "titel": "Kleine Pokale aus Papier",
+      "alt": "Goldfarbene Pokalverpackungen aus Papier, gefüllt mit kleinen Aufmerksamkeiten."
+    },
+    {
+      "bild": "/images/papier/folie-tshirt-name-einhorn.jpg",
+      "titel": "Dein Motiv auf dem T-Shirt",
+      "alt": "Schwarzes T-Shirt mit ausgeschnittener und aufgebügelter Folie: der Name Lena und ein Einhornmotiv."
+    }
+  ]
+}

@@ -7,6 +7,36 @@ media:
     extensions: [jpg, jpeg, png, webp]
 
 content:
+  - name: papier
+    label: Papier
+    type: file
+    path: content/papier.json
+    format: json
+    fields:
+      - name: titel
+        label: Titel
+        type: string
+      - name: slug
+        type: string
+      - name: einleitung
+        label: Einleitung
+        type: richtext
+      - name: galerie
+        label: Galerie
+        type: object
+        list: true
+        fields:
+          - name: bild
+            label: Bild
+            type: image
+            media: bilder
+          - name: titel
+            label: Bildtitel
+            type: string
+          - name: alt
+            label: Bildbeschreibung
+            type: string
+
   - name: weihnachtsbaumkugeln
     label: Weihnachtsbaumkugeln
     type: file
