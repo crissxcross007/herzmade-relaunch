@@ -135,6 +135,14 @@
     "width": 1152,
     "height": 1536
   },
+  "images/leder/leder-fotobuch-erinnerungen.jpg": {
+    "600": "assets/img/b814be8b08a5-600.webp",
+    "w600": 450,
+    "1200": "assets/img/b814be8b08a5-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
   "images/holz/holz-geschenkkartenhalter-danke.jpg": {
     "600": "assets/img/c43a2d5c60e0-600.webp",
     "w600": 600,
@@ -335,6 +343,14 @@
     "width": 644,
     "height": 859
   },
+  "images/holz/holzscheibe-wappen.jpg": {
+    "600": "assets/img/29a7bb9fda29-600.webp",
+    "w600": 450,
+    "1200": "assets/img/29a7bb9fda29-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
+  },
   "images/holz/holzbrett-portraet.jpg": {
     "600": "assets/img/b75aedd1a0ea-600.webp",
     "w600": 600,
@@ -350,14 +366,6 @@
     "w1200": 644,
     "width": 644,
     "height": 859
-  },
-  "images/holz/holzscheibe-wappen.jpg": {
-    "600": "assets/img/29a7bb9fda29-600.webp",
-    "w600": 450,
-    "1200": "assets/img/29a7bb9fda29-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
   },
   "images/holz/IMG_5533.jpeg": {
     "600": "assets/img/767dddfb9769-600.webp",
@@ -670,14 +678,6 @@
     "w1200": 900,
     "width": 3024,
     "height": 4032
-  },
-  "images/leder/leder-fotobuch-erinnerungen.jpg": {
-    "600": "assets/img/b814be8b08a5-600.webp",
-    "w600": 450,
-    "1200": "assets/img/b814be8b08a5-1200.webp",
-    "w1200": 644,
-    "width": 644,
-    "height": 859
   },
   "images/leder/2026-01-0620-38-50228.jpg": {
     "600": "assets/img/7d8d8f748d64-600.webp",
