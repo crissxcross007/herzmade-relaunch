@@ -71,37 +71,13 @@
     "width": 644,
     "height": 859
   },
-  "images/schiefer/schiefertafel-paare.jpg": {
-    "600": "assets/img/e33c0653cc44-600.webp",
-    "w600": 600,
-    "1200": "assets/img/e33c0653cc44-1200.webp",
-    "w1200": 1200,
-    "width": 1536,
-    "height": 1152
-  },
-  "images/glas/img5452.jpeg": {
-    "600": "assets/img/8f8d53599fad-600.webp",
+  "images/edelstahl/thermobecher-rosenmotiv.jpg": {
+    "600": "assets/img/444511381095-600.webp",
     "w600": 450,
-    "1200": "assets/img/8f8d53599fad-1200.webp",
+    "1200": "assets/img/444511381095-1200.webp",
     "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
-  "images/glas/img5674.jpeg": {
-    "600": "assets/img/8808fdd40afb-600.webp",
-    "w600": 450,
-    "1200": "assets/img/8808fdd40afb-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
-  "images/glas/2025-11-2216-50-59948.jpg": {
-    "600": "assets/img/53071594c51c-600.webp",
-    "w600": 450,
-    "1200": "assets/img/53071594c51c-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
+    "width": 1152,
+    "height": 1536
   },
   "images/edelstahl/thermobecher-persoenlich.jpg": {
     "600": "assets/img/62ad10351e8e-600.webp",
@@ -111,13 +87,53 @@
     "width": 1152,
     "height": 1536
   },
-  "images/holz/holzbrett-portraet.jpg": {
-    "600": "assets/img/b75aedd1a0ea-600.webp",
-    "w600": 600,
-    "1200": "assets/img/b75aedd1a0ea-1200.webp",
-    "w1200": 1145,
-    "width": 1145,
+  "images/glas/glasmedaille-tanzgruppe-halbendorf.jpg": {
+    "600": "assets/img/db3920bb7dd5-600.webp",
+    "w600": 450,
+    "1200": "assets/img/db3920bb7dd5-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
+  },
+  "images/glas/glas-diamantene-hochzeit.jpg": {
+    "600": "assets/img/ff14828f3734-600.webp",
+    "w600": 450,
+    "1200": "assets/img/ff14828f3734-1200.webp",
+    "w1200": 644,
+    "width": 644,
     "height": 859
+  },
+  "images/schiefer/schiefertafel-route66.jpg": {
+    "600": "assets/img/d7cd313acb06-600.webp",
+    "w600": 600,
+    "1200": "assets/img/d7cd313acb06-1200.webp",
+    "w1200": 1200,
+    "width": 1536,
+    "height": 1152
+  },
+  "images/glas/laterne-geburt.jpg": {
+    "600": "assets/img/1b7b6cc5dd9c-600.webp",
+    "w600": 450,
+    "1200": "assets/img/1b7b6cc5dd9c-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
+  },
+  "images/glas/img5452.jpeg": {
+    "600": "assets/img/8f8d53599fad-600.webp",
+    "w600": 450,
+    "1200": "assets/img/8f8d53599fad-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/holz/heissluftballon-polterabend.jpg": {
+    "600": "assets/img/9d8f0e9839c1-600.webp",
+    "w600": 450,
+    "1200": "assets/img/9d8f0e9839c1-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
   },
   "images/holz/holz-geschenkkartenhalter-danke.jpg": {
     "600": "assets/img/c43a2d5c60e0-600.webp",
@@ -143,6 +159,190 @@
     "width": 644,
     "height": 859
   },
+  "images/holz/2026-01-10_14-38-05_703-1.jpeg": {
+    "600": "assets/img/1bab0acc1dd6-600.webp",
+    "w600": 600,
+    "1200": "assets/img/1bab0acc1dd6-1200.webp",
+    "w1200": 1200,
+    "width": 4032,
+    "height": 3024
+  },
+  "images/holz/2026-01-12_00-33-15_156.jpg": {
+    "600": "assets/img/a36019200118-600.webp",
+    "w600": 450,
+    "1200": "assets/img/a36019200118-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/glas/laterne-geburtstag.jpg": {
+    "600": "assets/img/714f0c692e42-600.webp",
+    "w600": 450,
+    "1200": "assets/img/714f0c692e42-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
+  },
+  "images/glas/laterne-familie.jpg": {
+    "600": "assets/img/6e2569b97ebb-600.webp",
+    "w600": 450,
+    "1200": "assets/img/6e2569b97ebb-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
+  },
+  "images/glas/img5674.jpeg": {
+    "600": "assets/img/8808fdd40afb-600.webp",
+    "w600": 450,
+    "1200": "assets/img/8808fdd40afb-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/glas/2025-12-1223-50-11078.jpg": {
+    "600": "assets/img/91f4d941bd09-600.webp",
+    "w600": 450,
+    "1200": "assets/img/91f4d941bd09-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/glas/2025-12-2201-07-01133.jpg": {
+    "600": "assets/img/41497c03e475-600.webp",
+    "w600": 450,
+    "1200": "assets/img/41497c03e475-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/glas/2025-12-2718-05-38519.jpg": {
+    "600": "assets/img/ff9e1558f124-600.webp",
+    "w600": 450,
+    "1200": "assets/img/ff9e1558f124-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/schiefer/schiefer-ruhestand-drohnenaufnahme.jpg": {
+    "600": "assets/img/5d5655ffb3bf-600.webp",
+    "w600": 600,
+    "1200": "assets/img/5d5655ffb3bf-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/schiefer/schiefer-ruhestand-werkfeuerwehr.jpg": {
+    "600": "assets/img/f044a2595634-600.webp",
+    "w600": 449,
+    "1200": "assets/img/f044a2595634-1200.webp",
+    "w1200": 899,
+    "width": 1085,
+    "height": 1449
+  },
+  "images/schiefer/schiefertafel-paare.jpg": {
+    "600": "assets/img/e33c0653cc44-600.webp",
+    "w600": 600,
+    "1200": "assets/img/e33c0653cc44-1200.webp",
+    "w1200": 1200,
+    "width": 1536,
+    "height": 1152
+  },
+  "images/schiefer/schiefertafel-geburt.jpg": {
+    "600": "assets/img/6d1d9f23d98f-600.webp",
+    "w600": 600,
+    "1200": "assets/img/6d1d9f23d98f-1200.webp",
+    "w1200": 1200,
+    "width": 1536,
+    "height": 1152
+  },
+  "images/schiefer/2025-11-0216-28-30563.jpg": {
+    "600": "assets/img/e2c8884b0072-600.webp",
+    "w600": 450,
+    "1200": "assets/img/e2c8884b0072-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/edelstahl/edelstahltassen-spreeflut.jpg": {
+    "600": "assets/img/22df28597bc7-600.webp",
+    "w600": 450,
+    "1200": "assets/img/22df28597bc7-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/edelstahl/tasse-opa.jpg": {
+    "600": "assets/img/34ffdb59ed41-600.webp",
+    "w600": 450,
+    "1200": "assets/img/34ffdb59ed41-1200.webp",
+    "w1200": 900,
+    "width": 1152,
+    "height": 1536
+  },
+  "images/edelstahl/img6380.jpeg": {
+    "600": "assets/img/08049487c765-600.webp",
+    "w600": 600,
+    "1200": "assets/img/08049487c765-1200.webp",
+    "w1200": 1200,
+    "width": 4032,
+    "height": 3024
+  },
+  "images/papier/papier-hasen-osterei.jpg": {
+    "600": "assets/img/c12325f47120-600.webp",
+    "w600": 600,
+    "1200": "assets/img/c12325f47120-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/papier/papier-geburtstagsboxen.jpg": {
+    "600": "assets/img/cf5432c22fff-600.webp",
+    "w600": 450,
+    "1200": "assets/img/cf5432c22fff-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/2025-11-2216-50-59948.jpg": {
+    "600": "assets/img/53071594c51c-600.webp",
+    "w600": 450,
+    "1200": "assets/img/53071594c51c-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/glas/weihnachtskugel-traktor-kullick.jpg": {
+    "600": "assets/img/06dbaf771552-600.webp",
+    "w600": 600,
+    "1200": "assets/img/06dbaf771552-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-pferd-herzlinie.jpg": {
+    "600": "assets/img/33a68557afb5-600.webp",
+    "w600": 600,
+    "1200": "assets/img/33a68557afb5-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-elena.jpg": {
+    "600": "assets/img/79bad7ac013f-600.webp",
+    "w600": 450,
+    "1200": "assets/img/79bad7ac013f-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/holz/holzbrett-portraet.jpg": {
+    "600": "assets/img/b75aedd1a0ea-600.webp",
+    "w600": 600,
+    "1200": "assets/img/b75aedd1a0ea-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
   "images/holz/baumscheibe-halbendorf.jpg": {
     "600": "assets/img/d3c92d715ed2-600.webp",
     "w600": 450,
@@ -150,14 +350,6 @@
     "w1200": 644,
     "width": 644,
     "height": 859
-  },
-  "images/holz/heissluftballon-polterabend.jpg": {
-    "600": "assets/img/9d8f0e9839c1-600.webp",
-    "w600": 450,
-    "1200": "assets/img/9d8f0e9839c1-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
   },
   "images/holz/holzscheibe-wappen.jpg": {
     "600": "assets/img/29a7bb9fda29-600.webp",
@@ -207,22 +399,6 @@
     "width": 1536,
     "height": 2048
   },
-  "images/holz/2026-01-10_14-38-05_703-1.jpeg": {
-    "600": "assets/img/1bab0acc1dd6-600.webp",
-    "w600": 600,
-    "1200": "assets/img/1bab0acc1dd6-1200.webp",
-    "w1200": 1200,
-    "width": 4032,
-    "height": 3024
-  },
-  "images/holz/2026-01-12_00-33-15_156.jpg": {
-    "600": "assets/img/a36019200118-600.webp",
-    "w600": 450,
-    "1200": "assets/img/a36019200118-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
   "images/holz/IMG_5365.jpeg": {
     "600": "assets/img/c5e4b53b8be9-600.webp",
     "w600": 450,
@@ -255,14 +431,6 @@
     "width": 644,
     "height": 859
   },
-  "images/glas/glas-diamantene-hochzeit.jpg": {
-    "600": "assets/img/ff14828f3734-600.webp",
-    "w600": 450,
-    "1200": "assets/img/ff14828f3734-1200.webp",
-    "w1200": 644,
-    "width": 644,
-    "height": 859
-  },
   "images/glas/glas-portraet-fotoerinnerung.jpg": {
     "600": "assets/img/19a1f4059aff-600.webp",
     "w600": 600,
@@ -271,14 +439,6 @@
     "width": 1527,
     "height": 859
   },
-  "images/glas/glasmedaille-tanzgruppe-halbendorf.jpg": {
-    "600": "assets/img/db3920bb7dd5-600.webp",
-    "w600": 450,
-    "1200": "assets/img/db3920bb7dd5-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
-  },
   "images/glas/windlicht-meer.jpg": {
     "600": "assets/img/42bf0f17338f-600.webp",
     "w600": 600,
@@ -286,30 +446,6 @@
     "w1200": 1200,
     "width": 1536,
     "height": 1152
-  },
-  "images/glas/laterne-geburtstag.jpg": {
-    "600": "assets/img/714f0c692e42-600.webp",
-    "w600": 450,
-    "1200": "assets/img/714f0c692e42-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
-  },
-  "images/glas/laterne-familie.jpg": {
-    "600": "assets/img/6e2569b97ebb-600.webp",
-    "w600": 450,
-    "1200": "assets/img/6e2569b97ebb-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
-  },
-  "images/glas/laterne-geburt.jpg": {
-    "600": "assets/img/1b7b6cc5dd9c-600.webp",
-    "w600": 450,
-    "1200": "assets/img/1b7b6cc5dd9c-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
   },
   "images/glas/weinglas-linienmotiv.jpg": {
     "600": "assets/img/f3aa29b4900d-600.webp",
@@ -351,46 +487,6 @@
     "width": 3024,
     "height": 4032
   },
-  "images/glas/3cb68ea3-2501-44fa-97f7-b43472624a732025-11-2502-04-35046-1.jpeg": {
-    "600": "assets/img/eee0674e93a3-600.webp",
-    "w600": 450,
-    "1200": "assets/img/eee0674e93a3-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
-  "images/glas/2025-11-0223-53-31946.jpg": {
-    "600": "assets/img/b921862e43d9-600.webp",
-    "w600": 600,
-    "1200": "assets/img/b921862e43d9-1200.webp",
-    "w1200": 1200,
-    "width": 4032,
-    "height": 3024
-  },
-  "images/glas/2025-11-2317-01-35272.jpg": {
-    "600": "assets/img/d75f40f16a8d-600.webp",
-    "w600": 450,
-    "1200": "assets/img/d75f40f16a8d-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
-  "images/glas/2025-12-1223-50-11078.jpg": {
-    "600": "assets/img/91f4d941bd09-600.webp",
-    "w600": 450,
-    "1200": "assets/img/91f4d941bd09-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
-  "images/glas/2025-12-2201-07-01133.jpg": {
-    "600": "assets/img/41497c03e475-600.webp",
-    "w600": 450,
-    "1200": "assets/img/41497c03e475-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
   "images/glas/2025-12-2315-47-27276.jpg": {
     "600": "assets/img/78f87db79a04-600.webp",
     "w600": 450,
@@ -399,26 +495,10 @@
     "width": 3024,
     "height": 4032
   },
-  "images/glas/2025-12-2718-05-38519.jpg": {
-    "600": "assets/img/ff9e1558f124-600.webp",
-    "w600": 450,
-    "1200": "assets/img/ff9e1558f124-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
   "images/glas/2026-01-1622-27-52845.jpg": {
     "600": "assets/img/093f758e7a8e-600.webp",
     "w600": 450,
     "1200": "assets/img/093f758e7a8e-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
-  "images/glas/img2036.jpeg": {
-    "600": "assets/img/4295655917db-600.webp",
-    "w600": 450,
-    "1200": "assets/img/4295655917db-1200.webp",
     "w1200": 900,
     "width": 3024,
     "height": 4032
@@ -447,22 +527,6 @@
     "width": 644,
     "height": 859
   },
-  "images/schiefer/schiefer-ruhestand-drohnenaufnahme.jpg": {
-    "600": "assets/img/5d5655ffb3bf-600.webp",
-    "w600": 600,
-    "1200": "assets/img/5d5655ffb3bf-1200.webp",
-    "w1200": 1145,
-    "width": 1145,
-    "height": 859
-  },
-  "images/schiefer/schiefer-ruhestand-werkfeuerwehr.jpg": {
-    "600": "assets/img/f044a2595634-600.webp",
-    "w600": 449,
-    "1200": "assets/img/f044a2595634-1200.webp",
-    "w1200": 899,
-    "width": 1085,
-    "height": 1449
-  },
   "images/schiefer/schiefer-garten-portraet-spruch.jpg": {
     "600": "assets/img/8d7281225d96-600.webp",
     "w600": 450,
@@ -470,14 +534,6 @@
     "w1200": 644,
     "width": 644,
     "height": 859
-  },
-  "images/schiefer/schiefertafel-route66.jpg": {
-    "600": "assets/img/d7cd313acb06-600.webp",
-    "w600": 600,
-    "1200": "assets/img/d7cd313acb06-1200.webp",
-    "w1200": 1200,
-    "width": 1536,
-    "height": 1152
   },
   "images/schiefer/schiefertafel-verein-danke.jpg": {
     "600": "assets/img/79ce6da38289-600.webp",
@@ -519,14 +575,6 @@
     "width": 1536,
     "height": 1152
   },
-  "images/schiefer/schiefertafel-geburt.jpg": {
-    "600": "assets/img/6d1d9f23d98f-600.webp",
-    "w600": 600,
-    "1200": "assets/img/6d1d9f23d98f-1200.webp",
-    "w1200": 1200,
-    "width": 1536,
-    "height": 1152
-  },
   "images/schiefer/schiefer-fotogravur-hund.jpg": {
     "600": "assets/img/6b98e503fe3b-600.webp",
     "w600": 600,
@@ -559,14 +607,6 @@
     "width": 3024,
     "height": 4032
   },
-  "images/schiefer/2025-11-0216-28-30563.jpg": {
-    "600": "assets/img/e2c8884b0072-600.webp",
-    "w600": 450,
-    "1200": "assets/img/e2c8884b0072-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
   "images/schiefer/2025-11-0216-28-36645.jpg": {
     "600": "assets/img/959910ab8192-600.webp",
     "w600": 450,
@@ -590,30 +630,6 @@
     "w1200": 1200,
     "width": 4032,
     "height": 3024
-  },
-  "images/edelstahl/edelstahltassen-spreeflut.jpg": {
-    "600": "assets/img/22df28597bc7-600.webp",
-    "w600": 450,
-    "1200": "assets/img/22df28597bc7-1200.webp",
-    "w1200": 644,
-    "width": 644,
-    "height": 859
-  },
-  "images/edelstahl/tasse-opa.jpg": {
-    "600": "assets/img/34ffdb59ed41-600.webp",
-    "w600": 450,
-    "1200": "assets/img/34ffdb59ed41-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
-  },
-  "images/edelstahl/thermobecher-rosenmotiv.jpg": {
-    "600": "assets/img/444511381095-600.webp",
-    "w600": 450,
-    "1200": "assets/img/444511381095-1200.webp",
-    "w1200": 900,
-    "width": 1152,
-    "height": 1536
   },
   "images/edelstahl/tasse-motiv.jpg": {
     "600": "assets/img/5a26efeea8ae-600.webp",
@@ -655,14 +671,6 @@
     "width": 3024,
     "height": 4032
   },
-  "images/edelstahl/img6380.jpeg": {
-    "600": "assets/img/08049487c765-600.webp",
-    "w600": 600,
-    "1200": "assets/img/08049487c765-1200.webp",
-    "w1200": 1200,
-    "width": 4032,
-    "height": 3024
-  },
   "images/leder/leder-fotobuch-erinnerungen.jpg": {
     "600": "assets/img/b814be8b08a5-600.webp",
     "w600": 450,
@@ -687,14 +695,6 @@
     "width": 1145,
     "height": 859
   },
-  "images/papier/papier-hasen-osterei.jpg": {
-    "600": "assets/img/c12325f47120-600.webp",
-    "w600": 600,
-    "1200": "assets/img/c12325f47120-1200.webp",
-    "w1200": 1145,
-    "width": 1145,
-    "height": 859
-  },
   "images/papier/papier-hase-osterei-detail.jpg": {
     "600": "assets/img/65f98c5cdd43-600.webp",
     "w600": 450,
@@ -711,14 +711,6 @@
     "width": 644,
     "height": 859
   },
-  "images/papier/papier-geburtstagsboxen.jpg": {
-    "600": "assets/img/cf5432c22fff-600.webp",
-    "w600": 450,
-    "1200": "assets/img/cf5432c22fff-1200.webp",
-    "w1200": 644,
-    "width": 644,
-    "height": 859
-  },
   "images/papier/papier-pokale.jpg": {
     "600": "assets/img/642d94c0a102-600.webp",
     "w600": 600,
@@ -731,30 +723,6 @@
     "600": "assets/img/25f63ec2e66e-600.webp",
     "w600": 450,
     "1200": "assets/img/25f63ec2e66e-1200.webp",
-    "w1200": 644,
-    "width": 644,
-    "height": 859
-  },
-  "images/glas/weihnachtskugel-traktor-kullick.jpg": {
-    "600": "assets/img/06dbaf771552-600.webp",
-    "w600": 600,
-    "1200": "assets/img/06dbaf771552-1200.webp",
-    "w1200": 1145,
-    "width": 1145,
-    "height": 859
-  },
-  "images/glas/weihnachtskugel-pferd-herzlinie.jpg": {
-    "600": "assets/img/33a68557afb5-600.webp",
-    "w600": 600,
-    "1200": "assets/img/33a68557afb5-1200.webp",
-    "w1200": 1145,
-    "width": 1145,
-    "height": 859
-  },
-  "images/glas/weihnachtskugel-elena.jpg": {
-    "600": "assets/img/79bad7ac013f-600.webp",
-    "w600": 450,
-    "1200": "assets/img/79bad7ac013f-1200.webp",
     "w1200": 644,
     "width": 644,
     "height": 859
@@ -910,6 +878,38 @@
     "w1200": 552,
     "width": 707,
     "height": 1536
+  },
+  "images/glas/3cb68ea3-2501-44fa-97f7-b43472624a732025-11-2502-04-35046-1.jpeg": {
+    "600": "assets/img/eee0674e93a3-600.webp",
+    "w600": 450,
+    "1200": "assets/img/eee0674e93a3-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/glas/2025-11-0223-53-31946.jpg": {
+    "600": "assets/img/b921862e43d9-600.webp",
+    "w600": 600,
+    "1200": "assets/img/b921862e43d9-1200.webp",
+    "w1200": 1200,
+    "width": 4032,
+    "height": 3024
+  },
+  "images/glas/2025-11-2317-01-35272.jpg": {
+    "600": "assets/img/d75f40f16a8d-600.webp",
+    "w600": 450,
+    "1200": "assets/img/d75f40f16a8d-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
+  },
+  "images/glas/img2036.jpeg": {
+    "600": "assets/img/4295655917db-600.webp",
+    "w600": 450,
+    "1200": "assets/img/4295655917db-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
   },
   "images/person3.jpeg": {
     "600": "assets/img/15ee6b3529aa-600.webp",
