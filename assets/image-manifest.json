@@ -263,6 +263,14 @@
     "width": 1536,
     "height": 1152
   },
+  "images/schiefer/schiefer-fotogravur-hund.jpg": {
+    "600": "assets/img/6b98e503fe3b-600.webp",
+    "w600": 600,
+    "1200": "assets/img/6b98e503fe3b-1200.webp",
+    "w1200": 1200,
+    "width": 1448,
+    "height": 1086
+  },
   "images/schiefer/2025-11-0216-28-30563.jpg": {
     "600": "assets/img/e2c8884b0072-600.webp",
     "w600": 450,
@@ -341,6 +349,22 @@
     "1200": "assets/img/79bad7ac013f-1200.webp",
     "w1200": 644,
     "width": 644,
+    "height": 859
+  },
+  "images/glas/glas-hund-erinnerung.jpg": {
+    "600": "assets/img/7ee71d12f7a9-600.webp",
+    "w600": 450,
+    "1200": "assets/img/7ee71d12f7a9-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/glas-portraet-fotoerinnerung.jpg": {
+    "600": "assets/img/19a1f4059aff-600.webp",
+    "w600": 600,
+    "1200": "assets/img/19a1f4059aff-1200.webp",
+    "w1200": 1200,
+    "width": 1527,
     "height": 859
   },
   "images/holz/holzscheibe-wappen.jpg": {
@@ -430,22 +454,6 @@
     "w1200": 900,
     "width": 3024,
     "height": 4032
-  },
-  "images/glas/glas-hund-erinnerung.jpg": {
-    "600": "assets/img/7ee71d12f7a9-600.webp",
-    "w600": 450,
-    "1200": "assets/img/7ee71d12f7a9-1200.webp",
-    "w1200": 644,
-    "width": 644,
-    "height": 859
-  },
-  "images/glas/glas-portraet-fotoerinnerung.jpg": {
-    "600": "assets/img/19a1f4059aff-600.webp",
-    "w600": 600,
-    "1200": "assets/img/19a1f4059aff-1200.webp",
-    "w1200": 1200,
-    "width": 1527,
-    "height": 859
   },
   "images/glas/windlicht-meer.jpg": {
     "600": "assets/img/42bf0f17338f-600.webp",
@@ -582,14 +590,6 @@
     "w1200": 1200,
     "width": 1536,
     "height": 1152
-  },
-  "images/schiefer/schiefer-fotogravur-hund.jpg": {
-    "600": "assets/img/6b98e503fe3b-600.webp",
-    "w600": 600,
-    "1200": "assets/img/6b98e503fe3b-1200.webp",
-    "w1200": 1200,
-    "width": 1448,
-    "height": 1086
   },
   "images/schiefer/9df40f52-f366-4b83-9838-5ba48af4d176.jpeg": {
     "600": "assets/img/c925b83bdc8d-600.webp",
