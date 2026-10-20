@@ -18,3 +18,9 @@
 .story-photo>img.team-portrait{aspect-ratio:auto;max-height:none}
 .story-photo>figcaption{font-size:12px;margin-top:15px;font-style:italic;color:var(--muted)}
 @media(max-width:600px){.team-story{flex-direction:column}}
+
+/* Photo-only screenshot viewports; original files stay intact. */
+.gallery-photo>svg.gallery-crop{display:block;width:100%;height:auto;aspect-ratio:4/4.3;background:var(--grey)}
+.lightbox svg.lightbox-crop{height:auto;max-width:80vw;max-height:75vh;display:block}
+@media(max-width:600px){.gallery-photo>svg.gallery-crop{aspect-ratio:3/4}}
+@media(max-width:360px){.gallery-photo>svg.gallery-crop{aspect-ratio:4/4.3}}

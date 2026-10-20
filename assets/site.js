@@ -70,8 +70,20 @@ document.documentElement.classList.add('js');
     const show=i=>{
       current=(i+gallery.length)%gallery.length;
       const item=gallery[current];
-      image.src=item.href;
-      image.alt=item.querySelector('img').alt;
+      const crop=item.querySelector('svg.gallery-crop');
+      dialog.querySelector('.lightbox-crop')?.remove();
+      image.style.display=crop?'none':'';
+      if (crop) {
+        image.removeAttribute('src');
+        const preview=crop.cloneNode(true);
+        preview.classList.add('lightbox-crop');
+        const box=crop.viewBox.baseVal;
+        preview.style.width=`min(80vw, ${75*box.width/box.height}vh)`;
+        image.after(preview);
+      } else {
+        image.src=item.href;
+        image.alt=item.querySelector('img').alt;
+      }
       caption.textContent=item.dataset.caption+' · '+(current+1)+' / '+gallery.length;
     };
     gallery.forEach((link,index)=>link.addEventListener('click',event=>{
@@ -85,7 +97,7 @@ document.documentElement.classList.add('js');
       if(e.key==='ArrowLeft'){e.preventDefault();show(current-1)}
       if(e.key==='ArrowRight'){e.preventDefault();show(current+1)}
     });
-    dialog.addEventListener('close',()=>{document.body.style.overflow='';image.removeAttribute('src');if(returnFocus)returnFocus.focus()});
+    dialog.addEventListener('close',()=>{document.body.style.overflow='';image.removeAttribute('src');dialog.querySelector('.lightbox-crop')?.remove();if(returnFocus)returnFocus.focus()});
   }
   const select=document.getElementById('product');
   const requested=new URLSearchParams(location.search).get('produkt');

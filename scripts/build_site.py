@@ -17,6 +17,7 @@ OCCASIONS = {'geburtstag': 'Geburtstag', 'freundschaft': 'Freundschaft & Danke',
 DATA = {key: json.loads((ROOT/'content'/f'{key}.json').read_text()) for key in MATERIALS}
 PRODUCTS = json.loads((ROOT/'content/gifts.json').read_text())
 IMAGES = {}
+SCREENSHOT_CROPS = {'images/glas/weihnachtskugel-pferdemotiv.jpeg': (0, 296, 707, 944), 'images/glas/weihnachtskugel-pfote-name.jpeg': (0, 296, 707, 944), 'images/glas/weihnachtskugel-gaming-controller.jpeg': (0, 296, 707, 944), 'images/glas/weihnachtskugel-blumenmotiv.jpeg': (0, 296, 707, 944), 'images/glas/weihnachtskugel-wolfshain-tschernitz.jpeg': (0, 503, 707, 531), 'images/glas/weihnachtskugel-dackelmotiv.jpeg': (0, 190, 707, 1180), 'images/glas/weihnachtskugel-namensgravur.jpeg': (0, 296, 707, 944)}
 
 def occasion_url(key):
     return 'weihnachtsbaumkugeln.html' if key == 'weihnachten' else f'geschenkideen.html#{key}'
@@ -81,7 +82,7 @@ def page(filename, title, desc, content, active, lightbox=False):
     dialog = '''<dialog class="lightbox" aria-label="Bild in Großansicht"><button class="lightbox-close" aria-label="Großansicht schließen">×</button><button class="lightbox-prev" aria-label="Vorheriges Bild">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lightbox-next" aria-label="Nächstes Bild">›</button></dialog>''' if lightbox else ''
     url = 'https://herzmade.de/'+('' if filename == 'index.html' else filename)
     out = f'''<!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#eeeeeb"><title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="https://herzmade.de/images/herzmade-social.jpg"><link rel="stylesheet" href="assets/site.css?v=20261020"><script src="assets/site.js?v=20261016" defer></script></head><body><a class="skip-link" href="#inhalt">Zum Inhalt</a>{navigation(active)}<main id="inhalt">{content}</main>{footer()}{dialog}</body></html>'''
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#eeeeeb"><title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="https://herzmade.de/images/herzmade-social.jpg"><link rel="stylesheet" href="assets/site.css?v=20261020b"><script src="assets/site.js?v=20261020b" defer></script></head><body><a class="skip-link" href="#inhalt">Zum Inhalt</a>{navigation(active)}<main id="inhalt">{content}</main>{footer()}{dialog}</body></html>'''
     (ROOT/filename).write_text(out)
 
 def product_card(p):
@@ -145,6 +146,17 @@ def build_materials():
         content=f'''<section class="page-intro wrap"><p class="eyebrow">Materialien / {label}</p><h1>{label} mit Gravur.<br><em>{subtitles[key]}</em></h1><p>Individuelle Arbeiten von Herzmade aus Döbern. Lass dich inspirieren und bring deine eigene Idee mit.</p></section><section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div>{priceblock}</section><section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">So persönlich kann {label} sein</p><h2>Einblicke in unsere Arbeiten.</h2></div><p>Echte Einzelstücke aus unserer Werkstatt.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta()}'''
         page(key+'.html',f'{label} gravieren lassen in Döbern | Herzmade',f'Individuelle Gravuren auf {label} aus Döbern. Entdecke echte Arbeiten, persönliche Geschenkideen und Gestaltungsmöglichkeiten von Herzmade.',content,'materials',True)
 
+
+def gallery_picture(item):
+    path = item['bild'].lstrip('/').removeprefix('./')
+    crop = SCREENSHOT_CROPS.get(path)
+    alt = clean(item.get('alt') or item.get('titel') or 'Persönliche Weihnachtskugel')
+    if crop is None:
+        return picture(path, alt)
+    x, y, width, height = crop
+    optimized = optimize(path)
+    return f'<svg class="gallery-crop" role="img" aria-label="{E(alt)}" viewBox="{x} {y} {width} {height}" width="{width}" height="{height}"><image href="{optimized["1200"]}" width="{optimized["width"]}" height="{optimized["height"]}"/></svg>'
+
 def build_christmas():
     data = json.loads((ROOT/'content/weihnachtsbaumkugeln.json').read_text())
     title = data.get('titel') or 'Weihnachtskugeln mit Gravur'
@@ -155,7 +167,7 @@ def build_christmas():
         item_title = clean(item.get('titel') or 'Persönliche Weihnachtskugel')
         item_alt = clean(item.get('alt') or item_title)
         optimized = optimize(item['bild'])
-        gallery += f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{picture(item["bild"],item_alt)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
+        gallery += f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{gallery_picture(item)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
     product = next(p for p in PRODUCTS if p.get('gallery') == 'weihnachtsbaumkugeln.html#gallery')
     content = f'''<section class="page-intro wrap"><p class="eyebrow">Geschenkideen / Weihnachten</p><h1>{E(title)}.<br><em>Deine Erinnerungen am Baum.</em></h1><p>Namen, Lieblingsfotos und persönliche Motive auf Echtglas. Für deinen Weihnachtsbaum oder als Geschenk für einen besonderen Menschen.</p></section>
     <section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div><aside class="material-prices"><p class="eyebrow">8 cm Echtglas · persönlich gestaltet</p><div><span>Weihnachtskugel mit Gravur</span><strong>ab {E(product['price'])} €</strong></div><div><span>Mit Foto- oder Grafikbearbeitung</span><strong>ab 14,90 €</strong></div><p>Alle Preise pro Stück inklusive Material und Gravur. Gestaltung und Ausführung stimmen wir persönlich mit dir ab.</p></aside></section>
