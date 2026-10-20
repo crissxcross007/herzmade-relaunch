@@ -3,6 +3,86 @@
   "einleitung": "<p>Ein Lieblingsfoto, ein Name oder ein Motiv mit besonderer Bedeutung: Wir gestalten deine Weihnachtsbaumkugel persönlich nach deinen Wünschen. Unsere Kugeln aus Echtglas haben einen Durchmesser von 8 cm.</p><p>Ob als Erinnerung an die Hochzeit, an das erste Weihnachten oder an einen geliebten Menschen oder ein Tier – entdecke hier echte Arbeiten von Herzmade. Auch Orts- und Vereinsmotive sind möglich. Farbe und Ausführung besprechen wir mit dir.</p>",
   "galerie": [
     {
+      "bild": "/images/glas/weihnachtskugel-traktor-kullick.jpg",
+      "titel": "Weihnachtskugel mit Traktor",
+      "alt": "Rote Weihnachtsbaumkugel mit detailreicher Traktorgravur und dem Schriftzug „Kullick Agrardienste“."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-pferd-herzlinie.jpg",
+      "titel": "Pferdeliebe am Weihnachtsbaum",
+      "alt": "Glänzende goldfarbene Weihnachtsbaumkugel mit graviertem Pferd und Herzlinie."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-elena.jpg",
+      "titel": "Eine Weihnachtskugel für Elena",
+      "alt": "Helle Weihnachtsbaumkugel mit dem gravierten Namen Elena und weihnachtlichen Motiven."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-oldtimer.jpg",
+      "titel": "Für Oldtimerfreunde",
+      "alt": "Schwarze Weihnachtsbaumkugel mit einer detailreichen Oldtimergravur."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-blumen-rot.jpg",
+      "titel": "Blumen auf rotem Glas",
+      "alt": "Rote Weihnachtsbaumkugel mit einem gravierten Band aus Blüten und Blättern."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugeln-eishockey.jpg",
+      "titel": "Für Eishockeyfans",
+      "alt": "Weihnachtsbaumkugeln mit gravierten Eishockeymotiven und persönlicher Gestaltung."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-doreen.jpg",
+      "titel": "Eine Weihnachtskugel für Doreen",
+      "alt": "Grüne Weihnachtsbaumkugel mit graviertem Namen Doreen und Sternen."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-schneeflocke.jpg",
+      "titel": "Eine Schneeflocke für den Baum",
+      "alt": "Rote matte Weihnachtsbaumkugel mit einer großen gravierten Schneeflocke."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugeln-fee-name.jpg",
+      "titel": "Ein Hauch von Feenzauber",
+      "alt": "Glänzende Weihnachtsbaumkugeln mit gravierten Feenmotiven und Namen."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-maehdrescher.jpg",
+      "titel": "Für Freunde der Landwirtschaft",
+      "alt": "Rosafarbene Weihnachtsbaumkugel mit graviertem Mähdreschermotiv in einer Geschenkverpackung."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-physiotherapie-krautz.jpg",
+      "titel": "Weihnachtskugel mit Praxislogo",
+      "alt": "Glänzende Weihnachtsbaumkugel mit graviertem Schriftzug der Physiotherapie Krautz und Sternen."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-zimmerei-sachse.jpg",
+      "titel": "Weihnachtskugel für die Zimmerei",
+      "alt": "Schwarze Weihnachtsbaumkugel mit graviertem Logo der Zimmerei Sachse."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-siio-smarthome.jpg",
+      "titel": "Smart Home am Weihnachtsbaum",
+      "alt": "Grüne Weihnachtsbaumkugel mit graviertem siio-Smart-Home-Logo am Weihnachtsbaum."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugeln-weiss-herzlinie.jpg",
+      "titel": "Namen und Herzen auf Weiß",
+      "alt": "Weiße Weihnachtsbaumkugeln mit gravierten Namen und Herzlinienmotiven."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugel-wolfshain.jpg",
+      "titel": "Wolfshain am Weihnachtsbaum",
+      "alt": "Schwarze Weihnachtsbaumkugel mit dem gravierten Ortsnamen Wolfshain."
+    },
+    {
+      "bild": "/images/glas/weihnachtskugeln-wolfshain-tschernitz-original.jpg",
+      "titel": "Heimat am Weihnachtsbaum",
+      "alt": "Rote und blaue Weihnachtsbaumkugeln mit den gravierten Ortsnamen Wolfshain und Tschernitz sowie Herzen und Sternen."
+    },
+    {
       "bild": "/images/glas/weihnachtskugel-pferdemotiv.jpeg",
       "titel": "Für Pferdefreunde",
       "alt": "Violette Weihnachtsbaumkugel mit graviertem Pferdekopf, Blumen und Sternen."
@@ -21,11 +101,6 @@
       "bild": "/images/glas/weihnachtskugel-blumenmotiv.jpeg",
       "titel": "Blumen für den Weihnachtsbaum",
       "alt": "Goldfarbene Weihnachtsbaumkugel mit gravierten Blumen und Namen."
-    },
-    {
-      "bild": "/images/glas/weihnachtskugel-wolfshain-tschernitz.jpeg",
-      "titel": "Heimat am Weihnachtsbaum",
-      "alt": "Rote und blaue Weihnachtsbaumkugeln mit den Ortsnamen Wolfshain und Tschernitz sowie Herzen und Sternen."
     },
     {
       "bild": "/images/glas/weihnachtskugel-dackelmotiv.jpeg",
