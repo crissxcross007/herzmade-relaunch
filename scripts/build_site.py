@@ -143,7 +143,11 @@ def build_materials():
             gallery+=f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{picture(item["bild"],item_alt)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
         related=[p for p in PRODUCTS if p['material']==key]
         prices=''.join(f'<div><span>{E(p["title"])}</span><strong>ab {E(p["price"])} €</strong></div>' for p in related)
+        if key == 'schiefer':
+            prices = '<div><span>Schiefertafel 10 × 10 cm</span><strong>ab 7,00 €</strong></div><div><span>Schiefertafel 25 × 25 cm</span><strong>ab 24,90 €</strong></div><div><span>Schiefertafel 20 × 30 cm</span><strong>ab 24,90 €</strong></div><div><span>Größere Schiefertafeln</span><strong>auf Anfrage</strong></div>'
         price_note = 'Je nach Größe und Gestaltung. Inhalt und Werkstück separat. Folienarbeiten auf Anfrage.' if key == 'papier' else 'Inklusive Material und Gravur. Details zu Größen und Ausführungen findest du bei den Geschenkideen.'
+        if key == 'schiefer':
+            price_note = 'Inklusive Material und Gravur. Gestaltung und Ausführung stimmen wir persönlich mit dir ab.'
         heading = 'Papier, Verpackungen & Folien.' if key == 'papier' else f'{label} mit Gravur.'
         page_title = 'Papierverpackungen, filigrane Ausschnitte & Folien | Herzmade' if key == 'papier' else f'{label} gravieren lassen in Döbern | Herzmade'
         description = 'Individuelle Papierboxen, Umschläge und Geschenkverpackungen ab 3 Euro. Dazu Bügel- und Klebefolien mit persönlichen Motiven von Herzmade aus Döbern.' if key == 'papier' else f'Individuelle Gravuren auf {label} aus Döbern. Entdecke echte Arbeiten, persönliche Geschenkideen und Gestaltungsmöglichkeiten von Herzmade.'
