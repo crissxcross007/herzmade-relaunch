@@ -148,10 +148,13 @@ def build_materials():
         price_note = 'Je nach Größe und Gestaltung. Inhalt und Werkstück separat. Folienarbeiten auf Anfrage.' if key == 'papier' else 'Inklusive Material und Gravur. Details zu Größen und Ausführungen findest du bei den Geschenkideen.'
         if key == 'schiefer':
             price_note = 'Inklusive Material und Gravur. Gestaltung und Ausführung stimmen wir persönlich mit dir ab.'
+        if key == 'leder':
+            prices = '<div><span>Gravurarbeit auf Leder</span><strong>ab 9,00 €</strong></div>'
+            price_note = 'Zuzüglich Material. Du kannst uns auch dein eigenes Lederstück zur Gravur geben. Gestaltung, Ausführung und Preis stimmen wir persönlich mit dir ab.'
         heading = 'Papier, Verpackungen & Folien.' if key == 'papier' else f'{label} mit Gravur.'
         page_title = 'Papierverpackungen, filigrane Ausschnitte & Folien | Herzmade' if key == 'papier' else f'{label} gravieren lassen in Döbern | Herzmade'
         description = 'Individuelle Papierboxen, Umschläge und Geschenkverpackungen ab 3 Euro. Dazu Bügel- und Klebefolien mit persönlichen Motiven von Herzmade aus Döbern.' if key == 'papier' else f'Individuelle Gravuren auf {label} aus Döbern. Entdecke echte Arbeiten, persönliche Geschenkideen und Gestaltungsmöglichkeiten von Herzmade.'
-        priceblock=f'<aside class="material-prices"><p class="eyebrow">Deine Preisorientierung</p>{prices}<p>{E(price_note)}</p><a class="text-link" href="geschenkideen.html">Geschenkideen & Preise ↗</a></aside>' if related else ''
+        priceblock=f'<aside class="material-prices"><p class="eyebrow">Deine Preisorientierung</p>{prices}<p>{E(price_note)}</p><a class="text-link" href="geschenkideen.html">Geschenkideen & Preise ↗</a></aside>' if related or key == 'leder' else ''
         content=f'''<section class="page-intro wrap"><p class="eyebrow">Materialien / {label}</p><h1>{E(heading)}<br><em>{subtitles[key]}</em></h1><p>Individuelle Arbeiten von Herzmade aus Döbern. Lass dich inspirieren und bring deine eigene Idee mit.</p></section><section class="material-overview wrap"><div class="material-story">{clean(data.get('einleitung') or '')}</div>{priceblock}</section><section class="gallery-section wrap" id="gallery"><div class="section-heading"><div><p class="eyebrow">So persönlich kann {label} sein</p><h2>Einblicke in unsere Arbeiten.</h2></div><p>Echte Einzelstücke aus unserer Werkstatt.<br>Tippe auf ein Bild für die Großansicht.</p></div><div class="gallery-grid">{gallery}</div></section>{cta()}'''
         page(key+'.html',page_title,description,content,'materials',True)
 
