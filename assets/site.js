@@ -43,11 +43,8 @@ document.documentElement.classList.add('js');
   const products = [...document.querySelectorAll('.product')];
   const count = document.getElementById('gift-count');
   function filterProducts() {
-    const wanted = location.hash.slice(1);
-    if (wanted === 'andenken' || wanted === 'gedenken') {
-      location.replace('erinnern.html');
-      return;
-    }
+    const raw = location.hash.slice(1);
+    const wanted = raw==='andenken'?'gedenken':raw;
     const active = filterButtons.some(b=>b.dataset.filter===wanted) ? wanted : 'alle';
     filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===active)));
     let visible=0;
@@ -59,6 +56,18 @@ document.documentElement.classList.add('js');
     const heading=document.getElementById('ideas-title');
     const chosen=filterButtons.find(b=>b.dataset.filter===active);
     if (heading) heading.textContent=active==='alle'?'Echte Arbeiten als Inspiration.':chosen.textContent+' – echte Beispiele.';
+    const remembrance=active==='gedenken';
+    const copy={
+      'ideas-eyebrow':remembrance?'Erinnern & Gedenken':'Echte Arbeiten. Persönliche Anlässe.',
+      'ideas-heading-main':remembrance?'Was bleibt,':'Für deinen Anlass.',
+      'ideas-heading-accent':remembrance?'ist die Erinnerung.':'Persönlich gestaltet.',
+      'ideas-intro':remembrance?'Ein vertrautes Foto, ein Name oder Worte, die verbinden. Wir gestalten persönliche Erinnerungsstücke an Menschen und Tiere – behutsam und nach deinen Wünschen.':'Entdecke Einzelstücke, die wir für besondere Anlässe und persönliche Erinnerungen gestaltet haben. Wähle deinen Anlass und lass dich von den passenden Arbeiten inspirieren.',
+      'ideas-context-text':remembrance?'Hier zeigen wir Arbeiten, die als Erinnerungsstücke entstanden sind. Größe, Material und Gestaltung besprechen wir in Ruhe mit dir.':'Jedes gezeigte Werk ist dem tatsächlichen Anlass seines Auftrags zugeordnet.'
+    };
+    Object.entries(copy).forEach(([id,text])=>{const node=document.getElementById(id);if(node)node.textContent=text});
+    if(remembrance&&heading)heading.textContent='Persönliche Erinnerungsstücke.';
+    document.querySelectorAll('[data-gift-cta]').forEach(node=>{node.hidden=remembrance});
+    document.querySelectorAll('[data-remembrance-cta]').forEach(node=>{node.hidden=!remembrance});
     const empty=document.getElementById('empty-results');
     if (empty) empty.hidden=visible!==0;
     document.querySelectorAll('[data-only-filter]').forEach(note=>{note.hidden=note.dataset.onlyFilter!==active});

@@ -12,7 +12,7 @@ Unter **Content → Werke & Anlässe** jedes Werk einmal pflegen:
 4. „Bei den Ideen beziehungsweise beim Gedenken anzeigen“ einschalten, wenn das Werk zusätzlich als Anlass-Beispiel erscheinen soll. Ohne ausgewählten Anlass erscheint es dort nicht.
 5. Optional den Ab-Preis als `14,90` eintragen. Ohne Preis erscheint „Preis auf Anfrage“. Im Preishinweis genau angeben, ob etwa nur die Gravur, eine einzelne Tasse oder eine Verpackung ohne Inhalt gemeint ist.
 
-„Erinnern & Gedenken“ zeigt ein Werk ausschließlich auf der separaten Erinnerungsseite, nicht in der Geschenkideen-Auswahl. Tierporträts und Fotobücher bitte nicht automatisch als Trauerarbeit einordnen.
+„Erinnern & Gedenken“ ist eine eigene Anlass-Kategorie in der Ideen-Auswahl. Beim Auswählen wechseln Einleitung und Kontaktaufruf zur passenden ruhigen Ansprache. Die eigene Erinnerungsseite bleibt zusätzlich verfügbar. Tierporträts und Fotobücher bitte nicht automatisch als Trauerarbeit einordnen.
 
 Die Schalter für die Ideen-Auswahl beeinflussen die Materialgalerie nicht. Ein Bild muss nicht doppelt hochgeladen werden.
 
