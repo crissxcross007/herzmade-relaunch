@@ -13,3 +13,8 @@
 
 /* Show complete engravings, including wide plaques, in gallery previews. */
 .gallery-photo>img{object-fit:contain;background:var(--grey)}
+
+/* Keep both people visible at the original photo ratio. */
+.story-photo>img.team-portrait{aspect-ratio:auto;max-height:none}
+.story-photo>figcaption{font-size:12px;margin-top:15px;font-style:italic;color:var(--muted)}
+@media(max-width:600px){.team-story{flex-direction:column}}
