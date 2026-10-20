@@ -63,6 +63,14 @@
     "width": 1024,
     "height": 768
   },
+  "images/papier/papier-box-umschlag-schmetterling.jpg": {
+    "600": "assets/img/28f245f6e5ae-600.webp",
+    "w600": 450,
+    "1200": "assets/img/28f245f6e5ae-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
   "images/schiefer/schiefertafel-paare.jpg": {
     "600": "assets/img/e33c0653cc44-600.webp",
     "w600": 600,
@@ -102,6 +110,30 @@
     "w1200": 900,
     "width": 1152,
     "height": 1536
+  },
+  "images/holz/holz-geschenkkartenhalter-danke.jpg": {
+    "600": "assets/img/c43a2d5c60e0-600.webp",
+    "w600": 600,
+    "1200": "assets/img/c43a2d5c60e0-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/holz/holz-brett-jugendlager-sponsoren.jpg": {
+    "600": "assets/img/b4bfa0b4a1c5-600.webp",
+    "w600": 600,
+    "1200": "assets/img/b4bfa0b4a1c5-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/holz/holz-ostereier-sprueche.jpg": {
+    "600": "assets/img/cac0dbf5c4a5-600.webp",
+    "w600": 450,
+    "1200": "assets/img/cac0dbf5c4a5-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
   },
   "images/holz/baumscheibe-halbendorf.jpg": {
     "600": "assets/img/d3c92d715ed2-600.webp",
@@ -206,6 +238,22 @@
     "w1200": 900,
     "width": 3024,
     "height": 4032
+  },
+  "images/glas/glas-hund-erinnerung.jpg": {
+    "600": "assets/img/7ee71d12f7a9-600.webp",
+    "w600": 450,
+    "1200": "assets/img/7ee71d12f7a9-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/glas-diamantene-hochzeit.jpg": {
+    "600": "assets/img/ff14828f3734-600.webp",
+    "w600": 450,
+    "1200": "assets/img/ff14828f3734-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
   },
   "images/glas/glas-portraet-fotoerinnerung.jpg": {
     "600": "assets/img/19a1f4059aff-600.webp",
@@ -382,6 +430,30 @@
     "w1200": 900,
     "width": 3024,
     "height": 4032
+  },
+  "images/schiefer/schiefer-ruhestand-drohnenaufnahme.jpg": {
+    "600": "assets/img/5d5655ffb3bf-600.webp",
+    "w600": 600,
+    "1200": "assets/img/5d5655ffb3bf-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/schiefer/schiefer-ruhestand-werkfeuerwehr.jpg": {
+    "600": "assets/img/6f32cfa928f4-600.webp",
+    "w600": 450,
+    "1200": "assets/img/6f32cfa928f4-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/schiefer/schiefer-garten-portraet-spruch.jpg": {
+    "600": "assets/img/8d7281225d96-600.webp",
+    "w600": 450,
+    "1200": "assets/img/8d7281225d96-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
   },
   "images/schiefer/schiefertafel-route66.jpg": {
     "600": "assets/img/d7cd313acb06-600.webp",
@@ -574,6 +646,62 @@
     "w1200": 768,
     "width": 768,
     "height": 1024
+  },
+  "images/papier/papier-verpackungen-ueberblick.jpg": {
+    "600": "assets/img/026eb09f984e-600.webp",
+    "w600": 600,
+    "1200": "assets/img/026eb09f984e-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/papier/papier-hasen-osterei.jpg": {
+    "600": "assets/img/c12325f47120-600.webp",
+    "w600": 600,
+    "1200": "assets/img/c12325f47120-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/papier/papier-hase-osterei-detail.jpg": {
+    "600": "assets/img/65f98c5cdd43-600.webp",
+    "w600": 450,
+    "1200": "assets/img/65f98c5cdd43-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/papier/papier-umschlag-schmetterling.jpg": {
+    "600": "assets/img/bd3e28027acb-600.webp",
+    "w600": 450,
+    "1200": "assets/img/bd3e28027acb-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/papier/papier-geburtstagsboxen.jpg": {
+    "600": "assets/img/cf5432c22fff-600.webp",
+    "w600": 450,
+    "1200": "assets/img/cf5432c22fff-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/papier/papier-pokale.jpg": {
+    "600": "assets/img/642d94c0a102-600.webp",
+    "w600": 600,
+    "1200": "assets/img/642d94c0a102-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/papier/folie-tshirt-name-einhorn.jpg": {
+    "600": "assets/img/25f63ec2e66e-600.webp",
+    "w600": 450,
+    "1200": "assets/img/25f63ec2e66e-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
   },
   "images/glas/weihnachtskugel-traktor-kullick.jpg": {
     "600": "assets/img/06dbaf771552-600.webp",
