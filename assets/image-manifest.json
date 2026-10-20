@@ -103,6 +103,14 @@
     "width": 1152,
     "height": 1536
   },
+  "images/holz/baumscheibe-halbendorf.jpg": {
+    "600": "assets/img/d3c92d715ed2-600.webp",
+    "w600": 450,
+    "1200": "assets/img/d3c92d715ed2-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
   "images/holz/heissluftballon-polterabend.jpg": {
     "600": "assets/img/9d8f0e9839c1-600.webp",
     "w600": 450,
@@ -198,6 +206,14 @@
     "w1200": 900,
     "width": 3024,
     "height": 4032
+  },
+  "images/glas/glas-portraet-fotoerinnerung.jpg": {
+    "600": "assets/img/19a1f4059aff-600.webp",
+    "w600": 600,
+    "1200": "assets/img/19a1f4059aff-1200.webp",
+    "w1200": 1200,
+    "width": 1527,
+    "height": 859
   },
   "images/glas/glasmedaille-tanzgruppe-halbendorf.jpg": {
     "600": "assets/img/db3920bb7dd5-600.webp",
@@ -559,6 +575,134 @@
     "width": 768,
     "height": 1024
   },
+  "images/glas/weihnachtskugel-traktor-kullick.jpg": {
+    "600": "assets/img/06dbaf771552-600.webp",
+    "w600": 600,
+    "1200": "assets/img/06dbaf771552-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-pferd-herzlinie.jpg": {
+    "600": "assets/img/33a68557afb5-600.webp",
+    "w600": 600,
+    "1200": "assets/img/33a68557afb5-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-elena.jpg": {
+    "600": "assets/img/79bad7ac013f-600.webp",
+    "w600": 450,
+    "1200": "assets/img/79bad7ac013f-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-oldtimer.jpg": {
+    "600": "assets/img/77425bdb4ec7-600.webp",
+    "w600": 450,
+    "1200": "assets/img/77425bdb4ec7-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-blumen-rot.jpg": {
+    "600": "assets/img/7121e36f08d5-600.webp",
+    "w600": 450,
+    "1200": "assets/img/7121e36f08d5-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugeln-eishockey.jpg": {
+    "600": "assets/img/70b2d4d0d2d3-600.webp",
+    "w600": 450,
+    "1200": "assets/img/70b2d4d0d2d3-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-doreen.jpg": {
+    "600": "assets/img/c208118a8c62-600.webp",
+    "w600": 450,
+    "1200": "assets/img/c208118a8c62-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-schneeflocke.jpg": {
+    "600": "assets/img/f937dd2c485a-600.webp",
+    "w600": 450,
+    "1200": "assets/img/f937dd2c485a-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugeln-fee-name.jpg": {
+    "600": "assets/img/490a558cb84e-600.webp",
+    "w600": 450,
+    "1200": "assets/img/490a558cb84e-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-maehdrescher.jpg": {
+    "600": "assets/img/15ff2da2431f-600.webp",
+    "w600": 450,
+    "1200": "assets/img/15ff2da2431f-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-physiotherapie-krautz.jpg": {
+    "600": "assets/img/092a45a86826-600.webp",
+    "w600": 450,
+    "1200": "assets/img/092a45a86826-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-zimmerei-sachse.jpg": {
+    "600": "assets/img/77abe6fdc6b1-600.webp",
+    "w600": 450,
+    "1200": "assets/img/77abe6fdc6b1-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-siio-smarthome.jpg": {
+    "600": "assets/img/c5740f4229f4-600.webp",
+    "w600": 450,
+    "1200": "assets/img/c5740f4229f4-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugeln-weiss-herzlinie.jpg": {
+    "600": "assets/img/b07f8576d6ee-600.webp",
+    "w600": 450,
+    "1200": "assets/img/b07f8576d6ee-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugel-wolfshain.jpg": {
+    "600": "assets/img/91f271727d96-600.webp",
+    "w600": 450,
+    "1200": "assets/img/91f271727d96-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
+  "images/glas/weihnachtskugeln-wolfshain-tschernitz-original.jpg": {
+    "600": "assets/img/ce05d05cd872-600.webp",
+    "w600": 600,
+    "1200": "assets/img/ce05d05cd872-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
+  },
   "images/glas/weihnachtskugel-pferdemotiv.jpeg": {
     "600": "assets/img/91b17cb4a33b-600.webp",
     "w600": 276,
@@ -587,14 +731,6 @@
     "600": "assets/img/d2e52c4e4c72-600.webp",
     "w600": 276,
     "1200": "assets/img/d2e52c4e4c72-1200.webp",
-    "w1200": 552,
-    "width": 707,
-    "height": 1536
-  },
-  "images/glas/weihnachtskugel-wolfshain-tschernitz.jpeg": {
-    "600": "assets/img/71ce9b9f7ac2-600.webp",
-    "w600": 276,
-    "1200": "assets/img/71ce9b9f7ac2-1200.webp",
     "w1200": 552,
     "width": 707,
     "height": 1536
