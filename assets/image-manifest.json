@@ -55,13 +55,13 @@
     "width": 1170,
     "height": 1404
   },
-  "images/leder/leder-fotobuch-erinnerungen.jpg": {
-    "600": "assets/img/b814be8b08a5-600.webp",
-    "w600": 450,
-    "1200": "assets/img/b814be8b08a5-1200.webp",
-    "w1200": 644,
-    "width": 644,
-    "height": 859
+  "images/leder/2025-12-1922-36-12195.jpg": {
+    "600": "assets/img/f5830924f228-600.webp",
+    "w600": 600,
+    "1200": "assets/img/f5830924f228-1200.webp",
+    "w1200": 1024,
+    "width": 1024,
+    "height": 768
   },
   "images/papier/papier-box-umschlag-schmetterling.jpg": {
     "600": "assets/img/28f245f6e5ae-600.webp",
@@ -663,13 +663,13 @@
     "width": 4032,
     "height": 3024
   },
-  "images/leder/2025-12-1922-36-12195.jpg": {
-    "600": "assets/img/f5830924f228-600.webp",
-    "w600": 600,
-    "1200": "assets/img/f5830924f228-1200.webp",
-    "w1200": 1024,
-    "width": 1024,
-    "height": 768
+  "images/leder/leder-fotobuch-erinnerungen.jpg": {
+    "600": "assets/img/b814be8b08a5-600.webp",
+    "w600": 450,
+    "1200": "assets/img/b814be8b08a5-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
   },
   "images/leder/2026-01-0620-38-50228.jpg": {
     "600": "assets/img/7d8d8f748d64-600.webp",
