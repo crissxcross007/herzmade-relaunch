@@ -55,13 +55,13 @@
     "width": 1170,
     "height": 1404
   },
-  "images/leder/2025-12-1922-36-12195.jpg": {
-    "600": "assets/img/f5830924f228-600.webp",
-    "w600": 600,
-    "1200": "assets/img/f5830924f228-1200.webp",
-    "w1200": 1024,
-    "width": 1024,
-    "height": 768
+  "images/leder/leder-fotobuch-erinnerungen.jpg": {
+    "600": "assets/img/b814be8b08a5-600.webp",
+    "w600": 450,
+    "1200": "assets/img/b814be8b08a5-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
   },
   "images/papier/papier-box-umschlag-schmetterling.jpg": {
     "600": "assets/img/28f245f6e5ae-600.webp",
@@ -110,6 +110,14 @@
     "w1200": 900,
     "width": 1152,
     "height": 1536
+  },
+  "images/holz/holzbrett-portraet.jpg": {
+    "600": "assets/img/b75aedd1a0ea-600.webp",
+    "w600": 600,
+    "1200": "assets/img/b75aedd1a0ea-1200.webp",
+    "w1200": 1145,
+    "width": 1145,
+    "height": 859
   },
   "images/holz/holz-geschenkkartenhalter-danke.jpg": {
     "600": "assets/img/c43a2d5c60e0-600.webp",
@@ -431,6 +439,14 @@
     "width": 3024,
     "height": 4032
   },
+  "images/schiefer/schiefer-hundefoto.jpg": {
+    "600": "assets/img/ee6bca9ac409-600.webp",
+    "w600": 450,
+    "1200": "assets/img/ee6bca9ac409-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
   "images/schiefer/schiefer-ruhestand-drohnenaufnahme.jpg": {
     "600": "assets/img/5d5655ffb3bf-600.webp",
     "w600": 600,
@@ -575,6 +591,14 @@
     "width": 4032,
     "height": 3024
   },
+  "images/edelstahl/edelstahltassen-spreeflut.jpg": {
+    "600": "assets/img/22df28597bc7-600.webp",
+    "w600": 450,
+    "1200": "assets/img/22df28597bc7-1200.webp",
+    "w1200": 644,
+    "width": 644,
+    "height": 859
+  },
   "images/edelstahl/tasse-opa.jpg": {
     "600": "assets/img/34ffdb59ed41-600.webp",
     "w600": 450,
@@ -638,6 +662,14 @@
     "w1200": 1200,
     "width": 4032,
     "height": 3024
+  },
+  "images/leder/2025-12-1922-36-12195.jpg": {
+    "600": "assets/img/f5830924f228-600.webp",
+    "w600": 600,
+    "1200": "assets/img/f5830924f228-1200.webp",
+    "w1200": 1024,
+    "width": 1024,
+    "height": 768
   },
   "images/leder/2026-01-0620-38-50228.jpg": {
     "600": "assets/img/7d8d8f748d64-600.webp",
