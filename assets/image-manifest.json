@@ -7,13 +7,13 @@
     "width": 1152,
     "height": 1536
   },
-  "images/holz/hochzeitsbox-holz.jpg": {
-    "600": "assets/img/9bed4b9c3fd9-600.webp",
-    "w600": 600,
-    "1200": "assets/img/9bed4b9c3fd9-1200.webp",
-    "w1200": 1200,
-    "width": 1536,
-    "height": 1152
+  "images/glas/2025-12-1223-50-11078.jpg": {
+    "600": "assets/img/91f4d941bd09-600.webp",
+    "w600": 450,
+    "1200": "assets/img/91f4d941bd09-1200.webp",
+    "w1200": 900,
+    "width": 3024,
+    "height": 4032
   },
   "images/holz/brett-lieblingsfussballer.jpg": {
     "600": "assets/img/2c091c2d9f94-600.webp",
@@ -167,6 +167,14 @@
     "width": 644,
     "height": 859
   },
+  "images/holz/hochzeitsbox-holz.jpg": {
+    "600": "assets/img/9bed4b9c3fd9-600.webp",
+    "w600": 600,
+    "1200": "assets/img/9bed4b9c3fd9-1200.webp",
+    "w1200": 1200,
+    "width": 1536,
+    "height": 1152
+  },
   "images/holz/2026-01-10_14-38-05_703-1.jpeg": {
     "600": "assets/img/1bab0acc1dd6-600.webp",
     "w600": 600,
@@ -203,14 +211,6 @@
     "600": "assets/img/8808fdd40afb-600.webp",
     "w600": 450,
     "1200": "assets/img/8808fdd40afb-1200.webp",
-    "w1200": 900,
-    "width": 3024,
-    "height": 4032
-  },
-  "images/glas/2025-12-1223-50-11078.jpg": {
-    "600": "assets/img/91f4d941bd09-600.webp",
-    "w600": 450,
-    "1200": "assets/img/91f4d941bd09-1200.webp",
     "w1200": 900,
     "width": 3024,
     "height": 4032
