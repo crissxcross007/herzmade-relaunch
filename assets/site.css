@@ -39,3 +39,9 @@
 .legal-draft p{margin:8px 0 0}
 .legal-pending{border-left:3px solid var(--accent);padding-left:16px}
 @media(max-width:600px){.legal-links{font-size:13px}.legal-content{padding-bottom:55px}}
+
+/* Platform-independent line icons, including iOS. */
+.ui-arrow{display:inline-block;width:18px;height:18px;flex:none;vertical-align:-.15em}
+.material-card h3{align-items:center;gap:10px}
+.material-card h3>span{display:inline-flex;align-items:center;justify-content:center}
+.material-card .ui-arrow{width:19px;height:19px}

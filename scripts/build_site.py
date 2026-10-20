@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'assets' / 'img'
 ASSETS.mkdir(parents=True, exist_ok=True)
 E = lambda value: html.escape(str(value), quote=True)
+ARROW_SVG = "<svg class=\"ui-arrow\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg>"
 MATERIALS = {'holz': 'Holz', 'glas': 'Glas', 'schiefer': 'Schiefer', 'edelstahl': 'Edelstahl', 'keramik': 'Keramik', 'leder': 'Leder', 'papier': 'Papier'}
 OCCASIONS = {'geburtstag': 'Geburtstag', 'freundschaft': 'Freundschaft & Danke', 'paare': 'Hochzeit & Paare', 'ehrung': 'Jubiläum & Ehrung', 'weihnachten': 'Weihnachten', 'andenken': 'Andenken & Gedenken'}
 DATA = {key: json.loads((ROOT/'content'/f'{key}.json').read_text()) for key in MATERIALS}
@@ -82,8 +83,8 @@ def page(filename, title, desc, content, active, lightbox=False):
     dialog = '''<dialog class="lightbox" aria-label="Bild in Großansicht"><button class="lightbox-close" aria-label="Großansicht schließen">×</button><button class="lightbox-prev" aria-label="Vorheriges Bild">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lightbox-next" aria-label="Nächstes Bild">›</button></dialog>''' if lightbox else ''
     url = 'https://herzmade.de/'+('' if filename == 'index.html' else filename)
     out = f'''<!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#eeeeeb"><title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="https://herzmade.de/images/herzmade-social.jpg"><link rel="stylesheet" href="assets/site.css?v=20261020c"><script src="assets/site.js?v=20261020b" defer></script></head><body><a class="skip-link" href="#inhalt">Zum Inhalt</a>{navigation(active)}<main id="inhalt">{content}</main>{footer()}{dialog}</body></html>'''
-    (ROOT/filename).write_text(out)
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#eeeeeb"><title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:image" content="https://herzmade.de/images/herzmade-social.jpg"><link rel="stylesheet" href="assets/site.css?v=20261020d"><script src="assets/site.js?v=20261020b" defer></script></head><body><a class="skip-link" href="#inhalt">Zum Inhalt</a>{navigation(active)}<main id="inhalt">{content}</main>{footer()}{dialog}</body></html>'''
+    (ROOT/filename).write_text(out.replace('↗', ARROW_SVG))
 
 def product_card(p):
     return f'''<article class="product" data-occasions="{E(' '.join(p['occasions']))}"><a class="product-photo" href="{E(p.get('gallery') or (p['material']+'.html#gallery'))}">{picture(p['image'],p['alt'])}<span class="photo-arrow" aria-hidden="true">↗</span></a><div class="product-top"><h3>{E(p['title'])}</h3><p class="price">ab {E(p['price'])} €</p></div><p>{E(p['description'])}</p><p class="product-detail">{E(p['detail'])}</p><a class="text-link" href="{E(p.get('gallery') or (p['material']+'.html#gallery'))}">Beispiele ansehen <span aria-hidden="true">↗</span></a></article>'''
@@ -216,8 +217,8 @@ def main():
     page('work.html','Geschenkideen | Herzmade','Persönliche Geschenkideen mit Gravur.', '<section class="page-intro wrap"><h1>Unsere Geschenkideen.</h1><p>Du findest unsere Arbeiten jetzt nach Anlässen sortiert.</p><a class="button" href="geschenkideen.html">Zu den Geschenkideen ↗</a></section>','gifts')
     page('danke.html','Danke für deine Nachricht | Herzmade','Wir freuen uns auf deine Geschenkidee.','<section class="page-intro wrap"><p class="eyebrow">Mit Herz gelesen</p><h1>Danke für deine Nachricht.</h1><p>Wir freuen uns auf deine Idee und melden uns bei dir.</p><a class="button" href="index.html">Zur Startseite</a></section>','contact')
     # Central snippets remain available; published pages already contain them.
-    (ROOT/'menu.html').write_text(navigation(''))
-    (ROOT/'footer.html').write_text(footer())
+    (ROOT/'menu.html').write_text(navigation('').replace('↗', ARROW_SVG))
+    (ROOT/'footer.html').write_text(footer().replace('↗', ARROW_SVG))
     (ROOT/'assets/image-manifest.json').write_text(json.dumps(IMAGES,ensure_ascii=False,indent=2))
     (ROOT/'.nojekyll').touch()
     assert not (ROOT/'CNAME').exists(), 'Test repository must not claim the live domain'
