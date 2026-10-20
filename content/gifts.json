@@ -168,5 +168,30 @@
     ],
     "description": "Das i-Tüpfelchen für dein Geschenk: individuelle Papierboxen, Umschläge und liebevolle Verpackungen.",
     "detail": "Verpackungen ab 3,00 € je nach Größe und Gestaltung. Inhalt und Werkstück separat."
+  },
+  {
+    "title": "Glasmedaillen",
+    "price": "9,90",
+    "material": "glas",
+    "image": "images/glas/glasmedaille-tanzgruppe-halbendorf.jpg",
+    "alt": "Gravierte Glasmedaille mit Tänzerin im Herz, „Halbendorf“ und „10.2026“ am grünen Band – als Dankeschön für eine Gruppe Mädchen, die beim Rentnercafé in Halbendorf aufgetreten ist.",
+    "occasions": [
+      "danke",
+      "ehrung"
+    ],
+    "description": "Individuelle Glasmedaillen als Dankeschön oder Auszeichnung.",
+    "detail": "Inklusive Gravur, Band und Grafikerstellung."
+  },
+  {
+    "title": "Holz-Cut-Arbeiten",
+    "price": "4,90",
+    "material": "holz",
+    "image": "images/holz/holz-geschenkkartenhalter-danke.jpg",
+    "alt": "Lasergeschnittene Geschenkkartenhalterung aus Holz mit dem Schriftzug „Danke“ und persönlicher Gravur.",
+    "occasions": [
+      "danke"
+    ],
+    "description": "Filigrane Ausschnitte aus Holz nach persönlichem Wunsch.",
+    "detail": "Arbeitsleistung ab 4,90 € zuzüglich Material."
   }
 ]

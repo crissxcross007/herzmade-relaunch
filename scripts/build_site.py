@@ -189,6 +189,10 @@ def build_materials():
         price_note = 'Je nach Größe und Gestaltung. Inhalt und Werkstück separat. Folienarbeiten auf Anfrage.' if key == 'papier' else 'Inklusive Material und Gravur. Details zu Größen und Ausführungen findest du bei den Geschenkideen.'
         if key == 'schiefer':
             price_note = 'Inklusive Material und Gravur. Gestaltung und Ausführung stimmen wir persönlich mit dir ab.'
+        if key == 'glas':
+            price_note = 'Inklusive Material und Gravur. Bei Glasmedaillen sind auch Band und Grafikerstellung enthalten.'
+        if key == 'holz':
+            price_note = 'Flaschenöffner, Holzostereier und Brettchen inklusive Material und Gravur. Holz-Cut-Arbeiten ab 4,90 € zuzüglich Material.'
         if key == 'leder':
             prices = '<div><span>Gravurarbeit auf Leder</span><strong>ab 9,00 €</strong></div>'
             price_note = 'Zuzüglich Material. Du kannst uns auch dein eigenes Lederstück zur Gravur geben. Gestaltung, Ausführung und Preis stimmen wir persönlich mit dir ab.'
