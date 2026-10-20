@@ -11,7 +11,7 @@
       "andenken"
     ],
     "description": "Fotos für Paare, persönliche Andenken oder eine besondere Auszeichnung.",
-    "detail": "10 × 10 cm ab 7,00 € · 25 × 25 cm oder 20 × 30 cm ab 24,90 €. Größere Tafeln auf Anfrage."
+    "detail": "10 × 10 cm ab 7,00 € · 25 × 25 cm ab 24,90 € · 20 × 30 cm ab 29,90 €. Größere Tafeln auf Anfrage."
   },
   {
     "title": "Klare Weingläser",
@@ -54,6 +54,30 @@
     ],
     "description": "Zur goldenen Hochzeit, zum Jubiläum oder als persönliches Trauer- und Gedenklicht.",
     "detail": "Weißes oder schwarzes Glas inklusive Gravur. Auch als Pokal gestaltbar."
+  },
+  {
+    "title": "Flaschenöffner",
+    "price": "4,90",
+    "material": "holz",
+    "image": "images/holz/holzscheibe-wappen.jpg",
+    "alt": "Individuell gravierter Holzflaschenöffner als Geburtstagsgeschenk für eine Feuerwehrfrau, mit Feuerwehrlogo, Stadtwappen und ihrem Namen.",
+    "occasions": [
+      "geburtstag"
+    ],
+    "description": "Persönliche Flaschenöffner mit Namen, Motiv oder Logo.",
+    "detail": "Inklusive Material und Gravur."
+  },
+  {
+    "title": "Holzosterei",
+    "price": "6,90",
+    "material": "holz",
+    "image": "images/holz/holz-ostereier-sprueche.jpg",
+    "alt": "Gravierte Ostereier mit unterschiedlichen Sprüchen und Motiven als persönliche Osteraufmerksamkeit.",
+    "occasions": [
+      "ostern"
+    ],
+    "description": "Holzostereier mit persönlicher Gravur, Motiven oder Sprüchen.",
+    "detail": "Inklusive Material und Gravur. Eine passende Verpackung kommt separat hinzu."
   },
   {
     "title": "Brettchen & Holzgeschenke",

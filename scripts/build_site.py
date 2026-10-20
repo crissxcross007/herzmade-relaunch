@@ -130,7 +130,7 @@ def build_home():
     material_images = {key: gallery_example(key, path) for key, path in featured.items()}
     hero_item = gallery_example('glas', 'images/glas/laterne-lebensbaum.jpg')
     hero = picture(hero_item['bild'],hero_item['alt'],True)
-    small_item = gallery_example('holz', 'images/holz/hochzeitsbox-holz.jpg')
+    small_item = gallery_example('glas', 'images/glas/2025-12-1223-50-11078.jpg')
     small = picture(small_item['bild'],small_item['alt'])
     cards = ''.join(f'<a class="material-card" href="{key}.html"><div>{picture(material_images[key]["bild"],material_images[key]["alt"])}</div><h3>{label}<span aria-hidden="true">↗</span></h3></a>' for key,label in MATERIALS.items())
     content = f'''<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">Gravuren & Geschenkideen aus Döbern</p><h1>Kein Geschenk<br>wie jedes.<br><em>Deins.</em></h1><p class="hero-lead">Ein Name. Ein besonderer Moment. Eine Erinnerung, die bleibt. Wir machen aus deiner Idee ein persönliches Einzelstück.</p><div class="hero-actions"><a class="button" href="geschenkideen.html">Geschenkideen entdecken <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">Das ist Herzmade</a></div><p class="hero-signoff">Mit Herz gemacht statt Barcode.</p></div><div class="hero-visual"><div class="hero-main">{hero}<span class="image-label">Ein Licht.<br>Deine persönliche Botschaft.</span></div><div class="hero-small">{small}<span>Für deine Lieblingsmenschen.</span></div></div></div></section>
@@ -185,7 +185,7 @@ def build_materials():
         related=[p for p in PRODUCTS if p['material']==key]
         prices=''.join(f'<div><span>{E(p["title"])}</span><strong>ab {E(p["price"])} €</strong></div>' for p in related)
         if key == 'schiefer':
-            prices = '<div><span>Schiefertafel 10 × 10 cm</span><strong>ab 7,00 €</strong></div><div><span>Schiefertafel 25 × 25 cm</span><strong>ab 24,90 €</strong></div><div><span>Schiefertafel 20 × 30 cm</span><strong>ab 24,90 €</strong></div><div><span>Größere Schiefertafeln</span><strong>auf Anfrage</strong></div>'
+            prices = '<div><span>Schiefertafel 10 × 10 cm</span><strong>ab 7,00 €</strong></div><div><span>Schiefertafel 25 × 25 cm</span><strong>ab 24,90 €</strong></div><div><span>Schiefertafel 20 × 30 cm</span><strong>ab 29,90 €</strong></div><div><span>Größere Schiefertafeln</span><strong>auf Anfrage</strong></div>'
         price_note = 'Je nach Größe und Gestaltung. Inhalt und Werkstück separat. Folienarbeiten auf Anfrage.' if key == 'papier' else 'Inklusive Material und Gravur. Details zu Größen und Ausführungen findest du bei den Geschenkideen.'
         if key == 'schiefer':
             price_note = 'Inklusive Material und Gravur. Gestaltung und Ausführung stimmen wir persönlich mit dir ab.'
