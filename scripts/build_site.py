@@ -140,7 +140,7 @@ def build_materials():
             item_title = clean(item.get('titel') or f'Gravur auf {label}')
             item_alt = clean(item.get('alt') or item_title)
             optimized=optimize(item['bild'])
-            gallery+=f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{picture(item["bild"],item_alt)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
+            gallery+=f'<article class="gallery-item"><a class="gallery-photo" href="{optimized["1200"]}" data-lightbox data-caption="{E(item_title)}" aria-label="{E(item_title)} vergrößern">{gallery_picture(item)}<span class="photo-arrow" aria-hidden="true">+</span></a><h3>{E(item_title)}</h3><p>{E(item_alt)}</p></article>'
         related=[p for p in PRODUCTS if p['material']==key]
         prices=''.join(f'<div><span>{E(p["title"])}</span><strong>ab {E(p["price"])} €</strong></div>' for p in related)
         if key == 'schiefer':
@@ -158,6 +158,11 @@ def build_materials():
 
 def gallery_picture(item):
     path = item['bild'].lstrip('/').removeprefix('./')
+    if path == 'images/edelstahl/edelstahltassen-spreeflut.jpg':
+        optimized = optimize(path)
+        width, height = optimized['width'], optimized['height']
+        alt = clean(item.get('alt') or item.get('titel') or 'Edelstahltassen für SpreeFLUT 2026')
+        return f'<svg class="gallery-crop" role="img" aria-label="{E(alt)}" viewBox="0 0 {height} {width}" width="{height}" height="{width}"><image href="{optimized["1200"]}" width="{width}" height="{height}" transform="translate({height} 0) rotate(90)"/></svg>'
     crop = SCREENSHOT_CROPS.get(path)
     alt = clean(item.get('alt') or item.get('titel') or 'Persönliche Weihnachtskugel')
     if crop is None:
